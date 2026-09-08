@@ -33,12 +33,6 @@ SplitRAG/
 │   └── finetuning/
 │       └── finetuning_records.zip
 │
-├── models/
-│   └── lora_adapters/
-│       ├── Llama-3.2-1B-Instruct/
-│       └── Qwen3.5-0.8B/
-
-│
 ├── results/
 │   └── internal/
 │       ├── prompts.zip
@@ -110,15 +104,14 @@ The archives preserve the original model / strategy / query-type directory hiera
 
 `datasets/finetuning/finetuning_records.zip` contains the 25,000 RAG-formatted fine-tuning examples used for Qwen3.5-0.8B and Llama-3.2-1B-Instruct.
 
-The resulting LoRA adapters are provided in:
+The trained LoRA adapters are not stored directly in the Git repository. They are provided as compressed **GitHub Release assets**:
 
 ```text
-models/lora_adapters/
-├── Llama-3.2-1B-Instruct/
-└── Qwen3.5-0.8B/
+llama32_1b_lora_adapter.zip
+qwen35_08b_lora_adapter.zip
 ```
 
-Each directory contains `adapter_config.json` and `adapter_model.safetensors`.
+Each archive contains the corresponding PEFT adapter files, including `adapter_config.json` and `adapter_model.safetensors`.
 
 ## Supplementary diagnostic experiments
 
@@ -128,6 +121,7 @@ Each directory contains `adapter_config.json` and `adapter_model.safetensors`.
 
 Contains the distractor-generation script and the prompt, output, and score records used to evaluate evidence exposure under increasing context noise.
 
+Recommended contents:
 
 ```text
 generate_context_distractors.py
@@ -227,6 +221,8 @@ summary.json
 
 Contains the sampled structured benchmark used in the study, entity/relation mappings, generated prompts/evidence, model outputs, scores, and the analysis report.
 
+Recommended organization:
+
 ```text
 entity_id_map.pkl
 relation_id_map.pkl
@@ -253,12 +249,25 @@ build_kqapro_prompts.py
 
 Small JSON files describing the retained evaluation set and parser results are kept uncompressed for inspection. Large prompt / answer / score collections are stored in `inference_records.zip`.
 
-The trained KQA Pro parser adapter is larger than GitHub's normal per-file size limit and should be uploaded as a **GitHub Release asset** (or managed through Git LFS). Its release asset should contain:
+The trained KQA Pro parser adapter is not stored directly in the Git repository and is provided as a compressed **GitHub Release asset**:
 
 ```text
-adapter_config.json
-adapter_model.safetensors
+kqapro_parser_adapter.zip
 ```
+
+The archive contains the corresponding PEFT adapter files, including `adapter_config.json` and `adapter_model.safetensors`.
+
+## GitHub Release assets
+
+The trained adapters used in the experiments are distributed separately through the repository's **Releases** page:
+
+```text
+lora_adapters.zip
+kqapro_parser_adapter.zip
+```
+
+These archives are excluded from the main Git repository to keep large binary files out of the version history. Each archive contains the corresponding PEFT adapter configuration and weights.
+
 
 ## Notes on archived records
 
@@ -267,7 +276,7 @@ The repository contains a large number of per-query experimental files. To keep 
 1. source code, summary files, CSV/JSON analysis outputs, and small metadata files are kept directly visible;
 2. large collections of numbered `.txt` prompt/output/score files are stored in ZIP archives;
 3. numbered files inside archives are not renamed because their indices align the benchmark instance, prompt, prediction, and score;
-4. trained model weights larger than GitHub's normal file-size limit are stored as GitHub Release assets or with Git LFS.
+4. trained LoRA adapters and the KQA Pro parser adapter are distributed as compressed GitHub Release assets.
 
 ## API models
 
