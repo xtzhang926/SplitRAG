@@ -1,0 +1,218 @@
+{
+  "data": {
+    "train_samples": 25000,
+    "test_samples": 750,
+    "train_qtype_counts": {
+      "1p": 5000,
+      "2i": 5000,
+      "2p": 5000,
+      "2u": 5000,
+      "3i": 5000
+    },
+    "test_qtype_counts": {
+      "1p": 150,
+      "2i": 150,
+      "2p": 150,
+      "2u": 150,
+      "3i": 150
+    },
+    "anomaly_count": 0,
+    "anomalies": []
+  },
+  "overall_overlap": [
+    {
+      "metric": "prompt_entity",
+      "description": "Train prompt entity IDs vs Test query entity IDs",
+      "train_unique": 14632,
+      "test_unique": 3183,
+      "overlap": 1508,
+      "test_overlap_rate": 0.4737668865849827,
+      "train_overlap_rate": 0.10306178239475124,
+      "jaccard": 0.09247562396516833
+    },
+    {
+      "metric": "target_answer_entity",
+      "description": "Train final target IDs vs Test gold IDs",
+      "train_unique": 13919,
+      "test_unique": 1991,
+      "overlap": 472,
+      "test_overlap_rate": 0.2370668006027122,
+      "train_overlap_rate": 0.0339104820748617,
+      "jaccard": 0.030573908537375308
+    },
+    {
+      "metric": "relation",
+      "description": "Train relation IDs vs Test relation IDs",
+      "train_unique": 1197,
+      "test_unique": 665,
+      "overlap": 351,
+      "test_overlap_rate": 0.5278195488721804,
+      "train_overlap_rate": 0.2932330827067669,
+      "jaccard": 0.23229649238914626
+    },
+    {
+      "metric": "all_numeric_upper_bound",
+      "description": "All train numeric tokens vs All test numeric tokens",
+      "train_unique": 14663,
+      "test_unique": 3753,
+      "overlap": 2082,
+      "test_overlap_rate": 0.5547561950439648,
+      "train_overlap_rate": 0.14199004296528678,
+      "jaccard": 0.1274641851353006
+    },
+    {
+      "metric": "exact_triple_train_input_only",
+      "description": "Train input triples vs Test query triples",
+      "train_unique": 141043,
+      "test_unique": 2977,
+      "overlap": 0,
+      "test_overlap_rate": 0.0,
+      "train_overlap_rate": 0.0,
+      "jaccard": 0.0
+    },
+    {
+      "metric": "exact_triple_full_train_exposure",
+      "description": "Train input+target triples vs Test query triples",
+      "train_unique": 146040,
+      "test_unique": 2977,
+      "overlap": 0,
+      "test_overlap_rate": 0.0,
+      "train_overlap_rate": 0.0,
+      "jaccard": 0.0
+    },
+    {
+      "metric": "head_relation_pair",
+      "description": "Train (h,r) pairs vs Test (h,r) pairs",
+      "train_unique": 42264,
+      "test_unique": 1468,
+      "overlap": 4,
+      "test_overlap_rate": 0.0027247956403269754,
+      "train_overlap_rate": 9.46431951542684e-05,
+      "jaccard": 9.147457006952067e-05
+    },
+    {
+      "metric": "relation_tail_pair",
+      "description": "Train (r,t) pairs vs Test (r,t) pairs",
+      "train_unique": 80999,
+      "test_unique": 2652,
+      "overlap": 2,
+      "test_overlap_rate": 0.0007541478129713424,
+      "train_overlap_rate": 2.469166286003531e-05,
+      "jaccard": 2.390943107508757e-05
+    },
+    {
+      "metric": "head_tail_pair",
+      "description": "Train (h,t) pairs vs Test (h,t) pairs",
+      "train_unique": 131104,
+      "test_unique": 2919,
+      "overlap": 1,
+      "test_overlap_rate": 0.00034258307639602604,
+      "train_overlap_rate": 7.627532340737125e-06,
+      "jaccard": 7.461461551088627e-06
+    }
+  ],
+  "sample_level_summary": [
+    {
+      "scope": "overall",
+      "n_samples": 750,
+      "mean_query_entity_overlap_rate": 0.5764851383104493,
+      "samples_any_query_entity_seen_rate": 0.964,
+      "samples_all_query_entities_seen_rate": 0.156,
+      "mean_gold_overlap_rate_final_target": 0.27426828264943676,
+      "samples_any_gold_seen_final_target_rate": 0.396,
+      "samples_all_gold_seen_final_target_rate": 0.208,
+      "mean_relation_overlap_rate": 0.7148888888888892,
+      "samples_any_relation_seen_rate": 0.856,
+      "samples_all_relations_seen_rate": 0.5693333333333334,
+      "samples_any_exact_triple_overlap_rate": 0.0,
+      "samples_any_head_relation_overlap_rate": 0.006666666666666667,
+      "samples_any_relation_tail_overlap_rate": 0.0026666666666666666
+    },
+    {
+      "scope": "1p",
+      "n_samples": 150,
+      "mean_query_entity_overlap_rate": 0.3882010582010584,
+      "samples_any_query_entity_seen_rate": 0.88,
+      "samples_all_query_entities_seen_rate": 0.06666666666666667,
+      "mean_gold_overlap_rate_final_target": 0.1462710612973771,
+      "samples_any_gold_seen_final_target_rate": 0.32666666666666666,
+      "samples_all_gold_seen_final_target_rate": 0.06666666666666667,
+      "mean_relation_overlap_rate": 0.68,
+      "samples_any_relation_seen_rate": 0.68,
+      "samples_all_relations_seen_rate": 0.68,
+      "samples_any_exact_triple_overlap_rate": 0.0,
+      "samples_any_head_relation_overlap_rate": 0.013333333333333334,
+      "samples_any_relation_tail_overlap_rate": 0.0
+    },
+    {
+      "scope": "2p",
+      "n_samples": 150,
+      "mean_query_entity_overlap_rate": 0.5063964720330871,
+      "samples_any_query_entity_seen_rate": 0.9866666666666667,
+      "samples_all_query_entities_seen_rate": 0.06,
+      "mean_gold_overlap_rate_final_target": 0.15119395057340512,
+      "samples_any_gold_seen_final_target_rate": 0.3333333333333333,
+      "samples_all_gold_seen_final_target_rate": 0.07333333333333333,
+      "mean_relation_overlap_rate": 0.72,
+      "samples_any_relation_seen_rate": 0.9466666666666667,
+      "samples_all_relations_seen_rate": 0.49333333333333335,
+      "samples_any_exact_triple_overlap_rate": 0.0,
+      "samples_any_head_relation_overlap_rate": 0.013333333333333334,
+      "samples_any_relation_tail_overlap_rate": 0.0
+    },
+    {
+      "scope": "2i",
+      "n_samples": 150,
+      "mean_query_entity_overlap_rate": 0.6318068783068786,
+      "samples_any_query_entity_seen_rate": 0.9733333333333334,
+      "samples_all_query_entities_seen_rate": 0.16666666666666666,
+      "mean_gold_overlap_rate_final_target": 0.23746825396825397,
+      "samples_any_gold_seen_final_target_rate": 0.2866666666666667,
+      "samples_all_gold_seen_final_target_rate": 0.2,
+      "mean_relation_overlap_rate": 0.7533333333333333,
+      "samples_any_relation_seen_rate": 0.86,
+      "samples_all_relations_seen_rate": 0.6466666666666666,
+      "samples_any_exact_triple_overlap_rate": 0.0,
+      "samples_any_head_relation_overlap_rate": 0.006666666666666667,
+      "samples_any_relation_tail_overlap_rate": 0.006666666666666667
+    },
+    {
+      "scope": "2u",
+      "n_samples": 150,
+      "mean_query_entity_overlap_rate": 0.5808360978260358,
+      "samples_any_query_entity_seen_rate": 0.98,
+      "samples_all_query_entities_seen_rate": 0.16,
+      "mean_gold_overlap_rate_final_target": 0.3167256077256077,
+      "samples_any_gold_seen_final_target_rate": 0.5,
+      "samples_all_gold_seen_final_target_rate": 0.19333333333333333,
+      "mean_relation_overlap_rate": 0.7033333333333334,
+      "samples_any_relation_seen_rate": 0.8666666666666667,
+      "samples_all_relations_seen_rate": 0.54,
+      "samples_any_exact_triple_overlap_rate": 0.0,
+      "samples_any_head_relation_overlap_rate": 0.0,
+      "samples_any_relation_tail_overlap_rate": 0.006666666666666667
+    },
+    {
+      "scope": "3i",
+      "n_samples": 150,
+      "mean_query_entity_overlap_rate": 0.7751851851851852,
+      "samples_any_query_entity_seen_rate": 1.0,
+      "samples_all_query_entities_seen_rate": 0.32666666666666666,
+      "mean_gold_overlap_rate_final_target": 0.5196825396825396,
+      "samples_any_gold_seen_final_target_rate": 0.5333333333333333,
+      "samples_all_gold_seen_final_target_rate": 0.5066666666666667,
+      "mean_relation_overlap_rate": 0.7177777777777778,
+      "samples_any_relation_seen_rate": 0.9266666666666666,
+      "samples_all_relations_seen_rate": 0.4866666666666667,
+      "samples_any_exact_triple_overlap_rate": 0.0,
+      "samples_any_head_relation_overlap_rate": 0.0,
+      "samples_any_relation_tail_overlap_rate": 0.0
+    }
+  ],
+  "exact_sample_overlap": {
+    "train_unique_sample_signatures": 24909,
+    "test_samples": 750,
+    "exact_sample_overlap_count": 0,
+    "exact_sample_overlap_files": []
+  }
+}
