@@ -121,7 +121,7 @@ Each archive contains the corresponding PEFT adapter files, including `adapter_c
 
 Contains the distractor-generation script and the prompt, output, and score records used to evaluate evidence exposure under increasing context noise.
 
-Recommended contents:
+Contents:
 
 ```text
 generate_context_distractors.py
@@ -221,7 +221,7 @@ summary.json
 
 Contains the sampled structured benchmark used in the study, entity/relation mappings, generated prompts/evidence, model outputs, scores, and the analysis report.
 
-Recommended organization:
+Organization:
 
 ```text
 entity_id_map.pkl
