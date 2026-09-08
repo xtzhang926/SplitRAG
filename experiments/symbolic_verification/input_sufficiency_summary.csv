@@ -1,0 +1,13 @@
+﻿task,qtype,n,executor_correct,executor_accuracy
+Decompose,1p,150,150,1.0
+Decompose,2p,150,150,1.0
+Decompose,2i,150,150,1.0
+Decompose,3i,150,150,1.0
+Decompose,2u,150,150,1.0
+Decompose,Overall,750,750,1.0
+SplitRag,1p,150,150,1.0
+SplitRag,2p,150,150,1.0
+SplitRag,2i,150,150,1.0
+SplitRag,3i,150,150,1.0
+SplitRag,2u,150,150,1.0
+SplitRag,Overall,750,750,1.0
