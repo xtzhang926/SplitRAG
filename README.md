@@ -34,11 +34,10 @@ SplitRAG/
 │       └── finetuning_records.zip
 │
 ├── models/
-│   ├── lora_adapters/
-│   │   ├── Llama-3.2-1B-Instruct/
-│   │   └── Qwen3.5-0.8B/
-│   └── kqapro_parser/
-│       └── README.md
+│   └── lora_adapters/
+│       ├── Llama-3.2-1B-Instruct/
+│       └── Qwen3.5-0.8B/
+
 │
 ├── results/
 │   └── internal/
@@ -254,7 +253,7 @@ build_kqapro_prompts.py
 
 Small JSON files describing the retained evaluation set and parser results are kept uncompressed for inspection. Large prompt / answer / score collections are stored in `inference_records.zip`.
 
-The trained KQA Pro parser adapter is larger than GitHub's normal per-file size limit and be uploaded as a **GitHub Release asset** (or managed through Git LFS). Its release asset contain:
+The trained KQA Pro parser adapter is larger than GitHub's normal per-file size limit and should be uploaded as a **GitHub Release asset** (or managed through Git LFS). Its release asset should contain:
 
 ```text
 adapter_config.json
