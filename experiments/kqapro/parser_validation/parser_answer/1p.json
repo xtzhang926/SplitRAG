@@ -1,0 +1,302 @@
+[
+  {
+    "queries": "Star Trek: The Animated Series is based on which TV series?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Star Trek: The Animated Series\", \"path\": [{\"relation\": \"based on\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0001",
+    "source_index": 44
+  },
+  {
+    "queries": "Who is Douglas Fairbanks' spouse?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Douglas Fairbanks\", \"path\": [{\"relation\": \"spouse\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0002",
+    "source_index": 270
+  },
+  {
+    "queries": "Which person was born in Coral Gables?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Coral Gables\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0003",
+    "source_index": 344
+  },
+  {
+    "queries": "What band is signed to the Kill Rock Stars label?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Kill Rock Stars\", \"path\": [{\"relation\": \"record label\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0004",
+    "source_index": 784
+  },
+  {
+    "queries": "Which human is a member of AGOVV Apeldoorn?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"AGOVV Apeldoorn\", \"path\": [{\"relation\": \"member of sports team\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0005",
+    "source_index": 1997
+  },
+  {
+    "queries": "Who was the screenwriter of The Station Agent?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"The Station Agent\", \"path\": [{\"relation\": \"screenwriter\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0006",
+    "source_index": 2232
+  },
+  {
+    "queries": "What cemetery was John F. Seitz buried at?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"John F. Seitz\", \"path\": [{\"relation\": \"place of burial\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0007",
+    "source_index": 2479
+  },
+  {
+    "queries": "Who is the spouse of Swizz Beatz ?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Swizz Beatz\", \"path\": [{\"relation\": \"spouse\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0008",
+    "source_index": 2481
+  },
+  {
+    "queries": "What is the national association football team which belongs to Austria?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Austria\", \"path\": [{\"relation\": \"country for sport\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0009",
+    "source_index": 2847
+  },
+  {
+    "queries": "What person is part of the Dave Matthews Band?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Dave Matthews Band\", \"path\": [{\"relation\": \"has part\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0010",
+    "source_index": 3241
+  },
+  {
+    "queries": "What activity's genre is massively multiplayer online role-playing game?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"massively multiplayer online role-playing game\", \"path\": [{\"relation\": \"genre\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0011",
+    "source_index": 3298
+  },
+  {
+    "queries": "Which association football club is set up in Breda?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Breda\", \"path\": [{\"relation\": \"location of formation\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0012",
+    "source_index": 3397
+  },
+  {
+    "queries": "What person is a sibling of Randy Quaid?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Randy Quaid\", \"path\": [{\"relation\": \"sibling\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0013",
+    "source_index": 3423
+  },
+  {
+    "queries": "Tallinn is headquarters of which soccer club?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Tallinn\", \"path\": [{\"relation\": \"headquarters location\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0014",
+    "source_index": 3550
+  },
+  {
+    "queries": "What is Eddie Vedder's record label?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Eddie Vedder\", \"path\": [{\"relation\": \"record label\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0015",
+    "source_index": 3593
+  },
+  {
+    "queries": "Which film was written by William S. Burroughs?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"William S. Burroughs\", \"path\": [{\"relation\": \"screenwriter\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0016",
+    "source_index": 3858
+  },
+  {
+    "queries": "Which county town is in West Dorset?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"West Dorset\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0017",
+    "source_index": 3961
+  },
+  {
+    "queries": "Which vocal academic discipline is associated with Damon Albarn?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Damon Albarn\", \"path\": [{\"relation\": \"voice type\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0018",
+    "source_index": 4382
+  },
+  {
+    "queries": "Edward Norton produced which visual artwork?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Edward Norton\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0019",
+    "source_index": 4484
+  },
+  {
+    "queries": "Who is Peter Bogdanovich's partner?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Peter Bogdanovich\", \"path\": [{\"relation\": \"partner\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0020",
+    "source_index": 4709
+  },
+  {
+    "queries": "The Democratic Republic of the Congo was the filming locale of which visual artwork?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Democratic Republic of the Congo\", \"path\": [{\"relation\": \"filming location\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0021",
+    "source_index": 4734
+  },
+  {
+    "queries": "What is the university in Pomona?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Pomona\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0022",
+    "source_index": 5013
+  },
+  {
+    "queries": "Which person was born in Trondheim?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Trondheim\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0023",
+    "source_index": 5128
+  },
+  {
+    "queries": "Tell me the person who is Katy Perry's spouse",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Katy Perry\", \"path\": [{\"relation\": \"spouse\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0024",
+    "source_index": 5182
+  },
+  {
+    "queries": "Which agent owns General Dynamics Electric Boat?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"General Dynamics Electric Boat\", \"path\": [{\"relation\": \"owner of\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0025",
+    "source_index": 5528
+  },
+  {
+    "queries": "Who is a resident of Tunis?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Tunis\", \"path\": [{\"relation\": \"residence\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0026",
+    "source_index": 5618
+  },
+  {
+    "queries": "Which disease did Warren Zevon die of?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Warren Zevon\", \"path\": [{\"relation\": \"cause of death\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0027",
+    "source_index": 6107
+  },
+  {
+    "queries": "What county in Illinois is named after DeWitt Clinton?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"DeWitt Clinton\", \"path\": [{\"relation\": \"named after\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0028",
+    "source_index": 6294
+  },
+  {
+    "queries": "Which award did Rickey Henderson receive?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Rickey Henderson\", \"path\": [{\"relation\": \"award received\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0029",
+    "source_index": 6312
+  },
+  {
+    "queries": "Which association football club has headquarters located in Cremona?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Cremona\", \"path\": [{\"relation\": \"headquarters location\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0030",
+    "source_index": 6550
+  },
+  {
+    "queries": "In which city was Orlando Bloom born?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Orlando Bloom\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0031",
+    "source_index": 6853
+  },
+  {
+    "queries": "What person was born in Charlottesville?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Charlottesville\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0032",
+    "source_index": 7844
+  },
+  {
+    "queries": "Which person is a member of Tom Petty and the Heartbreakers?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Tom Petty and the Heartbreakers\", \"path\": [{\"relation\": \"member of\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0033",
+    "source_index": 7869
+  },
+  {
+    "queries": "What industry is part of the North African Campaign?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"North African Campaign\", \"path\": [{\"relation\": \"part of\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0034",
+    "source_index": 8561
+  },
+  {
+    "queries": "What visual artwork is narrated by Ray Liotta?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Ray Liotta\", \"path\": [{\"relation\": \"narrator\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0035",
+    "source_index": 9091
+  },
+  {
+    "queries": "Which individual was Ted's composer?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Ted\", \"path\": [{\"relation\": \"composer\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0036",
+    "source_index": 9290
+  },
+  {
+    "queries": "What disease is James Coburn's medical condition?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"James Coburn\", \"path\": [{\"relation\": \"medical condition\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0037",
+    "source_index": 9511
+  },
+  {
+    "queries": "Which person was influenced by Red Hot Chili Peppers?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Red Hot Chili Peppers\", \"path\": [{\"relation\": \"influenced by\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0038",
+    "source_index": 9751
+  },
+  {
+    "queries": "What city is the birthplace of Alan Dale?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Alan Dale\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0039",
+    "source_index": 9871
+  },
+  {
+    "queries": "What work was produced by Bob Hoskins?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Bob Hoskins\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0040",
+    "source_index": 10540
+  },
+  {
+    "queries": "Which Summer Olympics preceded the 1912 Summer Games?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"1912 Summer Olympics\", \"path\": [{\"relation\": \"followed by\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0041",
+    "source_index": 10672
+  },
+  {
+    "queries": "Whih person was convicted of theft?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"theft\", \"path\": [{\"relation\": \"convicted of\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0042",
+    "source_index": 10691
+  },
+  {
+    "queries": "Steven Wilson is a member of which band?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Steven Wilson\", \"path\": [{\"relation\": \"has part\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0043",
+    "source_index": 10851
+  },
+  {
+    "queries": "Which person was educated at Smith College?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Smith College\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0044",
+    "source_index": 10893
+  },
+  {
+    "queries": "What person was born in Royal Leamington Spa?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Royal Leamington Spa\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0045",
+    "source_index": 10895
+  },
+  {
+    "queries": "Ken Burns produced which series for TV?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Ken Burns\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0046",
+    "source_index": 10928
+  },
+  {
+    "queries": "What Summer Olympic Games were followed by the 1980 Summer Olympics?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"1980 Summer Olympics\", \"path\": [{\"relation\": \"followed by\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0047",
+    "source_index": 11106
+  },
+  {
+    "queries": "What disease did John Hartford die of ?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"John Hartford\", \"path\": [{\"relation\": \"cause of death\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0048",
+    "source_index": 11143
+  },
+  {
+    "queries": "Which association football club does the National Autonomous University of Mexico own?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"National Autonomous University of Mexico\", \"path\": [{\"relation\": \"owned by\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0049",
+    "source_index": 11353
+  },
+  {
+    "queries": "What television series included Steve Allen in the cast?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Steve Allen\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0050",
+    "source_index": 11618
+  }
+]

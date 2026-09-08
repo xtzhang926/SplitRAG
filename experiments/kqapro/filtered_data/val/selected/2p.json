@@ -1,0 +1,2762 @@
+[
+  {
+    "e11_sample_id": "2p_0001",
+    "source_split": "KQAPro-val",
+    "source_index": 867,
+    "qtype": "2p",
+    "question": "tell me the written work that was authored by the person that is buried in Monaco.",
+    "gold_answer_name": "A Clockwork Orange",
+    "gold_answer_ids": [
+      "Q692557"
+    ],
+    "anchors": [
+      {
+        "name": "Monaco",
+        "ids": [
+          "Q235"
+        ],
+        "unique_id": "Q235"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "place of burial",
+          "direction": "backward",
+          "relation_key": "place of burial::backward"
+        },
+        {
+          "predicate": "author",
+          "direction": "backward",
+          "relation_key": "author::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q235",
+      [
+        "place of burial::backward",
+        "author::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q692557"
+    ],
+    "reduced_answer_names": [
+      "A Clockwork Orange"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Monaco"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "place of burial",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "author",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "written work"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"written work\" . ?e <author> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"human\" . ?e_1 <place_of_burial> ?e_2 . ?e_2 <pred:name> \"Monaco\" .   }",
+    "choices": [
+      "The Commitments",
+      "The Help",
+      "Contact",
+      "The Maltese Falcon",
+      "A Clockwork Orange",
+      "The Human Stain",
+      "The Three Musketeers",
+      "The Right Stuff",
+      "The Painted Veil",
+      "I, Robot"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0002",
+    "source_split": "KQAPro-val",
+    "source_index": 872,
+    "qtype": "2p",
+    "question": "Who resides in the town where David Thewlis was born?",
+    "gold_answer_name": "Sabrina",
+    "gold_answer_ids": [
+      "Q507196"
+    ],
+    "anchors": [
+      {
+        "name": "David Thewlis",
+        "ids": [
+          "Q212790"
+        ],
+        "unique_id": "Q212790"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "place of birth",
+          "direction": "forward",
+          "relation_key": "place of birth::forward"
+        },
+        {
+          "predicate": "residence",
+          "direction": "backward",
+          "relation_key": "residence::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q212790",
+      [
+        "place of birth::forward",
+        "residence::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q507196"
+    ],
+    "reduced_answer_names": [
+      "Sabrina"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "David Thewlis"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "place of birth",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "town"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "residence",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <residence> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"town\" . ?e_2 <place_of_birth> ?e_1 . ?e_2 <pred:name> \"David Thewlis\" .   }",
+    "choices": [
+      "Roger Taylor",
+      "Philip Roth",
+      "Udo Kier",
+      "Sylvester Stallone",
+      "Fred Ebb",
+      "Michael Caine",
+      "Gregory Peck",
+      "Sabrina",
+      "Stephen Tobolowsky",
+      "Max Fleischer"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0003",
+    "source_split": "KQAPro-val",
+    "source_index": 1179,
+    "qtype": "2p",
+    "question": "The General Electric founder is a member of which association?",
+    "gold_answer_name": "American Philosophical Society",
+    "gold_answer_ids": [
+      "Q466089"
+    ],
+    "anchors": [
+      {
+        "name": "General Electric",
+        "ids": [
+          "Q54173"
+        ],
+        "unique_id": "Q54173"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "founded by",
+          "direction": "forward",
+          "relation_key": "founded by::forward"
+        },
+        {
+          "predicate": "member of",
+          "direction": "forward",
+          "relation_key": "member of::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q54173",
+      [
+        "founded by::forward",
+        "member of::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q466089"
+    ],
+    "reduced_answer_names": [
+      "American Philosophical Society"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "General Electric"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "founded by",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "member of",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "association"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"association\" . ?e_1 <member_of> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"human\" . ?e_2 <founded_by> ?e_1 . ?e_2 <pred:name> \"General Electric\" .   }",
+    "choices": [
+      "American Academy of Arts and Letters",
+      "Academy of Motion Picture Arts and Sciences",
+      "Como",
+      "Stand by Me",
+      "American Philosophical Society",
+      "Royal Academy of Arts",
+      "Norman",
+      "Diedrich Bader",
+      "Royal Society",
+      "April"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0004",
+    "source_split": "KQAPro-val",
+    "source_index": 1496,
+    "qtype": "2p",
+    "question": "Who died in a city in the United States, where Samuel M. Corner was born?",
+    "gold_answer_name": "John Davis",
+    "gold_answer_ids": [
+      "Q1699771"
+    ],
+    "anchors": [
+      {
+        "name": "Samuel M. Comer",
+        "ids": [
+          "Q507122"
+        ],
+        "unique_id": "Q507122"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "place of birth",
+          "direction": "forward",
+          "relation_key": "place of birth::forward"
+        },
+        {
+          "predicate": "place of death",
+          "direction": "backward",
+          "relation_key": "place of death::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q507122",
+      [
+        "place of birth::forward",
+        "place of death::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q1699771"
+    ],
+    "reduced_answer_names": [
+      "John Davis"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Samuel M. Comer"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "place of birth",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "city of the United States"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "place of death",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <place_of_death> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"city of the United States\" . ?e_2 <place_of_birth> ?e_1 . ?e_2 <pred:name> \"Samuel M. Comer\" .   }",
+    "choices": [
+      "Lon Chaney",
+      "Jason Mraz",
+      "Irene Lentz",
+      "John Ford",
+      "Clive Barker",
+      "Robert Taylor",
+      "Dermot Mulroney",
+      "Doc Watson",
+      "Truman Capote",
+      "John Davis"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0005",
+    "source_split": "KQAPro-val",
+    "source_index": 1654,
+    "qtype": "2p",
+    "question": "Tell me the film festival edition that follows the film festival edition that follows 58th Berlin International Film Festival",
+    "gold_answer_name": "60th Berlin International Film Festival",
+    "gold_answer_ids": [
+      "Q574075"
+    ],
+    "anchors": [
+      {
+        "name": "58th Berlin International Film Festival",
+        "ids": [
+          "Q82111"
+        ],
+        "unique_id": "Q82111"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "followed by",
+          "direction": "forward",
+          "relation_key": "followed by::forward"
+        },
+        {
+          "predicate": "followed by",
+          "direction": "forward",
+          "relation_key": "followed by::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q82111",
+      [
+        "followed by::forward",
+        "followed by::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q574075"
+    ],
+    "reduced_answer_names": [
+      "60th Berlin International Film Festival"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "58th Berlin International Film Festival"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "followed by",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "film festival edition"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "followed by",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "film festival edition"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"film festival edition\" . ?e_1 <followed_by> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"film festival edition\" . ?e_2 <followed_by> ?e_1 . ?e_2 <pred:name> \"58th Berlin International Film Festival\" .   }",
+    "choices": [
+      "2010 Sundance Film Festival",
+      "2009 Sundance Film Festival",
+      "61st Berlin International Film Festival",
+      "2011 Sundance Film Festival",
+      "32nd Berlin International Film Festival",
+      "59th Berlin International Film Festival",
+      "60th Berlin International Film Festival",
+      "62nd Berlin International Film Festival",
+      "2012 Sundance Film Festival",
+      "2008 Sundance Film Festival"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0006",
+    "source_split": "KQAPro-val",
+    "source_index": 1846,
+    "qtype": "2p",
+    "question": "Which occupation is the position of the human that is a member of Costa Rica's national football team?",
+    "gold_answer_name": "midfielder",
+    "gold_answer_ids": [
+      "Q193592"
+    ],
+    "anchors": [
+      {
+        "name": "Costa Rica national football team",
+        "ids": [
+          "Q194387"
+        ],
+        "unique_id": "Q194387"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "member of sports team",
+          "direction": "backward",
+          "relation_key": "member of sports team::backward"
+        },
+        {
+          "predicate": "position played on team / speciality",
+          "direction": "forward",
+          "relation_key": "position played on team / speciality::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q194387",
+      [
+        "member of sports team::backward",
+        "position played on team / speciality::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q193592"
+    ],
+    "reduced_answer_names": [
+      "midfielder"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Costa Rica national football team"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "member of sports team",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "position played on team / speciality",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "occupation"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"occupation\" . ?e_1 <position_played_on_team_/_speciality> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"human\" . ?e_1 <member_of_sports_team> ?e_3 . ?e_3 <pred:name> \"Costa Rica national football team\" .   }",
+    "choices": [
+      "all-rounder",
+      "environmentalist",
+      "small forward",
+      "lead vocalist",
+      "partner",
+      "singer-songwriter",
+      "winger",
+      "midfielder",
+      "defender",
+      "goaltender"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0007",
+    "source_split": "KQAPro-val",
+    "source_index": 2804,
+    "qtype": "2p",
+    "question": "Which person executive produced the visual artwork featuring Betty White as a cast member?",
+    "gold_answer_name": "Alex Kurtzman",
+    "gold_answer_ids": [
+      "Q432598"
+    ],
+    "anchors": [
+      {
+        "name": "Betty White",
+        "ids": [
+          "Q373895"
+        ],
+        "unique_id": "Q373895"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "cast member",
+          "direction": "backward",
+          "relation_key": "cast member::backward"
+        },
+        {
+          "predicate": "executive producer",
+          "direction": "forward",
+          "relation_key": "executive producer::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q373895",
+      [
+        "cast member::backward",
+        "executive producer::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q432598"
+    ],
+    "reduced_answer_names": [
+      "Alex Kurtzman"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Betty White"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "cast member",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "visual artwork"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "executive producer",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e_1 <executive_producer> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"visual artwork\" . ?e_1 <cast_member> ?e_3 . ?e_3 <pred:name> \"Betty White\" .   }",
+    "choices": [
+      "David Robb",
+      "Danilo Donati",
+      "Dino De Laurentiis",
+      "Alex Kurtzman",
+      "Jesse Louis Lasky",
+      "Alexander Payne",
+      "Harvey Weinstein",
+      "Samuel Goldwyn",
+      "Chuck Berry",
+      "Drew Barrymore"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0008",
+    "source_split": "KQAPro-val",
+    "source_index": 2946,
+    "qtype": "2p",
+    "question": "Who took part in the Winter Olympics that came after the 1976 Winter Games?",
+    "gold_answer_name": "Mark Johnson",
+    "gold_answer_ids": [
+      "Q1356869"
+    ],
+    "anchors": [
+      {
+        "name": "1976 Winter Olympics",
+        "ids": [
+          "Q9651"
+        ],
+        "unique_id": "Q9651"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "followed by",
+          "direction": "forward",
+          "relation_key": "followed by::forward"
+        },
+        {
+          "predicate": "participant of",
+          "direction": "backward",
+          "relation_key": "participant of::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q9651",
+      [
+        "followed by::forward",
+        "participant of::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q1356869"
+    ],
+    "reduced_answer_names": [
+      "Mark Johnson"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "1976 Winter Olympics"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "followed by",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "Winter Olympic Games"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "participant of",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <participant_of> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"Winter Olympic Games\" . ?e_2 <followed_by> ?e_1 . ?e_2 <pred:name> \"1976 Winter Olympics\" .   }",
+    "choices": [
+      "Mark Johnson",
+      "Chris Pronger",
+      "David Byrne",
+      "Max Fleischer",
+      "Bruce Greenwood",
+      "William Henry Harrison",
+      "Richard Gere",
+      "Harlan Ellison",
+      "John Milton",
+      "Dany Heatley"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0009",
+    "source_split": "KQAPro-val",
+    "source_index": 4666,
+    "qtype": "2p",
+    "question": "Which higher education institution is the parent organization of the law school that is Savannah Guthrie's education place?",
+    "gold_answer_name": "Georgetown University",
+    "gold_answer_ids": [
+      "Q333886"
+    ],
+    "anchors": [
+      {
+        "name": "Savannah Guthrie",
+        "ids": [
+          "Q2227969"
+        ],
+        "unique_id": "Q2227969"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "educated at",
+          "direction": "forward",
+          "relation_key": "educated at::forward"
+        },
+        {
+          "predicate": "parent organization",
+          "direction": "forward",
+          "relation_key": "parent organization::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q2227969",
+      [
+        "educated at::forward",
+        "parent organization::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q333886"
+    ],
+    "reduced_answer_names": [
+      "Georgetown University"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Savannah Guthrie"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "educated at",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "law school"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "parent organization",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "higher education institution"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"higher education institution\" . ?e_1 <parent_organization> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"law school\" . ?e_2 <educated_at> ?e_1 . ?e_2 <pred:name> \"Savannah Guthrie\" .   }",
+    "choices": [
+      "Georgetown University",
+      "Yale University",
+      "Peking University",
+      "Carnegie Institute of Technology",
+      "University of Michigan",
+      "Texas Christian University",
+      "Macquarie University",
+      "Ateneo de Manila University",
+      "York University",
+      "Memorial University of Newfoundland"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0010",
+    "source_split": "KQAPro-val",
+    "source_index": 5082,
+    "qtype": "2p",
+    "question": "Which person is the spouse of the person educated at University of Western Australia?",
+    "gold_answer_name": "Vincent D'Onofrio",
+    "gold_answer_ids": [
+      "Q320052"
+    ],
+    "anchors": [
+      {
+        "name": "University of Western Australia",
+        "ids": [
+          "Q1517021"
+        ],
+        "unique_id": "Q1517021"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "educated at",
+          "direction": "backward",
+          "relation_key": "educated at::backward"
+        },
+        {
+          "predicate": "spouse",
+          "direction": "forward",
+          "relation_key": "spouse::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q1517021",
+      [
+        "educated at::backward",
+        "spouse::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q320052"
+    ],
+    "reduced_answer_names": [
+      "Vincent D'Onofrio"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "University of Western Australia"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "educated at",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "spouse",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e_1 <spouse> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"human\" . ?e_1 <educated_at> ?e_2 . ?e_2 <pred:name> \"University of Western Australia\" .   }",
+    "choices": [
+      "Ellen Page",
+      "Akira Ishida",
+      "Alexander Payne",
+      "Julian Glover",
+      "Gary Oldman",
+      "Vincent D'Onofrio",
+      "Richard Brooks",
+      "Penelope Ann Miller",
+      "Norman Foster",
+      "Heather O'Reilly"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0011",
+    "source_split": "KQAPro-val",
+    "source_index": 5200,
+    "qtype": "2p",
+    "question": "What is the Academy Awards ceremony that came before the one received by Stirling Silliphanta?",
+    "gold_answer_name": "39th Academy Awards",
+    "gold_answer_ids": [
+      "Q167214"
+    ],
+    "anchors": [
+      {
+        "name": "Stirling Silliphanta",
+        "ids": [
+          "Q347945"
+        ],
+        "unique_id": "Q347945"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "award received",
+          "direction": "forward",
+          "relation_key": "award received::forward"
+        },
+        {
+          "predicate": "follows",
+          "direction": "forward",
+          "relation_key": "follows::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q347945",
+      [
+        "award received::forward",
+        "follows::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q167214"
+    ],
+    "reduced_answer_names": [
+      "39th Academy Awards"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Stirling Silliphanta"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "award received",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "Academy Awards ceremony"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "follows",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "Academy Awards ceremony"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"Academy Awards ceremony\" . ?e_1 <follows> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"Academy Awards ceremony\" . ?e_2 <award_received> ?e_1 . ?e_2 <pred:name> \"Stirling Silliphanta\" .   }",
+    "choices": [
+      "39th Academy Awards",
+      "35th Academy Awards",
+      "77th Academy Awards",
+      "50th Academy Awards",
+      "44th Academy Awards",
+      "80th Academy Awards",
+      "68th Academy Awards",
+      "36th Academy Awards",
+      "47th Academy Awards",
+      "74th Academy Awards"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0012",
+    "source_split": "KQAPro-val",
+    "source_index": 5349,
+    "qtype": "2p",
+    "question": "Which city in the US contains the university in which George S. Clinton studied ?",
+    "gold_answer_name": "Murfreesboro",
+    "gold_answer_ids": [
+      "Q501766"
+    ],
+    "anchors": [
+      {
+        "name": "George S. Clinton",
+        "ids": [
+          "Q364631"
+        ],
+        "unique_id": "Q364631"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "educated at",
+          "direction": "forward",
+          "relation_key": "educated at::forward"
+        },
+        {
+          "predicate": "located in the administrative territorial entity",
+          "direction": "forward",
+          "relation_key": "located in the administrative territorial entity::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q364631",
+      [
+        "educated at::forward",
+        "located in the administrative territorial entity::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q501766"
+    ],
+    "reduced_answer_names": [
+      "Murfreesboro"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "George S. Clinton"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "educated at",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "university"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "located in the administrative territorial entity",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "city of the United States"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"city of the United States\" . ?e_1 <located_in_the_administrative_territorial_entity> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"university\" . ?e_2 <educated_at> ?e_1 . ?e_2 <pred:name> \"George S. Clinton\" .   }",
+    "choices": [
+      "Portland",
+      "Hattiesburg",
+      "Green Bay",
+      "Malibu",
+      "Joplin",
+      "Independence",
+      "Columbia",
+      "Murfreesboro",
+      "Muncie",
+      "San Diego"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0013",
+    "source_split": "KQAPro-val",
+    "source_index": 5487,
+    "qtype": "2p",
+    "question": "Amitabh Bachchan studied at the university affiliated with which college?",
+    "gold_answer_name": "St. Stephen's College",
+    "gold_answer_ids": [
+      "Q5289309"
+    ],
+    "anchors": [
+      {
+        "name": "Amitabh Bachchan",
+        "ids": [
+          "Q9570"
+        ],
+        "unique_id": "Q9570"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "educated at",
+          "direction": "forward",
+          "relation_key": "educated at::forward"
+        },
+        {
+          "predicate": "affiliation",
+          "direction": "backward",
+          "relation_key": "affiliation::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q9570",
+      [
+        "educated at::forward",
+        "affiliation::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q5289309"
+    ],
+    "reduced_answer_names": [
+      "St. Stephen's College"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Amitabh Bachchan"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "educated at",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "university"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "affiliation",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "college"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"college\" . ?e <affiliation> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"university\" . ?e_2 <educated_at> ?e_1 . ?e_2 <pred:name> \"Amitabh Bachchan\" .   }",
+    "choices": [
+      "Harvard College",
+      "St. Stephen's College",
+      "Denison University",
+      "Morehouse College",
+      "Trinity College",
+      "University College Dublin",
+      "Barnard College",
+      "Royal Holloway, University of London",
+      "Colorado College",
+      "Santa Monica College"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0014",
+    "source_split": "KQAPro-val",
+    "source_index": 5641,
+    "qtype": "2p",
+    "question": "What ethnic group is geographically distributed in a geographic region which is the continent where The Hague is located ?",
+    "gold_answer_name": "Romani people",
+    "gold_answer_ids": [
+      "Q8060"
+    ],
+    "anchors": [
+      {
+        "name": "The Hague",
+        "ids": [
+          "Q36600"
+        ],
+        "unique_id": "Q36600"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "continent",
+          "direction": "forward",
+          "relation_key": "continent::forward"
+        },
+        {
+          "predicate": "geographic distribution",
+          "direction": "backward",
+          "relation_key": "geographic distribution::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q36600",
+      [
+        "continent::forward",
+        "geographic distribution::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q8060"
+    ],
+    "reduced_answer_names": [
+      "Romani people"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "The Hague"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "continent",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "geographic region"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "geographic distribution",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "ethnic group"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"ethnic group\" . ?e <geographic_distribution> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"geographic region\" . ?e_2 <continent> ?e_1 . ?e_2 <pred:name> \"The Hague\" .   }",
+    "choices": [
+      "Koreans",
+      "Austrians",
+      "Tamil people",
+      "Romani people",
+      "Irish migration to Great Britain",
+      "Thai Chinese people",
+      "Indian American",
+      "Swedes",
+      "White American",
+      "Australians"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0015",
+    "source_split": "KQAPro-val",
+    "source_index": 5678,
+    "qtype": "2p",
+    "question": "Who is the producer of the visual artwork directed by Sammo Hung?",
+    "gold_answer_name": "Andy Lau",
+    "gold_answer_ids": [
+      "Q16766"
+    ],
+    "anchors": [
+      {
+        "name": "Sammo Hung",
+        "ids": [
+          "Q311219"
+        ],
+        "unique_id": "Q311219"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "director",
+          "direction": "backward",
+          "relation_key": "director::backward"
+        },
+        {
+          "predicate": "producer",
+          "direction": "forward",
+          "relation_key": "producer::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q311219",
+      [
+        "director::backward",
+        "producer::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q16766"
+    ],
+    "reduced_answer_names": [
+      "Andy Lau"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Sammo Hung"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "director",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "visual artwork"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "producer",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e_1 <producer> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"visual artwork\" . ?e_1 <director> ?e_2 . ?e_2 <pred:name> \"Sammo Hung\" .   }",
+    "choices": [
+      "Andy Lau",
+      "Alexander Payne",
+      "Irwin Allen",
+      "Vittorio De Sica",
+      "Phil Hartman",
+      "Andrew G. Vajna",
+      "Mark Addy",
+      "Wes Craven",
+      "Brian Grazer",
+      "Ronald Neame"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0016",
+    "source_split": "KQAPro-val",
+    "source_index": 6423,
+    "qtype": "2p",
+    "question": "Which person was born in the capital city of Myanmar?",
+    "gold_answer_name": "James Wilby",
+    "gold_answer_ids": [
+      "Q652715"
+    ],
+    "anchors": [
+      {
+        "name": "Myanmar",
+        "ids": [
+          "Q836"
+        ],
+        "unique_id": "Q836"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "capital",
+          "direction": "forward",
+          "relation_key": "capital::forward"
+        },
+        {
+          "predicate": "place of birth",
+          "direction": "backward",
+          "relation_key": "place of birth::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q836",
+      [
+        "capital::forward",
+        "place of birth::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q652715"
+    ],
+    "reduced_answer_names": [
+      "James Wilby"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Myanmar"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "capital",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "city"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "place of birth",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <place_of_birth> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"city\" . ?e_2 <capital> ?e_1 . ?e_2 <pred:name> \"Myanmar\" .   }",
+    "choices": [
+      "Henry Corden",
+      "Fritz Lang",
+      "Richard Thompson",
+      "Sammy Cahn",
+      "Verity Lambert",
+      "Michael Biehn",
+      "Paul Simon",
+      "Ben Hecht",
+      "David Fury",
+      "James Wilby"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0017",
+    "source_split": "KQAPro-val",
+    "source_index": 6665,
+    "qtype": "2p",
+    "question": "What administrative territorial entity's capital is the United States city that is the birthplace of Kristin Davis?",
+    "gold_answer_name": "Boulder County",
+    "gold_answer_ids": [
+      "Q113029"
+    ],
+    "anchors": [
+      {
+        "name": "Kristin Davis",
+        "ids": [
+          "Q229176"
+        ],
+        "unique_id": "Q229176"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "place of birth",
+          "direction": "forward",
+          "relation_key": "place of birth::forward"
+        },
+        {
+          "predicate": "capital of",
+          "direction": "forward",
+          "relation_key": "capital of::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q229176",
+      [
+        "place of birth::forward",
+        "capital of::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q113029"
+    ],
+    "reduced_answer_names": [
+      "Boulder County"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Kristin Davis"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "place of birth",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "city of the United States"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "capital of",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "administrative territorial entity"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"administrative territorial entity\" . ?e_1 <capital_of> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"city of the United States\" . ?e_2 <place_of_birth> ?e_1 . ?e_2 <pred:name> \"Kristin Davis\" .   }",
+    "choices": [
+      "Kent County",
+      "El Paso County",
+      "Douglas County",
+      "Washington County",
+      "Hillsborough County",
+      "Weber County",
+      "Fremont County",
+      "Bernalillo County",
+      "Beaufort County",
+      "Boulder County"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0018",
+    "source_split": "KQAPro-val",
+    "source_index": 8644,
+    "qtype": "2p",
+    "question": "What movie was the director of She's Having a Baby a cast member of?",
+    "gold_answer_name": "Ferris Bueller's Day Off",
+    "gold_answer_ids": [
+      "Q498906"
+    ],
+    "anchors": [
+      {
+        "name": "She's Having a Baby",
+        "ids": [
+          "Q910178"
+        ],
+        "unique_id": "Q910178"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "director",
+          "direction": "forward",
+          "relation_key": "director::forward"
+        },
+        {
+          "predicate": "cast member",
+          "direction": "backward",
+          "relation_key": "cast member::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q910178",
+      [
+        "director::forward",
+        "cast member::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q498906"
+    ],
+    "reduced_answer_names": [
+      "Ferris Bueller's Day Off"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "She's Having a Baby"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "director",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "cast member",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "film"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"film\" . ?e <cast_member> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"human\" . ?e_3 <director> ?e_1 . ?e_3 <pred:name> \"She's Having a Baby\" .   }",
+    "choices": [
+      "I Now Pronounce You Chuck and Larry",
+      "A Prairie Home Companion",
+      "All Quiet on the Western Front",
+      "50 First Dates",
+      "Four Rooms",
+      "Flags of Our Fathers",
+      "Ferris Bueller's Day Off",
+      "Coriolanus",
+      "Ragtime",
+      "Shadowlands"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0019",
+    "source_split": "KQAPro-val",
+    "source_index": 8895,
+    "qtype": "2p",
+    "question": "What visual artwork is derivative of an Ian McEwan written work?",
+    "gold_answer_name": "Atonement",
+    "gold_answer_ids": [
+      "Q1626186"
+    ],
+    "anchors": [
+      {
+        "name": "Ian McEwan",
+        "ids": [
+          "Q190379"
+        ],
+        "unique_id": "Q190379"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "author",
+          "direction": "backward",
+          "relation_key": "author::backward"
+        },
+        {
+          "predicate": "derivative work",
+          "direction": "forward",
+          "relation_key": "derivative work::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q190379",
+      [
+        "author::backward",
+        "derivative work::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q1626186"
+    ],
+    "reduced_answer_names": [
+      "Atonement"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Ian McEwan"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "author",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "written work"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "derivative work",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "visual artwork"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"visual artwork\" . ?e_1 <derivative_work> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"written work\" . ?e_1 <author> ?e_3 . ?e_3 <pred:name> \"Ian McEwan\" .   }",
+    "choices": [
+      "Rebecca",
+      "The Time Machine",
+      "The Da Vinci Code",
+      "A Prairie Home Companion",
+      "The Great Gatsby",
+      "Harry Potter and the Order of the Phoenix",
+      "The Help",
+      "Stardust",
+      "Spellbound",
+      "Atonement"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0020",
+    "source_split": "KQAPro-val",
+    "source_index": 9007,
+    "qtype": "2p",
+    "question": "Which Washington county shares border with the Washington county which contains Yakima?",
+    "gold_answer_name": "Pierce County",
+    "gold_answer_ids": [
+      "Q156459"
+    ],
+    "anchors": [
+      {
+        "name": "Yakima",
+        "ids": [
+          "Q499203"
+        ],
+        "unique_id": "Q499203"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "located in the administrative territorial entity",
+          "direction": "forward",
+          "relation_key": "located in the administrative territorial entity::forward"
+        },
+        {
+          "predicate": "shares border with",
+          "direction": "backward",
+          "relation_key": "shares border with::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q499203",
+      [
+        "located in the administrative territorial entity::forward",
+        "shares border with::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q156459"
+    ],
+    "reduced_answer_names": [
+      "Pierce County"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Yakima"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "located in the administrative territorial entity",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "county of Washington"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "shares border with",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "county of Washington"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Washington\" . ?e <shares_border_with> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"county of Washington\" . ?e_2 <located_in_the_administrative_territorial_entity> ?e_1 . ?e_2 <pred:name> \"Yakima\" .   }",
+    "choices": [
+      "King County",
+      "Douglas County",
+      "Kitsap County",
+      "San Juan County",
+      "Okanogan County",
+      "Pierce County",
+      "Grays Harbor County",
+      "Jefferson County",
+      "Skagit County",
+      "Snohomish County"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0021",
+    "source_split": "KQAPro-val",
+    "source_index": 9967,
+    "qtype": "2p",
+    "question": "Which ethnic group the director of photography of Sleepers belongs to?",
+    "gold_answer_name": "Germans",
+    "gold_answer_ids": [
+      "Q42884"
+    ],
+    "anchors": [
+      {
+        "name": "Sleepers",
+        "ids": [
+          "Q1145732"
+        ],
+        "unique_id": "Q1145732"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "director of photography",
+          "direction": "forward",
+          "relation_key": "director of photography::forward"
+        },
+        {
+          "predicate": "ethnic group",
+          "direction": "forward",
+          "relation_key": "ethnic group::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q1145732",
+      [
+        "director of photography::forward",
+        "ethnic group::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q42884"
+    ],
+    "reduced_answer_names": [
+      "Germans"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Sleepers"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "director of photography",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "ethnic group",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "ethnic group"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"ethnic group\" . ?e_1 <ethnic_group> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"human\" . ?e_2 <director_of_photography> ?e_1 . ?e_2 <pred:name> \"Sleepers\" .   }",
+    "choices": [
+      "Australians",
+      "German Americans",
+      "Koreans",
+      "French people",
+      "Italians",
+      "Germans",
+      "Croatian American",
+      "Sinhalese people",
+      "Pashtun people",
+      "French American"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0022",
+    "source_split": "KQAPro-val",
+    "source_index": 10100,
+    "qtype": "2p",
+    "question": "Which person was born in the capital of Jammu and Kashmir?",
+    "gold_answer_name": "Joanna Lumley",
+    "gold_answer_ids": [
+      "Q254886"
+    ],
+    "anchors": [
+      {
+        "name": "Jammu and Kashmir",
+        "ids": [
+          "Q1180"
+        ],
+        "unique_id": "Q1180"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "capital of",
+          "direction": "backward",
+          "relation_key": "capital of::backward"
+        },
+        {
+          "predicate": "place of birth",
+          "direction": "backward",
+          "relation_key": "place of birth::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q1180",
+      [
+        "capital of::backward",
+        "place of birth::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q254886"
+    ],
+    "reduced_answer_names": [
+      "Joanna Lumley"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Jammu and Kashmir"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "capital of",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "city"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "place of birth",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <place_of_birth> ?e_1 . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"city\" . ?e_1 <capital_of> ?e_2 . ?e_2 <pred:name> \"Jammu and Kashmir\" .   }",
+    "choices": [
+      "Julia Stiles",
+      "Jill Scott",
+      "Douglas Adams",
+      "Joanna Lumley",
+      "Sanjay Dutt",
+      "Pritam Chakraborty",
+      "Ronnie Wood",
+      "Andre Braugher",
+      "Michael Douglas",
+      "Jeremy Piven"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0023",
+    "source_split": "KQAPro-val",
+    "source_index": 10478,
+    "qtype": "2p",
+    "question": "Which public company has the legal-form of business and is a subsidiary of Sony Interactive Entertainment?",
+    "gold_answer_name": "public limited company",
+    "gold_answer_ids": [
+      "Q5225895"
+    ],
+    "anchors": [
+      {
+        "name": "Sony Interactive Entertainment",
+        "ids": [
+          "Q18594"
+        ],
+        "unique_id": "Q18594"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "subsidiary",
+          "direction": "forward",
+          "relation_key": "subsidiary::forward"
+        },
+        {
+          "predicate": "legal form",
+          "direction": "forward",
+          "relation_key": "legal form::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q18594",
+      [
+        "subsidiary::forward",
+        "legal form::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q5225895"
+    ],
+    "reduced_answer_names": [
+      "public limited company"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Sony Interactive Entertainment"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "subsidiary",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "business"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "legal form",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "public company"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"public company\" . ?e_1 <legal_form> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"business\" . ?e_2 <subsidiary> ?e_1 . ?e_2 <pred:name> \"Sony Interactive Entertainment\" .   }",
+    "choices": [
+      "MGM Resorts International",
+      "Bandai Namco Holdings",
+      "Oracle Corporation",
+      "Boeing",
+      "TV5",
+      "Canon Inc.",
+      "public limited company",
+      "Kraft Foods",
+      "Motorola",
+      "Nokia"
+    ]
+  },
+  {
+    "e11_sample_id": "2p_0024",
+    "source_split": "KQAPro-val",
+    "source_index": 11403,
+    "qtype": "2p",
+    "question": "Which human is a cast member of the film produced by John Woo?",
+    "gold_answer_name": "Miyuki Sawashiro",
+    "gold_answer_ids": [
+      "Q49552"
+    ],
+    "anchors": [
+      {
+        "name": "John Woo",
+        "ids": [
+          "Q55432"
+        ],
+        "unique_id": "Q55432"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "producer",
+          "direction": "backward",
+          "relation_key": "producer::backward"
+        },
+        {
+          "predicate": "cast member",
+          "direction": "forward",
+          "relation_key": "cast member::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q55432",
+      [
+        "producer::backward",
+        "cast member::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(P(A))",
+    "reduced_answer_ids": [
+      "Q49552"
+    ],
+    "reduced_answer_names": [
+      "Miyuki Sawashiro"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "John Woo"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "producer",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "film"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          2
+        ],
+        "inputs": [
+          "cast member",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          3
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          4
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e_1 <cast_member> ?e . ?e_1 <pred:instance_of> ?c_1 . ?c_1 <pred:name> \"film\" . ?e_1 <producer> ?e_2 . ?e_2 <pred:name> \"John Woo\" .   }",
+    "choices": [
+      "Tracy Chapman",
+      "Tyrese Gibson",
+      "Robert Young",
+      "Aya Hisakawa",
+      "Albert S. D'Agostino",
+      "Missy Elliott",
+      "Liv Ullmann",
+      "Miyuki Sawashiro",
+      "Malcolm Arnold",
+      "Shaquille O'Neal"
+    ]
+  }
+]

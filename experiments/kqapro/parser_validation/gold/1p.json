@@ -1,0 +1,252 @@
+[
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Star Trek: The Animated Series\", \"path\": [{\"relation\": \"based on\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0001",
+    "source_index": 44
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Douglas Fairbanks\", \"path\": [{\"relation\": \"spouse\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0002",
+    "source_index": 270
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Coral Gables\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0003",
+    "source_index": 344
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Kill Rock Stars\", \"path\": [{\"relation\": \"record label\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0004",
+    "source_index": 784
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"AGOVV Apeldoorn\", \"path\": [{\"relation\": \"member of sports team\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0005",
+    "source_index": 1997
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"The Station Agent\", \"path\": [{\"relation\": \"screenwriter\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0006",
+    "source_index": 2232
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"John F. Seitz\", \"path\": [{\"relation\": \"place of burial\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0007",
+    "source_index": 2479
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Swizz Beatz\", \"path\": [{\"relation\": \"spouse\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0008",
+    "source_index": 2481
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Austria\", \"path\": [{\"relation\": \"country for sport\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0009",
+    "source_index": 2847
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Dave Matthews Band\", \"path\": [{\"relation\": \"has part\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0010",
+    "source_index": 3241
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"massively multiplayer online role-playing game\", \"path\": [{\"relation\": \"genre\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0011",
+    "source_index": 3298
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Breda\", \"path\": [{\"relation\": \"location of formation\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0012",
+    "source_index": 3397
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Randy Quaid\", \"path\": [{\"relation\": \"sibling\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0013",
+    "source_index": 3423
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Tallinn\", \"path\": [{\"relation\": \"headquarters location\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0014",
+    "source_index": 3550
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Eddie Vedder\", \"path\": [{\"relation\": \"record label\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0015",
+    "source_index": 3593
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"William S. Burroughs\", \"path\": [{\"relation\": \"after a work by\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0016",
+    "source_index": 3858
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"West Dorset\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0017",
+    "source_index": 3961
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Damon Albarn\", \"path\": [{\"relation\": \"voice type\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0018",
+    "source_index": 4382
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Edward Norton\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0019",
+    "source_index": 4484
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Peter Bogdanovich\", \"path\": [{\"relation\": \"partner\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0020",
+    "source_index": 4709
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Democratic Republic of the Congo\", \"path\": [{\"relation\": \"filming location\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0021",
+    "source_index": 4734
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Pomona\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0022",
+    "source_index": 5013
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Trondheim\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0023",
+    "source_index": 5128
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Katy Perry\", \"path\": [{\"relation\": \"spouse\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0024",
+    "source_index": 5182
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"General Dynamics Electric Boat\", \"path\": [{\"relation\": \"owned by\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0025",
+    "source_index": 5528
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Tunis\", \"path\": [{\"relation\": \"residence\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0026",
+    "source_index": 5618
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Warren Zevon\", \"path\": [{\"relation\": \"cause of death\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0027",
+    "source_index": 6107
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"DeWitt Clinton\", \"path\": [{\"relation\": \"named after\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0028",
+    "source_index": 6294
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Rickey Henderson\", \"path\": [{\"relation\": \"award received\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0029",
+    "source_index": 6312
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Cremona\", \"path\": [{\"relation\": \"headquarters location\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0030",
+    "source_index": 6550
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Orlando Bloom\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0031",
+    "source_index": 6853
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Charlottesville\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0032",
+    "source_index": 7844
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Tom Petty and the Heartbreakers\", \"path\": [{\"relation\": \"member of\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0033",
+    "source_index": 7869
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"North African Campaign\", \"path\": [{\"relation\": \"part of\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0034",
+    "source_index": 8561
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Ray Liotta\", \"path\": [{\"relation\": \"narrator\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0035",
+    "source_index": 9091
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Ted\", \"path\": [{\"relation\": \"composer\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0036",
+    "source_index": 9290
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"James Coburn\", \"path\": [{\"relation\": \"medical condition\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0037",
+    "source_index": 9511
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Red Hot Chili Peppers\", \"path\": [{\"relation\": \"influenced by\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0038",
+    "source_index": 9751
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Alan Dale\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0039",
+    "source_index": 9871
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Bob Hoskins\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0040",
+    "source_index": 10540
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"1912 Summer Olympics\", \"path\": [{\"relation\": \"follows\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0041",
+    "source_index": 10672
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"theft\", \"path\": [{\"relation\": \"convicted of\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0042",
+    "source_index": 10691
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Steven Wilson\", \"path\": [{\"relation\": \"has part\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0043",
+    "source_index": 10851
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Smith College\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0044",
+    "source_index": 10893
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Royal Leamington Spa\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0045",
+    "source_index": 10895
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Ken Burns\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0046",
+    "source_index": 10928
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"1980 Summer Olympics\", \"path\": [{\"relation\": \"followed by\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0047",
+    "source_index": 11106
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"John Hartford\", \"path\": [{\"relation\": \"cause of death\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0048",
+    "source_index": 11143
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"National Autonomous University of Mexico\", \"path\": [{\"relation\": \"owner of\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "1p_0049",
+    "source_index": 11353
+  },
+  {
+    "gold": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Steve Allen\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "1p_0050",
+    "source_index": 11618
+  }
+]

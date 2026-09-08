@@ -1,0 +1,437 @@
+{
+  "num_validation_samples": 11797,
+  "function_counts": {
+    "Find": 16058,
+    "FilterConcept": 7641,
+    "Relate": 6374,
+    "FindAll": 3866,
+    "FilterStr": 3264,
+    "And": 3237,
+    "QueryAttr": 2757,
+    "QueryRelation": 1786,
+    "SelectBetween": 1604,
+    "What": 1458,
+    "Count": 1318,
+    "QueryAttrQualifier": 1214,
+    "FilterNum": 1188,
+    "QueryRelationQualifier": 1004,
+    "VerifyStr": 717,
+    "SelectAmong": 548,
+    "FilterYear": 516,
+    "Or": 496,
+    "VerifyYear": 459,
+    "FilterDate": 432,
+    "QFilterStr": 301,
+    "VerifyNum": 258,
+    "QFilterYear": 146,
+    "QueryAttrUnderCondition": 108,
+    "QFilterDate": 78,
+    "QFilterNum": 64,
+    "VerifyDate": 13
+  },
+  "or_successor_counts": {
+    "Count": 496
+  },
+  "top_100_program_patterns": [
+    {
+      "count": 904,
+      "pattern": "Find -> Find -> QueryRelation"
+    },
+    {
+      "count": 679,
+      "pattern": "Find -> Find -> SelectBetween"
+    },
+    {
+      "count": 470,
+      "pattern": "Find -> Find -> QueryRelationQualifier"
+    },
+    {
+      "count": 410,
+      "pattern": "Find -> Relate -> Find -> And -> Find -> QueryRelation"
+    },
+    {
+      "count": 380,
+      "pattern": "FindAll -> FilterStr -> FilterConcept -> QueryAttr"
+    },
+    {
+      "count": 330,
+      "pattern": "FindAll -> FilterStr -> FilterConcept -> QueryAttrQualifier"
+    },
+    {
+      "count": 317,
+      "pattern": "Find -> QueryAttr"
+    },
+    {
+      "count": 293,
+      "pattern": "FindAll -> FilterStr -> FilterConcept -> What"
+    },
+    {
+      "count": 281,
+      "pattern": "Find -> QueryAttrQualifier"
+    },
+    {
+      "count": 276,
+      "pattern": "Find -> Relate -> Find -> And -> Find -> QueryRelationQualifier"
+    },
+    {
+      "count": 267,
+      "pattern": "FindAll -> FilterNum -> FilterConcept -> SelectAmong"
+    },
+    {
+      "count": 236,
+      "pattern": "Find -> Relate -> FilterConcept -> QueryAttr"
+    },
+    {
+      "count": 229,
+      "pattern": "Find -> Relate -> FilterConcept -> QueryAttrQualifier"
+    },
+    {
+      "count": 221,
+      "pattern": "Find -> QueryAttr -> VerifyStr"
+    },
+    {
+      "count": 179,
+      "pattern": "Find -> Relate -> Find -> And -> Find -> SelectBetween"
+    },
+    {
+      "count": 178,
+      "pattern": "Find -> Find -> Relate -> Find -> And -> SelectBetween"
+    },
+    {
+      "count": 175,
+      "pattern": "Find -> Relate -> FilterConcept -> What"
+    },
+    {
+      "count": 170,
+      "pattern": "FindAll -> FilterStr -> FilterConcept -> QueryAttr -> VerifyStr"
+    },
+    {
+      "count": 159,
+      "pattern": "FindAll -> FilterStr -> FilterConcept -> Relate -> FilterConcept -> What"
+    },
+    {
+      "count": 145,
+      "pattern": "FindAll -> FilterStr -> FilterConcept -> QueryAttr -> VerifyYear"
+    },
+    {
+      "count": 131,
+      "pattern": "Find -> Relate -> FilterConcept -> Count"
+    },
+    {
+      "count": 128,
+      "pattern": "Find -> Relate -> Find -> And -> QueryAttr"
+    },
+    {
+      "count": 127,
+      "pattern": "Find -> Relate -> FilterConcept -> SelectAmong"
+    },
+    {
+      "count": 119,
+      "pattern": "FindAll -> FilterStr -> FilterConcept -> Relate -> FilterConcept -> Count"
+    },
+    {
+      "count": 119,
+      "pattern": "Find -> Relate -> FilterConcept -> QueryAttr -> VerifyStr"
+    },
+    {
+      "count": 109,
+      "pattern": "Find -> Find -> Relate -> Find -> And -> QueryRelation"
+    },
+    {
+      "count": 109,
+      "pattern": "Find -> Relate -> Find -> And -> Find -> Relate -> Find -> And -> SelectBetween"
+    },
+    {
+      "count": 90,
+      "pattern": "Find -> Relate -> Find -> And -> QueryAttrQualifier"
+    },
+    {
+      "count": 88,
+      "pattern": "FindAll -> FilterYear -> FilterConcept -> Count"
+    },
+    {
+      "count": 83,
+      "pattern": "Find -> QueryAttr -> VerifyYear"
+    },
+    {
+      "count": 82,
+      "pattern": "Find -> Relate -> Find -> And -> Relate -> FilterConcept -> QueryAttr"
+    },
+    {
+      "count": 77,
+      "pattern": "Find -> FilterStr -> Find -> QueryRelation"
+    },
+    {
+      "count": 75,
+      "pattern": "FindAll -> FilterStr -> FilterConcept -> QueryAttr -> VerifyNum"
+    },
+    {
+      "count": 73,
+      "pattern": "Find -> Relate -> FilterConcept -> FindAll -> FilterStr -> FilterConcept -> And -> What"
+    },
+    {
+      "count": 72,
+      "pattern": "Find -> Relate -> FilterConcept -> Find -> Relate -> FilterConcept -> Or -> Count"
+    },
+    {
+      "count": 71,
+      "pattern": "FindAll -> FilterStr -> FilterConcept -> Count"
+    },
+    {
+      "count": 69,
+      "pattern": "FindAll -> FilterNum -> FilterConcept -> Count"
+    },
+    {
+      "count": 66,
+      "pattern": "Find -> Find -> Relate -> Find -> And -> QueryRelationQualifier"
+    },
+    {
+      "count": 65,
+      "pattern": "FindAll -> FilterStr -> FilterConcept -> Find -> Relate -> FilterConcept -> And -> What"
+    },
+    {
+      "count": 65,
+      "pattern": "Find -> FilterDate -> Find -> QueryRelation"
+    },
+    {
+      "count": 62,
+      "pattern": "Find -> Relate -> FilterConcept -> Relate -> FilterConcept -> Count"
+    },
+    {
+      "count": 62,
+      "pattern": "Find -> Relate -> FilterConcept -> Find -> Relate -> FilterConcept -> And -> What"
+    },
+    {
+      "count": 61,
+      "pattern": "FindAll -> FilterStr -> FilterConcept -> Find -> Relate -> FilterConcept -> Or -> Count"
+    },
+    {
+      "count": 60,
+      "pattern": "Find -> Find -> FilterNum -> SelectBetween"
+    },
+    {
+      "count": 59,
+      "pattern": "Find -> Relate -> Find -> And -> Relate -> FilterConcept -> QueryAttrQualifier"
+    },
+    {
+      "count": 57,
+      "pattern": "Find -> Relate -> FilterConcept -> FindAll -> FilterStr -> FilterConcept -> Or -> Count"
+    },
+    {
+      "count": 54,
+      "pattern": "Find -> Relate -> FilterConcept -> QueryAttr -> VerifyYear"
+    },
+    {
+      "count": 53,
+      "pattern": "Find -> FilterNum -> Find -> SelectBetween"
+    },
+    {
+      "count": 52,
+      "pattern": "FindAll -> FilterYear -> FilterConcept -> SelectAmong"
+    },
+    {
+      "count": 50,
+      "pattern": "Find -> Relate -> Find -> And -> Relate -> FilterConcept -> SelectAmong"
+    },
+    {
+      "count": 50,
+      "pattern": "Find -> Relate -> Find -> And -> Relate -> FilterConcept -> What"
+    },
+    {
+      "count": 49,
+      "pattern": "Find -> Find -> FilterStr -> SelectBetween"
+    },
+    {
+      "count": 48,
+      "pattern": "FindAll -> FilterStr -> FilterConcept -> FindAll -> FilterStr -> FilterConcept -> Or -> Count"
+    },
+    {
+      "count": 48,
+      "pattern": "Find -> Relate -> FilterConcept -> Relate -> FilterConcept -> What"
+    },
+    {
+      "count": 44,
+      "pattern": "Find -> FilterNum -> Find -> QueryRelation"
+    },
+    {
+      "count": 38,
+      "pattern": "Find -> Relate -> Find -> And -> Find -> Relate -> Find -> And -> QueryRelation"
+    },
+    {
+      "count": 37,
+      "pattern": "Find -> FilterStr -> Find -> SelectBetween"
+    },
+    {
+      "count": 37,
+      "pattern": "Find -> Relate -> Find -> And -> QueryAttr -> VerifyYear"
+    },
+    {
+      "count": 36,
+      "pattern": "Find -> Relate -> Find -> And -> Relate -> FilterConcept -> QueryAttr -> VerifyStr"
+    },
+    {
+      "count": 34,
+      "pattern": "Find -> FilterNum -> Find -> Relate -> Find -> And -> SelectBetween"
+    },
+    {
+      "count": 34,
+      "pattern": "Find -> FilterNum -> Find -> QueryRelationQualifier"
+    },
+    {
+      "count": 33,
+      "pattern": "FindAll -> FilterStr -> FilterConcept -> FindAll -> FilterStr -> FilterConcept -> And -> What"
+    },
+    {
+      "count": 32,
+      "pattern": "Find -> Relate -> FilterConcept -> QueryAttr -> VerifyNum"
+    },
+    {
+      "count": 32,
+      "pattern": "Find -> Relate -> FilterConcept -> FindAll -> FilterYear -> FilterConcept -> Or -> Count"
+    },
+    {
+      "count": 31,
+      "pattern": "Find -> FilterDate -> Find -> SelectBetween"
+    },
+    {
+      "count": 30,
+      "pattern": "Find -> QueryAttr -> VerifyNum"
+    },
+    {
+      "count": 30,
+      "pattern": "Find -> Relate -> Find -> And -> QueryAttr -> VerifyStr"
+    },
+    {
+      "count": 29,
+      "pattern": "Find -> FilterDate -> Find -> QueryRelationQualifier"
+    },
+    {
+      "count": 29,
+      "pattern": "FindAll -> FilterStr -> QFilterStr -> FilterConcept -> QueryAttrQualifier"
+    },
+    {
+      "count": 28,
+      "pattern": "Find -> Find -> FilterNum -> QueryRelation"
+    },
+    {
+      "count": 28,
+      "pattern": "Find -> Relate -> QFilterYear -> FilterConcept -> QueryAttr"
+    },
+    {
+      "count": 27,
+      "pattern": "Find -> Find -> FilterDate -> SelectBetween"
+    },
+    {
+      "count": 27,
+      "pattern": "Find -> Relate -> QFilterStr -> FilterConcept -> QueryAttrQualifier"
+    },
+    {
+      "count": 27,
+      "pattern": "Find -> Relate -> Find -> And -> Relate -> FilterConcept -> Count"
+    },
+    {
+      "count": 26,
+      "pattern": "Find -> Find -> FilterStr -> QueryRelation"
+    },
+    {
+      "count": 26,
+      "pattern": "Find -> Relate -> FilterConcept -> Find -> Relate -> FilterConcept -> And -> Count"
+    },
+    {
+      "count": 26,
+      "pattern": "Find -> Relate -> QFilterStr -> FilterConcept -> QueryAttr"
+    },
+    {
+      "count": 26,
+      "pattern": "FindAll -> FilterDate -> FilterConcept -> QueryAttr"
+    },
+    {
+      "count": 25,
+      "pattern": "FindAll -> FilterDate -> FilterConcept -> What"
+    },
+    {
+      "count": 25,
+      "pattern": "Find -> Find -> FilterStr -> QueryRelationQualifier"
+    },
+    {
+      "count": 24,
+      "pattern": "Find -> FilterNum -> QueryAttr"
+    },
+    {
+      "count": 24,
+      "pattern": "Find -> Relate -> FilterConcept -> FindAll -> FilterStr -> FilterConcept -> And -> Count"
+    },
+    {
+      "count": 23,
+      "pattern": "FindAll -> FilterNum -> FilterConcept -> Find -> Relate -> FilterConcept -> Or -> Count"
+    },
+    {
+      "count": 22,
+      "pattern": "Find -> Relate -> Find -> And -> Find -> Relate -> Find -> And -> QueryRelationQualifier"
+    },
+    {
+      "count": 22,
+      "pattern": "Find -> FilterStr -> QueryAttrQualifier"
+    },
+    {
+      "count": 20,
+      "pattern": "Find -> Relate -> QFilterYear -> FilterConcept -> What"
+    },
+    {
+      "count": 20,
+      "pattern": "Find -> FilterStr -> QueryAttr"
+    },
+    {
+      "count": 20,
+      "pattern": "Find -> Find -> FilterNum -> QueryRelationQualifier"
+    },
+    {
+      "count": 20,
+      "pattern": "Find -> Relate -> QFilterStr -> FilterConcept -> What"
+    },
+    {
+      "count": 20,
+      "pattern": "Find -> FilterStr -> Find -> Relate -> Find -> And -> SelectBetween"
+    },
+    {
+      "count": 20,
+      "pattern": "Find -> Relate -> Find -> And -> Find -> FilterNum -> SelectBetween"
+    },
+    {
+      "count": 20,
+      "pattern": "Find -> Relate -> Find -> And -> Find -> FilterDate -> SelectBetween"
+    },
+    {
+      "count": 20,
+      "pattern": "FindAll -> FilterNum -> FilterConcept -> QueryAttr"
+    },
+    {
+      "count": 20,
+      "pattern": "FindAll -> FilterYear -> FilterConcept -> Find -> Relate -> FilterConcept -> Or -> Count"
+    },
+    {
+      "count": 20,
+      "pattern": "Find -> FilterDate -> QueryAttr"
+    },
+    {
+      "count": 20,
+      "pattern": "Find -> FilterNum -> Relate -> FilterConcept -> SelectAmong"
+    },
+    {
+      "count": 20,
+      "pattern": "Find -> Relate -> Find -> And -> Relate -> FilterConcept -> QueryAttr -> VerifyYear"
+    },
+    {
+      "count": 19,
+      "pattern": "Find -> FilterStr -> Relate -> FilterConcept -> QueryAttrQualifier"
+    },
+    {
+      "count": 18,
+      "pattern": "FindAll -> FilterStr -> QFilterStr -> FilterConcept -> What"
+    },
+    {
+      "count": 18,
+      "pattern": "Find -> FilterNum -> QueryAttrQualifier"
+    }
+  ]
+}

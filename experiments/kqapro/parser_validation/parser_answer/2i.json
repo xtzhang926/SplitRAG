@@ -1,0 +1,272 @@
+[
+  {
+    "queries": "Which film director has acted as a cast member in An American in Paris?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"An American in Paris\", \"path\": [{\"relation\": \"performer\", \"direction\": \"forward\"}]}, {\"anchor\": \"An American in Paris\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0001",
+    "source_index": 91
+  },
+  {
+    "queries": "What film has Tilde Swinton in the cast and was distributed by StudioCanal?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Tilde Swinton\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"backward\"}]}, {\"anchor\": \"StudioCanal\", \"path\": [{\"relation\": \"distributor\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0002",
+    "source_index": 141
+  },
+  {
+    "queries": "What is the name of the Republican Party member whose birth place is Oakland?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Oakland\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}, {\"relation\": \"member of political party\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0003",
+    "source_index": 212
+  },
+  {
+    "queries": "I'd like to know the general officer that is the military rank of James A. Garfield and that is William Tecumseh Sherman's military rank.",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"James A. Garfield\", \"path\": [{\"relation\": \"military rank\", \"direction\": \"forward\"}]}, {\"anchor\": \"William Tecumseh Sherman\", \"path\": [{\"relation\": \"military rank\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0004",
+    "source_index": 490
+  },
+  {
+    "queries": "What film was produced and directed by Bobby Farrelly?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Bobby Farrelly\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}, {\"anchor\": \"Bobby Farrelly\", \"path\": [{\"relation\": \"director\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0005",
+    "source_index": 1051
+  },
+  {
+    "queries": "Who studied at Brandeis University of the cast member of Will & Grace?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Will & Grace\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"forward\"}, {\"relation\": \"educated at\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0006",
+    "source_index": 1574
+  },
+  {
+    "queries": "Who has been a cast member in both A Few Good Men and Nixon?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"A Few Good Men\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"forward\"}]}, {\"anchor\": \"Nixon\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0007",
+    "source_index": 1589
+  },
+  {
+    "queries": "Who is the person who stars in Desperate Housewives and was born in Berlin?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Desperate Housewives\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"forward\"}]}, {\"anchor\": \"Berlin\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0008",
+    "source_index": 1613
+  },
+  {
+    "queries": "Which visual artwork scripted by Dennis Hopper is distributed by Columbia Pictures?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Dennis Hopper\", \"path\": [{\"relation\": \"screenwriter\", \"direction\": \"backward\"}]}, {\"anchor\": \"Columbia Pictures\", \"path\": [{\"relation\": \"distributor\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0009",
+    "source_index": 1804
+  },
+  {
+    "queries": "What film, featuring the character Daffy Duck, received the Golden Raspberry Award for Worst Screenplay?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Daffy Duck\", \"path\": [{\"relation\": \"characters\", \"direction\": \"backward\"}]}, {\"anchor\": \"Golden Raspberry Award for Worst Screenplay\", \"path\": [{\"relation\": \"award received\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0010",
+    "source_index": 2460
+  },
+  {
+    "queries": "What is the name of the person who was born in Washington, D.C. and participated in the 1912 Summer Olympics?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Washington, D.C.\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}, {\"anchor\": \"1912 Summer Olympics\", \"path\": [{\"relation\": \"participant of\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0011",
+    "source_index": 2644
+  },
+  {
+    "queries": "What was the crime for what DMX was convicted and that iwasthe main subject of The Loss of a Teardrop Diamond?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"DMX\", \"path\": [{\"relation\": \"convicted of\", \"direction\": \"forward\"}]}, {\"anchor\": \"The Loss of a Teardrop Diamond\", \"path\": [{\"relation\": \"main subject\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0012",
+    "source_index": 2710
+  },
+  {
+    "queries": "Which Japanese citizen is in the cast of Street Fighter II: The Animated Movie?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Japan\", \"path\": [{\"relation\": \"country of citizenship\", \"direction\": \"backward\"}]}, {\"anchor\": \"Street Fighter II: The Animated Movie\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0013",
+    "source_index": 2914
+  },
+  {
+    "queries": "What human is a part of Tom Petty and the Heartbreakers and a cast member of George Harrison: Living in the Material World?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Tom Petty and the Heartbreakers\", \"path\": [{\"relation\": \"has part\", \"direction\": \"backward\"}]}, {\"anchor\": \"George Harrison: Living in the Material World\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0014",
+    "source_index": 3152
+  },
+  {
+    "queries": "Which person educated at Harvard University served as the executive producer of The Simpsons?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Harvard University\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"backward\"}]}, {\"anchor\": \"The Simpsons\", \"path\": [{\"relation\": \"executive producer\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0015",
+    "source_index": 3378
+  },
+  {
+    "queries": "Which resident of Italy won the Nobel Prize for Physics?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Italy\", \"path\": [{\"relation\": \"country of residence\", \"direction\": \"backward\"}]}, {\"anchor\": \"Nobel Prize for Physics\", \"path\": [{\"relation\": \"winner\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0016",
+    "source_index": 3498
+  },
+  {
+    "queries": "St. Louis is the birth place of which point guard player?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"St. Louis\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0017",
+    "source_index": 3623
+  },
+  {
+    "queries": "Who is the person that attended Fiorello H. LaGuardia High School and is a cast member of Zoolander?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Fiorello H. LaGuardia High School\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"backward\"}]}, {\"anchor\": \"Zoolander\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0018",
+    "source_index": 3776
+  },
+  {
+    "queries": "What monarch has the position of George III of Great Britain and is the noble title of Elizabeth II?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"George III\", \"path\": [{\"relation\": \"position held\", \"direction\": \"backward\"}]}, {\"anchor\": \"Elizabeth II\", \"path\": [{\"relation\": \"noble title\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0019",
+    "source_index": 3790
+  },
+  {
+    "queries": "What person uses Norwegian as a native language and has the occupation of playwright?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Norwegian\", \"path\": [{\"relation\": \"native language\", \"direction\": \"backward\"}]}, {\"anchor\": \"playwright\", \"path\": [{\"relation\": \"occupation\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0020",
+    "source_index": 4061
+  },
+  {
+    "queries": "Which Californian county shares a border with Tuolumne County and also with San Joaquin County?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Tuolumne County\", \"path\": [{\"relation\": \"shares border with\", \"direction\": \"backward\"}]}, {\"anchor\": \"San Joaquin County\", \"path\": [{\"relation\": \"shares border with\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0021",
+    "source_index": 4229
+  },
+  {
+    "queries": "What profession matches the occupation of Akira Toriyama and that belongs to Japan ?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Akira Toriyama\", \"path\": [{\"relation\": \"occupation\", \"direction\": \"forward\"}]}, {\"anchor\": \"Japan\", \"path\": [{\"relation\": \"country\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0022",
+    "source_index": 4469
+  },
+  {
+    "queries": "Which visual artwork includes in its cast Eugene Levy and was an Independent Spirit Award for Best Director nominee?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Eugene Levy\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"backward\"}]}, {\"anchor\": \"Independent Spirit Award for Best Director\", \"path\": [{\"relation\": \"nominated for\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0023",
+    "source_index": 4604
+  },
+  {
+    "queries": "At what ethnic group belongs Phil Collinson and Catherine Tate?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Phil Collinson\", \"path\": [{\"relation\": \"ethnic group\", \"direction\": \"forward\"}]}, {\"anchor\": \"Catherine Tate\", \"path\": [{\"relation\": \"ethnic group\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0024",
+    "source_index": 5365
+  },
+  {
+    "queries": "Which award ceremony was received by Gustavo Santaolalla and was received by Julieta Venegas?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Gustavo Santaolalla\", \"path\": [{\"relation\": \"award received\", \"direction\": \"forward\"}]}, {\"anchor\": \"Julieta Venegas\", \"path\": [{\"relation\": \"award received\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0025",
+    "source_index": 6446
+  },
+  {
+    "queries": "Which academic discipline distinct from astrology is Avicenna's field of work?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Avicenna\", \"path\": [{\"relation\": \"field of work\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0026",
+    "source_index": 6582
+  },
+  {
+    "queries": "Which agency owns General Dynamics Electric Boat and is the parent organization of Bath Iron Works?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"General Dynamics Electric Boat\", \"path\": [{\"relation\": \"owner of\", \"direction\": \"backward\"}]}, {\"anchor\": \"Bath Iron Works\", \"path\": [{\"relation\": \"parent organization\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0027",
+    "source_index": 6604
+  },
+  {
+    "queries": "What film is directed by Nora Ephron and stars Michael Caine?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Nora Ephron\", \"path\": [{\"relation\": \"director\", \"direction\": \"backward\"}]}, {\"anchor\": \"Michael Caine\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0028",
+    "source_index": 6816
+  },
+  {
+    "queries": "Which World Trade Organization member state is situated on the Lesser Antilles?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Lesser Antilles\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"backward\"}]}, {\"anchor\": \"World Trade Organization\", \"path\": [{\"relation\": \"member of\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0029",
+    "source_index": 6868
+  },
+  {
+    "queries": "Which soccer club of Qatar does Mark Bresciano belong to?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Qatar\", \"path\": [{\"relation\": \"country\", \"direction\": \"backward\"}]}, {\"anchor\": \"Mark Bresciano\", \"path\": [{\"relation\": \"member of sports team\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0030",
+    "source_index": 7309
+  },
+  {
+    "queries": "Gordon Willis and Patrick McGoohan were both born in which neighborhood?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Gordon Willis\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}]}, {\"anchor\": \"Patrick McGoohan\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0031",
+    "source_index": 7775
+  },
+  {
+    "queries": "Tell me the record label that is Ringo Starr's record label and that is KRS-One's record label",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Ringo Starr\", \"path\": [{\"relation\": \"record label\", \"direction\": \"forward\"}]}, {\"anchor\": \"KRS-One\", \"path\": [{\"relation\": \"record label\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0032",
+    "source_index": 7891
+  },
+  {
+    "queries": "What agent is related to the sport of cricket and has Barbados as a country?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"cricket\", \"path\": [{\"relation\": \"sport\", \"direction\": \"backward\"}]}, {\"anchor\": \"Barbados\", \"path\": [{\"relation\": \"country\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0033",
+    "source_index": 8194
+  },
+  {
+    "queries": "Who is a member of Tranmere Rovers F.C. and Wigan Athletic F.C.?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Tranmere Rovers F.C.\", \"path\": [{\"relation\": \"member of sports team\", \"direction\": \"backward\"}]}, {\"anchor\": \"Wigan Athletic F.C.\", \"path\": [{\"relation\": \"member of sports team\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0034",
+    "source_index": 8569
+  },
+  {
+    "queries": "What U.S. liberal-arts college is David Mamet's school and registered with the IRS?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"David Mamet\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"forward\"}]}, {\"anchor\": \"Internal Revenue Service\", \"path\": [{\"relation\": \"registered with\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0035",
+    "source_index": 8818
+  },
+  {
+    "queries": "In what city in the United Kingdom is the University of Lancaster located?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"University of Lancaster\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0036",
+    "source_index": 8907
+  },
+  {
+    "queries": "Which person cast in Jackass Number Two has the birthplace West Chester?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Jackass Number Two\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"forward\"}]}, {\"anchor\": \"West Chester\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0037",
+    "source_index": 9191
+  },
+  {
+    "queries": "Tell me the Christianity that is Frank Lloyd Wright's religion and that is Sylvia Plath's religion.",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Frank Lloyd Wright\", \"path\": [{\"relation\": \"religion\", \"direction\": \"forward\"}]}, {\"anchor\": \"Sylvia Plath\", \"path\": [{\"relation\": \"religion\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0038",
+    "source_index": 9399
+  },
+  {
+    "queries": "What person is an employee of the University of Notre Dame and the University at Buffalo.",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"University of Notre Dame\", \"path\": [{\"relation\": \"employer\", \"direction\": \"backward\"}]}, {\"anchor\": \"University at Buffalo\", \"path\": [{\"relation\": \"employer\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0039",
+    "source_index": 9423
+  },
+  {
+    "queries": "Who won Screen Actors Guild Award for Outstanding Performance by an Ensemble in a Drama Series and that is a cast member of Deadwood ?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Screen Actors Guild Award for Outstanding Performance by an Ensemble in a Drama Series\", \"path\": [{\"relation\": \"winner\", \"direction\": \"forward\"}]}, {\"anchor\": \"Deadwood\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0040",
+    "source_index": 9756
+  },
+  {
+    "queries": "Who is the person that directed Beverly Hills, 90210 and attended Beverly Hills High School?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Beverly Hills, 90210\", \"path\": [{\"relation\": \"director\", \"direction\": \"forward\"}]}, {\"anchor\": \"Beverly Hills High School\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0041",
+    "source_index": 9979
+  },
+  {
+    "queries": "Which person of American Jewish ethnicity studied at the University of Pittsburgh?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"University of Pittsburgh\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"backward\"}]}, {\"anchor\": \"American Jewish\", \"path\": [{\"relation\": \"ethnic group\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0042",
+    "source_index": 10731
+  },
+  {
+    "queries": "Which human is a cast member and director of Garden State?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Garden State\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"forward\"}]}, {\"anchor\": \"Garden State\", \"path\": [{\"relation\": \"director\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0043",
+    "source_index": 10761
+  },
+  {
+    "queries": "Which poet wrote The Hobbit: An Unexpected Journey?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"The Hobbit: An Unexpected Journey\", \"path\": [{\"relation\": \"author\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2i_0044",
+    "source_index": 10822
+  },
+  {
+    "queries": "What is the name of a person of Russian origin, who was involved in Russian Civil War conflict?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Russian\", \"path\": [{\"relation\": \"country of origin\", \"direction\": \"backward\"}]}, {\"anchor\": \"Russian Civil War\", \"path\": [{\"relation\": \"conflict\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2i_0045",
+    "source_index": 11486
+  }
+]

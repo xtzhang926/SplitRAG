@@ -1,0 +1,212 @@
+[
+  {
+    "sample_id": "2p_0004",
+    "source_index": 1496,
+    "question": "Who died in a city in the United States, where Samuel M. Corner was born?",
+    "gold_qtype": "2p",
+    "predicted_qtype": "2i",
+    "raw_output": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Samuel M. Corner\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}]}, {\"anchor\": \"death place\", \"path\": [{\"relation\": \"place of death\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "2i",
+      "query": [
+        {
+          "anchor": "Samuel M. Corner",
+          "path": [
+            {
+              "relation": "place of birth",
+              "direction": "forward"
+            }
+          ]
+        },
+        {
+          "anchor": "death place",
+          "path": [
+            {
+              "relation": "place of death",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": null,
+    "logical_query": null,
+    "status": "failed",
+    "failure_reason": "entity_not_found"
+  },
+  {
+    "sample_id": "2p_0023",
+    "source_index": 10478,
+    "question": "Which public company has the legal-form of business and is a subsidiary of Sony Interactive Entertainment?",
+    "gold_qtype": "2p",
+    "predicted_qtype": "2i",
+    "raw_output": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Sony Interactive Entertainment\", \"path\": [{\"relation\": \"parent company\", \"direction\": \"backward\"}]}, {\"anchor\": \"legal-form of business\", \"path\": [{\"relation\": \"legal form\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "2i",
+      "query": [
+        {
+          "anchor": "Sony Interactive Entertainment",
+          "path": [
+            {
+              "relation": "parent company",
+              "direction": "backward"
+            }
+          ]
+        },
+        {
+          "anchor": "legal-form of business",
+          "path": [
+            {
+              "relation": "legal form",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": null,
+    "logical_query": null,
+    "status": "failed",
+    "failure_reason": "relation_not_found"
+  },
+  {
+    "sample_id": "2i_0002",
+    "source_index": 141,
+    "question": "What film has Tilde Swinton in the cast and was distributed by StudioCanal?",
+    "gold_qtype": "2i",
+    "predicted_qtype": "2i",
+    "raw_output": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Tilde Swinton\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"backward\"}]}, {\"anchor\": \"StudioCanal\", \"path\": [{\"relation\": \"distributor\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "2i",
+      "query": [
+        {
+          "anchor": "Tilde Swinton",
+          "path": [
+            {
+              "relation": "cast member",
+              "direction": "backward"
+            }
+          ]
+        },
+        {
+          "anchor": "StudioCanal",
+          "path": [
+            {
+              "relation": "distributor",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": null,
+    "logical_query": null,
+    "status": "failed",
+    "failure_reason": "entity_not_found"
+  },
+  {
+    "sample_id": "2i_0016",
+    "source_index": 3498,
+    "question": "Which resident of Italy won the Nobel Prize for Physics?",
+    "gold_qtype": "2i",
+    "predicted_qtype": "2i",
+    "raw_output": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Italy\", \"path\": [{\"relation\": \"country of residence\", \"direction\": \"backward\"}]}, {\"anchor\": \"Nobel Prize for Physics\", \"path\": [{\"relation\": \"winner\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "2i",
+      "query": [
+        {
+          "anchor": "Italy",
+          "path": [
+            {
+              "relation": "country of residence",
+              "direction": "backward"
+            }
+          ]
+        },
+        {
+          "anchor": "Nobel Prize for Physics",
+          "path": [
+            {
+              "relation": "winner",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": null,
+    "logical_query": null,
+    "status": "failed",
+    "failure_reason": "relation_not_found"
+  },
+  {
+    "sample_id": "2i_0019",
+    "source_index": 3790,
+    "question": "What monarch has the position of George III of Great Britain and is the noble title of Elizabeth II?",
+    "gold_qtype": "2i",
+    "predicted_qtype": "2i",
+    "raw_output": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"George III\", \"path\": [{\"relation\": \"position held\", \"direction\": \"backward\"}]}, {\"anchor\": \"Elizabeth II\", \"path\": [{\"relation\": \"noble title\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "2i",
+      "query": [
+        {
+          "anchor": "George III",
+          "path": [
+            {
+              "relation": "position held",
+              "direction": "backward"
+            }
+          ]
+        },
+        {
+          "anchor": "Elizabeth II",
+          "path": [
+            {
+              "relation": "noble title",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": null,
+    "logical_query": null,
+    "status": "failed",
+    "failure_reason": "entity_not_found"
+  },
+  {
+    "sample_id": "2i_0042",
+    "source_index": 10731,
+    "question": "Which person of American Jewish ethnicity studied at the University of Pittsburgh?",
+    "gold_qtype": "2i",
+    "predicted_qtype": "2i",
+    "raw_output": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"University of Pittsburgh\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"backward\"}]}, {\"anchor\": \"American Jewish\", \"path\": [{\"relation\": \"ethnic group\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "2i",
+      "query": [
+        {
+          "anchor": "University of Pittsburgh",
+          "path": [
+            {
+              "relation": "educated at",
+              "direction": "backward"
+            }
+          ]
+        },
+        {
+          "anchor": "American Jewish",
+          "path": [
+            {
+              "relation": "ethnic group",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": null,
+    "logical_query": null,
+    "status": "failed",
+    "failure_reason": "entity_not_found"
+  }
+]

@@ -1,0 +1,4508 @@
+[
+  {
+    "e11_sample_id": "1p_0001",
+    "source_split": "KQAPro-val",
+    "source_index": 44,
+    "qtype": "1p",
+    "question": "Star Trek: The Animated Series is based on which TV series?",
+    "gold_answer_name": "Star Trek: The Original Series",
+    "gold_answer_ids": [
+      "Q1077"
+    ],
+    "anchors": [
+      {
+        "name": "Star Trek: The Animated Series",
+        "ids": [
+          "Q20922"
+        ],
+        "unique_id": "Q20922"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "based on",
+          "direction": "forward",
+          "relation_key": "based on::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q20922",
+      [
+        "based on::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q1077"
+    ],
+    "reduced_answer_names": [
+      "Star Trek: The Original Series"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Star Trek: The Animated Series"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "based on",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "television series"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"television series\" . ?e_1 <based_on> ?e . ?e_1 <pred:name> \"Star Trek: The Animated Series\" .   }",
+    "choices": [
+      "Mission: Impossible",
+      "Edge of Darkness",
+      "Search for Tomorrow",
+      "Bleak House",
+      "Red Dwarf",
+      "Avatar: The Last Airbender",
+      "24",
+      "Robot Chicken",
+      "American Horror Story",
+      "Star Trek: The Original Series"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0002",
+    "source_split": "KQAPro-val",
+    "source_index": 270,
+    "qtype": "1p",
+    "question": "Who is Douglas Fairbanks' spouse?",
+    "gold_answer_name": "Mary Pickford",
+    "gold_answer_ids": [
+      "Q104109"
+    ],
+    "anchors": [
+      {
+        "name": "Douglas Fairbanks",
+        "ids": [
+          "Q104127"
+        ],
+        "unique_id": "Q104127"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "spouse",
+          "direction": "backward",
+          "relation_key": "spouse::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q104127",
+      [
+        "spouse::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q104109"
+    ],
+    "reduced_answer_names": [
+      "Mary Pickford"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Douglas Fairbanks"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "spouse",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <spouse> ?e_1 . ?e_1 <pred:name> \"Douglas Fairbanks\" .   }",
+    "choices": [
+      "Richard Gere",
+      "Mary Pickford",
+      "David Benioff",
+      "Sylvester Stallone",
+      "Tim Armstrong",
+      "Jane Espenson",
+      "Paul Newman",
+      "William Henry Harrison",
+      "David Mamet",
+      "Chet Atkins"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0003",
+    "source_split": "KQAPro-val",
+    "source_index": 344,
+    "qtype": "1p",
+    "question": "Which person was born in Coral Gables?",
+    "gold_answer_name": "Mimi Rogers",
+    "gold_answer_ids": [
+      "Q233054"
+    ],
+    "anchors": [
+      {
+        "name": "Coral Gables",
+        "ids": [
+          "Q427559"
+        ],
+        "unique_id": "Q427559"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "place of birth",
+          "direction": "backward",
+          "relation_key": "place of birth::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q427559",
+      [
+        "place of birth::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q233054"
+    ],
+    "reduced_answer_names": [
+      "Mimi Rogers"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Coral Gables"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "place of birth",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <place_of_birth> ?e_1 . ?e_1 <pred:name> \"Coral Gables\" .   }",
+    "choices": [
+      "Morgan Spurlock",
+      "Jason Momoa",
+      "Mimi Rogers",
+      "Christopher Wren",
+      "William Henry Harrison",
+      "Richard Gere",
+      "Max Fleischer",
+      "Wim Wenders",
+      "Andy Samberg",
+      "Sylvester Stallone"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0004",
+    "source_split": "KQAPro-val",
+    "source_index": 784,
+    "qtype": "1p",
+    "question": "What band is signed to the Kill Rock Stars label?",
+    "gold_answer_name": "The Decemberists",
+    "gold_answer_ids": [
+      "Q930112"
+    ],
+    "anchors": [
+      {
+        "name": "Kill Rock Stars",
+        "ids": [
+          "Q1741329"
+        ],
+        "unique_id": "Q1741329"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "record label",
+          "direction": "backward",
+          "relation_key": "record label::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q1741329",
+      [
+        "record label::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q930112"
+    ],
+    "reduced_answer_names": [
+      "The Decemberists"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Kill Rock Stars"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "record label",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "band"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"band\" . ?e <record_label> ?e_1 . ?e_1 <pred:name> \"Kill Rock Stars\" .   }",
+    "choices": [
+      "The Pretenders",
+      "USA for Africa",
+      "Everything but the Girl",
+      "The Monkees",
+      "The Decemberists",
+      "KC and the Sunshine Band",
+      "The Jackson 5",
+      "The Kinks",
+      "Tangerine Dream",
+      "Dixie Chicks"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0005",
+    "source_split": "KQAPro-val",
+    "source_index": 1997,
+    "qtype": "1p",
+    "question": "Which human is a member of AGOVV Apeldoorn?",
+    "gold_answer_name": "Klaas-Jan Huntelaar",
+    "gold_answer_ids": [
+      "Q26069"
+    ],
+    "anchors": [
+      {
+        "name": "AGOVV Apeldoorn",
+        "ids": [
+          "Q292618"
+        ],
+        "unique_id": "Q292618"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "member of sports team",
+          "direction": "backward",
+          "relation_key": "member of sports team::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q292618",
+      [
+        "member of sports team::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q26069"
+    ],
+    "reduced_answer_names": [
+      "Klaas-Jan Huntelaar"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "AGOVV Apeldoorn"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "member of sports team",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <member_of_sports_team> ?e_1 . ?e_1 <pred:name> \"AGOVV Apeldoorn\" .   }",
+    "choices": [
+      "Max Fleischer",
+      "Daniel Barenboim",
+      "Jack Warner",
+      "William Henry Harrison",
+      "Richard Gere",
+      "Dianne Wiest",
+      "Klaas-Jan Huntelaar",
+      "Sylvester Stallone",
+      "Paris",
+      "Joe Jackson"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0006",
+    "source_split": "KQAPro-val",
+    "source_index": 2232,
+    "qtype": "1p",
+    "question": "Who was the screenwriter of The Station Agent?",
+    "gold_answer_name": "Tom McCarthy",
+    "gold_answer_ids": [
+      "Q514527"
+    ],
+    "anchors": [
+      {
+        "name": "The Station Agent",
+        "ids": [
+          "Q1653448"
+        ],
+        "unique_id": "Q1653448"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "screenwriter",
+          "direction": "forward",
+          "relation_key": "screenwriter::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q1653448",
+      [
+        "screenwriter::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q514527"
+    ],
+    "reduced_answer_names": [
+      "Tom McCarthy"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "The Station Agent"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "screenwriter",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e_1 <screenwriter> ?e . ?e_1 <pred:name> \"The Station Agent\" .   }",
+    "choices": [
+      "Max Fleischer",
+      "Sylvester Stallone",
+      "Rabindranath Tagore",
+      "Hugo Weaving",
+      "Richard Gere",
+      "John Broome",
+      "Tom McCarthy",
+      "Charles Boyer",
+      "Drew Goddard",
+      "William Henry Harrison"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0007",
+    "source_split": "KQAPro-val",
+    "source_index": 2479,
+    "qtype": "1p",
+    "question": "What cemetery was John F. Seitz buried at?",
+    "gold_answer_name": "Holy Cross Cemetery",
+    "gold_answer_ids": [
+      "Q1625328"
+    ],
+    "anchors": [
+      {
+        "name": "John F. Seitz",
+        "ids": [
+          "Q724695"
+        ],
+        "unique_id": "Q724695"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "place of burial",
+          "direction": "forward",
+          "relation_key": "place of burial::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q724695",
+      [
+        "place of burial::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q1625328"
+    ],
+    "reduced_answer_names": [
+      "Holy Cross Cemetery"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "John F. Seitz"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "place of burial",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "cemetery"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"cemetery\" . ?e_1 <place_of_burial> ?e . ?e_1 <pred:name> \"John F. Seitz\" .   }",
+    "choices": [
+      "Glasnevin Cemetery",
+      "Montmartre Cemetery",
+      "Brompton Cemetery",
+      "Arlington National Cemetery",
+      "Grove Street Cemetery",
+      "Woodlawn Cemetery",
+      "Kensal Green Cemetery",
+      "Hollywood Forever Cemetery",
+      "Holy Cross Cemetery",
+      "West Norwood Cemetery"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0008",
+    "source_split": "KQAPro-val",
+    "source_index": 2481,
+    "qtype": "1p",
+    "question": "Who is the spouse of Swizz Beatz ?",
+    "gold_answer_name": "Alicia Keys",
+    "gold_answer_ids": [
+      "Q121507"
+    ],
+    "anchors": [
+      {
+        "name": "Swizz Beatz",
+        "ids": [
+          "Q240523"
+        ],
+        "unique_id": "Q240523"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "spouse",
+          "direction": "forward",
+          "relation_key": "spouse::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q240523",
+      [
+        "spouse::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q121507"
+    ],
+    "reduced_answer_names": [
+      "Alicia Keys"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Swizz Beatz"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "spouse",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e_1 <spouse> ?e . ?e_1 <pred:name> \"Swizz Beatz\" .   }",
+    "choices": [
+      "Alicia Keys",
+      "Jim Clark",
+      "Richard Gere",
+      "Tom Jones",
+      "Justin Theroux",
+      "Chris Evans",
+      "William Henry Harrison",
+      "Hema Malini",
+      "Tia Carrere",
+      "Sylvester Stallone"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0009",
+    "source_split": "KQAPro-val",
+    "source_index": 2847,
+    "qtype": "1p",
+    "question": "What is the national association football team which belongs to Austria?",
+    "gold_answer_name": "Austria national football team",
+    "gold_answer_ids": [
+      "Q163534"
+    ],
+    "anchors": [
+      {
+        "name": "Austria",
+        "ids": [
+          "Q40"
+        ],
+        "unique_id": "Q40"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "country for sport",
+          "direction": "backward",
+          "relation_key": "country for sport::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q40",
+      [
+        "country for sport::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q163534"
+    ],
+    "reduced_answer_names": [
+      "Austria national football team"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Austria"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "country for sport",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "national association football team"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"national association football team\" . ?e <country_for_sport> ?e_1 . ?e_1 <pred:name> \"Austria\" .   }",
+    "choices": [
+      "India national football team",
+      "Canada men's national soccer team",
+      "Algeria national football team",
+      "Austria national football team",
+      "Greece national football team",
+      "Bahrain national football team",
+      "Sweden national football team",
+      "South Africa national football team",
+      "Finland national football team",
+      "Maldives national football team"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0010",
+    "source_split": "KQAPro-val",
+    "source_index": 3241,
+    "qtype": "1p",
+    "question": "What person is part of the Dave Matthews Band?",
+    "gold_answer_name": "Dave Matthews",
+    "gold_answer_ids": [
+      "Q380381"
+    ],
+    "anchors": [
+      {
+        "name": "Dave Matthews Band",
+        "ids": [
+          "Q832086"
+        ],
+        "unique_id": "Q832086"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "has part",
+          "direction": "forward",
+          "relation_key": "has part::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q832086",
+      [
+        "has part::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q380381"
+    ],
+    "reduced_answer_names": [
+      "Dave Matthews"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Dave Matthews Band"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "has part",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e_1 <has_part> ?e . ?e_1 <pred:name> \"Dave Matthews Band\" .   }",
+    "choices": [
+      "John Carpenter",
+      "Terry Gilliam",
+      "William Henry Harrison",
+      "Richard Gere",
+      "Dave Matthews",
+      "Anthony Kiedis",
+      "Steve Earle",
+      "Martie Maguire",
+      "Sylvester Stallone",
+      "Graham Yost"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0011",
+    "source_split": "KQAPro-val",
+    "source_index": 3298,
+    "qtype": "1p",
+    "question": "What activity's genre is massively multiplayer online role-playing game?",
+    "gold_answer_name": "Salem",
+    "gold_answer_ids": [
+      "Q7404029"
+    ],
+    "anchors": [
+      {
+        "name": "massively multiplayer online role-playing game",
+        "ids": [
+          "Q175173"
+        ],
+        "unique_id": "Q175173"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "genre",
+          "direction": "backward",
+          "relation_key": "genre::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q175173",
+      [
+        "genre::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q7404029"
+    ],
+    "reduced_answer_names": [
+      "Salem"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "massively multiplayer online role-playing game"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "genre",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "activity"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"activity\" . ?e <genre> ?e_1 . ?e_1 <pred:name> \"massively multiplayer online role-playing game\" .   }",
+    "choices": [
+      "Battleship",
+      "Harry Potter and the Half-Blood Prince",
+      "music video game",
+      "Van Helsing",
+      "Batman",
+      "Salem",
+      "Star Trek",
+      "shooting sport",
+      "The Da Vinci Code",
+      "Indiana Jones and the Temple of Doom"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0012",
+    "source_split": "KQAPro-val",
+    "source_index": 3397,
+    "qtype": "1p",
+    "question": "Which association football club is set up in Breda?",
+    "gold_answer_name": "NAC Breda",
+    "gold_answer_ids": [
+      "Q332642"
+    ],
+    "anchors": [
+      {
+        "name": "Breda",
+        "ids": [
+          "Q40844"
+        ],
+        "unique_id": "Q40844"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "location of formation",
+          "direction": "backward",
+          "relation_key": "location of formation::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q40844",
+      [
+        "location of formation::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q332642"
+    ],
+    "reduced_answer_names": [
+      "NAC Breda"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Breda"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "location of formation",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "association football club"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"association football club\" . ?e <location_of_formation> ?e_1 . ?e_1 <pred:name> \"Breda\" .   }",
+    "choices": [
+      "Middlesbrough F.C.",
+      "SBV Excelsior",
+      "Zamalek SC",
+      "NAC Breda",
+      "Sparta Rotterdam",
+      "FC Thun",
+      "Kettering Town F.C.",
+      "Vitesse",
+      "Brisbane Roar FC",
+      "Deportivo Toluca F.C."
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0013",
+    "source_split": "KQAPro-val",
+    "source_index": 3423,
+    "qtype": "1p",
+    "question": "What person is a sibling of Randy Quaid?",
+    "gold_answer_name": "Dennis Quaid",
+    "gold_answer_ids": [
+      "Q200768"
+    ],
+    "anchors": [
+      {
+        "name": "Randy Quaid",
+        "ids": [
+          "Q316647"
+        ],
+        "unique_id": "Q316647"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "sibling",
+          "direction": "backward",
+          "relation_key": "sibling::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q316647",
+      [
+        "sibling::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q200768"
+    ],
+    "reduced_answer_names": [
+      "Dennis Quaid"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Randy Quaid"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "sibling",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <sibling> ?e_1 . ?e_1 <pred:name> \"Randy Quaid\" .   }",
+    "choices": [
+      "Chad Hugo",
+      "Sylvester Stallone",
+      "Todd Haynes",
+      "Bob Weinstein",
+      "William Henry Harrison",
+      "Charles, Prince of Wales",
+      "Sophie Thompson",
+      "Dennis Quaid",
+      "Joan Cusack",
+      "Richard Gere"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0014",
+    "source_split": "KQAPro-val",
+    "source_index": 3550,
+    "qtype": "1p",
+    "question": "Tallinn is headquarters of which soccer club?",
+    "gold_answer_name": "FC Levadia Tallinn",
+    "gold_answer_ids": [
+      "Q210849"
+    ],
+    "anchors": [
+      {
+        "name": "Tallinn",
+        "ids": [
+          "Q1770"
+        ],
+        "unique_id": "Q1770"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "headquarters location",
+          "direction": "backward",
+          "relation_key": "headquarters location::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q1770",
+      [
+        "headquarters location::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q210849"
+    ],
+    "reduced_answer_names": [
+      "FC Levadia Tallinn"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Tallinn"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "headquarters location",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "association football club"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"association football club\" . ?e <headquarters_location> ?e_1 . ?e_1 <pred:name> \"Tallinn\" .   }",
+    "choices": [
+      "Brisbane Roar FC",
+      "Ulsan Hyundai FC",
+      "Lincoln City F.C.",
+      "Everton F.C.",
+      "FC Levadia Tallinn",
+      "Middlesbrough F.C.",
+      "Stade Brestois 29",
+      "Zamalek SC",
+      "Dagenham & Redbridge F.C.",
+      "Brentford F.C."
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0015",
+    "source_split": "KQAPro-val",
+    "source_index": 3593,
+    "qtype": "1p",
+    "question": "What is Eddie Vedder's record label?",
+    "gold_answer_name": "J Records",
+    "gold_answer_ids": [
+      "Q121698"
+    ],
+    "anchors": [
+      {
+        "name": "Eddie Vedder",
+        "ids": [
+          "Q221535"
+        ],
+        "unique_id": "Q221535"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "record label",
+          "direction": "forward",
+          "relation_key": "record label::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q221535",
+      [
+        "record label::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q121698"
+    ],
+    "reduced_answer_names": [
+      "J Records"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Eddie Vedder"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "record label",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "record label"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"record label\" . ?e_1 <record_label> ?e . ?e_1 <pred:name> \"Eddie Vedder\" .   }",
+    "choices": [
+      "Hollywood Records",
+      "Southern Lord Records",
+      "Epitaph Records",
+      "Priority Records",
+      "J Records",
+      "Epic Records",
+      "Tommy Boy Records",
+      "V2 Records Benelux",
+      "MGM Records",
+      "Nettwerk"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0016",
+    "source_split": "KQAPro-val",
+    "source_index": 3858,
+    "qtype": "1p",
+    "question": "Which film was written by William S. Burroughs?",
+    "gold_answer_name": "Naked Lunch",
+    "gold_answer_ids": [
+      "Q1755864"
+    ],
+    "anchors": [
+      {
+        "name": "William S. Burroughs",
+        "ids": [
+          "Q188176"
+        ],
+        "unique_id": "Q188176"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "after a work by",
+          "direction": "backward",
+          "relation_key": "after a work by::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q188176",
+      [
+        "after a work by::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q1755864"
+    ],
+    "reduced_answer_names": [
+      "Naked Lunch"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "William S. Burroughs"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "after a work by",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "film"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"film\" . ?e <after_a_work_by> ?e_1 . ?e_1 <pred:name> \"William S. Burroughs\" .   }",
+    "choices": [
+      "Dr. Strangelove",
+      "Naked Lunch",
+      "Talk to Her",
+      "A Prairie Home Companion",
+      "A Time to Kill",
+      "Rebecca",
+      "Murder by Decree",
+      "Moonraker",
+      "Pleasantville",
+      "Saw"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0017",
+    "source_split": "KQAPro-val",
+    "source_index": 3961,
+    "qtype": "1p",
+    "question": "Which county town is in West Dorset?",
+    "gold_answer_name": "Dorchester",
+    "gold_answer_ids": [
+      "Q503331"
+    ],
+    "anchors": [
+      {
+        "name": "West Dorset",
+        "ids": [
+          "Q629802"
+        ],
+        "unique_id": "Q629802"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "located in the administrative territorial entity",
+          "direction": "backward",
+          "relation_key": "located in the administrative territorial entity::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q629802",
+      [
+        "located in the administrative territorial entity::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q503331"
+    ],
+    "reduced_answer_names": [
+      "Dorchester"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "West Dorset"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "located in the administrative territorial entity",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "county town"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county town\" . ?e <located_in_the_administrative_territorial_entity> ?e_1 . ?e_1 <pred:name> \"West Dorset\" .   }",
+    "choices": [
+      "Ipswich",
+      "Northampton",
+      "Oxford",
+      "Dorchester",
+      "Guildford",
+      "Bedford",
+      "Maidstone",
+      "Warwick",
+      "Reading",
+      "Aylesbury"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0018",
+    "source_split": "KQAPro-val",
+    "source_index": 4382,
+    "qtype": "1p",
+    "question": "Which vocal academic discipline is associated with Damon Albarn?",
+    "gold_answer_name": "baritone",
+    "gold_answer_ids": [
+      "Q31687"
+    ],
+    "anchors": [
+      {
+        "name": "Damon Albarn",
+        "ids": [
+          "Q272069"
+        ],
+        "unique_id": "Q272069"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "voice type",
+          "direction": "forward",
+          "relation_key": "voice type::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q272069",
+      [
+        "voice type::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q31687"
+    ],
+    "reduced_answer_names": [
+      "baritone"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Damon Albarn"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "voice type",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "academic discipline"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"academic discipline\" . ?e_1 <voice_type> ?e . ?e_1 <pred:name> \"Damon Albarn\" .   }",
+    "choices": [
+      "biochemistry",
+      "baritone",
+      "Yellow Submarine",
+      "international relations",
+      "psychiatry",
+      "political science",
+      "choir",
+      "English Studies",
+      "soprano",
+      "mezzo-soprano"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0019",
+    "source_split": "KQAPro-val",
+    "source_index": 4484,
+    "qtype": "1p",
+    "question": "Edward Norton produced which visual artwork?",
+    "gold_answer_name": "The Painted Veil",
+    "gold_answer_ids": [
+      "Q128854"
+    ],
+    "anchors": [
+      {
+        "name": "Edward Norton",
+        "ids": [
+          "Q125904"
+        ],
+        "unique_id": "Q125904"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "producer",
+          "direction": "backward",
+          "relation_key": "producer::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q125904",
+      [
+        "producer::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q128854"
+    ],
+    "reduced_answer_names": [
+      "The Painted Veil"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Edward Norton"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "producer",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "visual artwork"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"visual artwork\" . ?e <producer> ?e_1 . ?e_1 <pred:name> \"Edward Norton\" .   }",
+    "choices": [
+      "Easy Rider",
+      "Talk to Her",
+      "The Painted Veil",
+      "Wreck-It Ralph",
+      "Pleasantville",
+      "Mansfield Park",
+      "A Prairie Home Companion",
+      "All the King's Men",
+      "My Week with Marilyn",
+      "Rebecca"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0020",
+    "source_split": "KQAPro-val",
+    "source_index": 4709,
+    "qtype": "1p",
+    "question": "Who is Peter Bogdanovich's partner?",
+    "gold_answer_name": "Cybill Shepherd",
+    "gold_answer_ids": [
+      "Q175142"
+    ],
+    "anchors": [
+      {
+        "name": "Peter Bogdanovich",
+        "ids": [
+          "Q158250"
+        ],
+        "unique_id": "Q158250"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "partner",
+          "direction": "forward",
+          "relation_key": "partner::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q158250",
+      [
+        "partner::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q175142"
+    ],
+    "reduced_answer_names": [
+      "Cybill Shepherd"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Peter Bogdanovich"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "partner",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e_1 <partner> ?e . ?e_1 <pred:name> \"Peter Bogdanovich\" .   }",
+    "choices": [
+      "Sylvester Stallone",
+      "Robert Rodriguez",
+      "Max Fleischer",
+      "Richard Gere",
+      "Will Smith",
+      "Lena Headey",
+      "Gwyneth Paltrow",
+      "William Henry Harrison",
+      "Cybill Shepherd",
+      "Tate Donovan"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0021",
+    "source_split": "KQAPro-val",
+    "source_index": 4734,
+    "qtype": "1p",
+    "question": "The Democratic Republic of the Congo was the filming locale of which visual artwork?",
+    "gold_answer_name": "The African Queen",
+    "gold_answer_ids": [
+      "Q384397"
+    ],
+    "anchors": [
+      {
+        "name": "Democratic Republic of the Congo",
+        "ids": [
+          "Q974"
+        ],
+        "unique_id": "Q974"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "filming location",
+          "direction": "backward",
+          "relation_key": "filming location::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q974",
+      [
+        "filming location::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q384397"
+    ],
+    "reduced_answer_names": [
+      "The African Queen"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Democratic Republic of the Congo"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "filming location",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "visual artwork"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"visual artwork\" . ?e <filming_location> ?e_1 . ?e_1 <pred:name> \"Democratic Republic of the Congo\" .   }",
+    "choices": [
+      "Taken 2",
+      "Rebecca",
+      "Talk to Her",
+      "Moonstruck",
+      "The Contender",
+      "Pleasantville",
+      "The Haunting",
+      "A Star Is Born",
+      "A Prairie Home Companion",
+      "The African Queen"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0022",
+    "source_split": "KQAPro-val",
+    "source_index": 5013,
+    "qtype": "1p",
+    "question": "What is the university in Pomona?",
+    "gold_answer_name": "California State Polytechnic University, Pomona",
+    "gold_answer_ids": [
+      "Q1026868"
+    ],
+    "anchors": [
+      {
+        "name": "Pomona",
+        "ids": [
+          "Q486868"
+        ],
+        "unique_id": "Q486868"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "located in the administrative territorial entity",
+          "direction": "backward",
+          "relation_key": "located in the administrative territorial entity::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q486868",
+      [
+        "located in the administrative territorial entity::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q1026868"
+    ],
+    "reduced_answer_names": [
+      "California State Polytechnic University, Pomona"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Pomona"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "located in the administrative territorial entity",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "university"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"university\" . ?e <located_in_the_administrative_territorial_entity> ?e_1 . ?e_1 <pred:name> \"Pomona\" .   }",
+    "choices": [
+      "Imperial College London",
+      "Northwestern University",
+      "California State University, Long Beach",
+      "Pratt Institute",
+      "McNeese State University",
+      "Cardiff University",
+      "University of East Anglia",
+      "University of Manchester",
+      "California State Polytechnic University, Pomona",
+      "Swarthmore College"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0023",
+    "source_split": "KQAPro-val",
+    "source_index": 5128,
+    "qtype": "1p",
+    "question": "Which person was born in Trondheim?",
+    "gold_answer_name": "Annie",
+    "gold_answer_ids": [
+      "Q181734"
+    ],
+    "anchors": [
+      {
+        "name": "Trondheim",
+        "ids": [
+          "Q25804"
+        ],
+        "unique_id": "Q25804"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "place of birth",
+          "direction": "backward",
+          "relation_key": "place of birth::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q25804",
+      [
+        "place of birth::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q181734"
+    ],
+    "reduced_answer_names": [
+      "Annie"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Trondheim"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "place of birth",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <place_of_birth> ?e_1 . ?e_1 <pred:name> \"Trondheim\" .   }",
+    "choices": [
+      "Annie",
+      "John Swasey",
+      "William Henry Harrison",
+      "Heather Graham",
+      "George Takei",
+      "Max Fleischer",
+      "John Adams",
+      "America Ferrera",
+      "Sylvester Stallone",
+      "Richard Gere"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0024",
+    "source_split": "KQAPro-val",
+    "source_index": 5182,
+    "qtype": "1p",
+    "question": "Tell me the person who is Katy Perry's spouse",
+    "gold_answer_name": "Russell Brand",
+    "gold_answer_ids": [
+      "Q296609"
+    ],
+    "anchors": [
+      {
+        "name": "Katy Perry",
+        "ids": [
+          "Q42493"
+        ],
+        "unique_id": "Q42493"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "spouse",
+          "direction": "forward",
+          "relation_key": "spouse::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q42493",
+      [
+        "spouse::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q296609"
+    ],
+    "reduced_answer_names": [
+      "Russell Brand"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Katy Perry"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "spouse",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e_1 <spouse> ?e . ?e_1 <pred:name> \"Katy Perry\" .   }",
+    "choices": [
+      "Bruce Cohen",
+      "Colleen Dewhurst",
+      "Max Fleischer",
+      "Marilyn Monroe",
+      "Sylvester Stallone",
+      "Richard Gere",
+      "William Henry Harrison",
+      "Rebecca Romijn",
+      "Arthur Rankin Jr.",
+      "Russell Brand"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0025",
+    "source_split": "KQAPro-val",
+    "source_index": 5528,
+    "qtype": "1p",
+    "question": "Which agent owns General Dynamics Electric Boat?",
+    "gold_answer_name": "General Dynamics",
+    "gold_answer_ids": [
+      "Q502940"
+    ],
+    "anchors": [
+      {
+        "name": "General Dynamics Electric Boat",
+        "ids": [
+          "Q1325893"
+        ],
+        "unique_id": "Q1325893"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "owned by",
+          "direction": "forward",
+          "relation_key": "owned by::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q1325893",
+      [
+        "owned by::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q502940"
+    ],
+    "reduced_answer_names": [
+      "General Dynamics"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "General Dynamics Electric Boat"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "owned by",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "agent"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"agent\" . ?e_1 <owned_by> ?e . ?e_1 <pred:name> \"General Dynamics Electric Boat\" .   }",
+    "choices": [
+      "Marvel Entertainment",
+      "Sega",
+      "Hearst",
+      "New Zealand national cricket team",
+      "McDonald's",
+      "Goldman Sachs",
+      "Pfizer",
+      "General Dynamics",
+      "Silver Pictures",
+      "Viacom"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0026",
+    "source_split": "KQAPro-val",
+    "source_index": 5618,
+    "qtype": "1p",
+    "question": "Who is a resident of Tunis?",
+    "gold_answer_name": "Claudia Cardinale",
+    "gold_answer_ids": [
+      "Q107006"
+    ],
+    "anchors": [
+      {
+        "name": "Tunis",
+        "ids": [
+          "Q3572"
+        ],
+        "unique_id": "Q3572"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "residence",
+          "direction": "backward",
+          "relation_key": "residence::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q3572",
+      [
+        "residence::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q107006"
+    ],
+    "reduced_answer_names": [
+      "Claudia Cardinale"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Tunis"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "residence",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <residence> ?e_1 . ?e_1 <pred:name> \"Tunis\" .   }",
+    "choices": [
+      "William Henry Harrison",
+      "Max Fleischer",
+      "Richard Gere",
+      "Bahamas",
+      "Christopher Sabat",
+      "Chris Paul",
+      "William Hurt",
+      "Ronald D. Moore",
+      "Claudia Cardinale",
+      "Bob Marley"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0027",
+    "source_split": "KQAPro-val",
+    "source_index": 6107,
+    "qtype": "1p",
+    "question": "Which disease did Warren Zevon die of?",
+    "gold_answer_name": "lung cancer",
+    "gold_answer_ids": [
+      "Q47912"
+    ],
+    "anchors": [
+      {
+        "name": "Warren Zevon",
+        "ids": [
+          "Q375792"
+        ],
+        "unique_id": "Q375792"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "cause of death",
+          "direction": "forward",
+          "relation_key": "cause of death::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q375792",
+      [
+        "cause of death::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q47912"
+    ],
+    "reduced_answer_names": [
+      "lung cancer"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Warren Zevon"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "cause of death",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "disease"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"disease\" . ?e_1 <cause_of_death> ?e . ?e_1 <pred:name> \"Warren Zevon\" .   }",
+    "choices": [
+      "prostate cancer",
+      "epilepsy",
+      "tuberculosis",
+      "attention deficit hyperactivity disorder",
+      "peritonitis",
+      "cerebral hemorrhage",
+      "pneumonia",
+      "influenza",
+      "gastroesophageal reflux disease",
+      "lung cancer"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0028",
+    "source_split": "KQAPro-val",
+    "source_index": 6294,
+    "qtype": "1p",
+    "question": "What county in Illinois is named after DeWitt Clinton?",
+    "gold_answer_name": "Clinton County",
+    "gold_answer_ids": [
+      "Q110555",
+      "Q111936",
+      "Q494093",
+      "Q94669"
+    ],
+    "anchors": [
+      {
+        "name": "DeWitt Clinton",
+        "ids": [
+          "Q527462"
+        ],
+        "unique_id": "Q527462"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "named after",
+          "direction": "backward",
+          "relation_key": "named after::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q527462",
+      [
+        "named after::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q110555",
+      "Q111936",
+      "Q494093",
+      "Q94669"
+    ],
+    "reduced_answer_names": [
+      "Clinton County"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "DeWitt Clinton"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "named after",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "county of Illinois"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"county of Illinois\" . ?e <named_after> ?e_1 . ?e_1 <pred:name> \"DeWitt Clinton\" .   }",
+    "choices": [
+      "Monroe County",
+      "McLean County",
+      "Clinton County",
+      "McHenry County",
+      "DeKalb County",
+      "Tazewell County",
+      "St. Clair County",
+      "Peoria County",
+      "Madison County",
+      "Montgomery County"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0029",
+    "source_split": "KQAPro-val",
+    "source_index": 6312,
+    "qtype": "1p",
+    "question": "Which award did Rickey Henderson receive?",
+    "gold_answer_name": "National Baseball Hall of Fame and Museum",
+    "gold_answer_ids": [
+      "Q809892"
+    ],
+    "anchors": [
+      {
+        "name": "Rickey Henderson",
+        "ids": [
+          "Q601521"
+        ],
+        "unique_id": "Q601521"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "award received",
+          "direction": "forward",
+          "relation_key": "award received::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q601521",
+      [
+        "award received::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q809892"
+    ],
+    "reduced_answer_names": [
+      "National Baseball Hall of Fame and Museum"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Rickey Henderson"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "award received",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "award"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"award\" . ?e_1 <award_received> ?e . ?e_1 <pred:name> \"Rickey Henderson\" .   }",
+    "choices": [
+      "Academy Award for Best Actor",
+      "Independent Spirit Award for Best Director",
+      "Golden Globe Award for Best Foreign Language Film",
+      "Grammy Award for Best Reggae Album",
+      "Primetime Emmy Award for Outstanding Lead Actor in a Drama Series",
+      "Independent Spirit Award for Best Female Lead",
+      "Academy Award for Best Original Musical Score",
+      "Hundred Flowers Award for Best Actress",
+      "National Baseball Hall of Fame and Museum",
+      "Golden Globe Award for Best Animated Feature Film"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0030",
+    "source_split": "KQAPro-val",
+    "source_index": 6550,
+    "qtype": "1p",
+    "question": "Which association football club has headquarters located in Cremona?",
+    "gold_answer_name": "U.S. Cremonese",
+    "gold_answer_ids": [
+      "Q759482"
+    ],
+    "anchors": [
+      {
+        "name": "Cremona",
+        "ids": [
+          "Q6231"
+        ],
+        "unique_id": "Q6231"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "headquarters location",
+          "direction": "backward",
+          "relation_key": "headquarters location::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q6231",
+      [
+        "headquarters location::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q759482"
+    ],
+    "reduced_answer_names": [
+      "U.S. Cremonese"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Cremona"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "headquarters location",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "association football club"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"association football club\" . ?e <headquarters_location> ?e_1 . ?e_1 <pred:name> \"Cremona\" .   }",
+    "choices": [
+      "Club Olimpia",
+      "Stade Brestois 29",
+      "U.S. Cremonese",
+      "PFC Lokomotiv Plovdiv",
+      "S.S.C. Napoli",
+      "Shrewsbury Town F.C.",
+      "Middlesbrough F.C.",
+      "Queens Park Rangers F.C.",
+      "Zamalek SC",
+      "Brisbane Roar FC"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0031",
+    "source_split": "KQAPro-val",
+    "source_index": 6853,
+    "qtype": "1p",
+    "question": "In which city was Orlando Bloom born?",
+    "gold_answer_name": "Canterbury",
+    "gold_answer_ids": [
+      "Q29303"
+    ],
+    "anchors": [
+      {
+        "name": "Orlando Bloom",
+        "ids": [
+          "Q44467"
+        ],
+        "unique_id": "Q44467"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "place of birth",
+          "direction": "forward",
+          "relation_key": "place of birth::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q44467",
+      [
+        "place of birth::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q29303"
+    ],
+    "reduced_answer_names": [
+      "Canterbury"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Orlando Bloom"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "place of birth",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "city"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"city\" . ?e_1 <place_of_birth> ?e . ?e_1 <pred:name> \"Orlando Bloom\" .   }",
+    "choices": [
+      "Kingston",
+      "Cork",
+      "Avignon",
+      "Bristol",
+      "Ferrara",
+      "Kilkenny",
+      "York",
+      "Bergen",
+      "Trieste",
+      "Canterbury"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0032",
+    "source_split": "KQAPro-val",
+    "source_index": 7844,
+    "qtype": "1p",
+    "question": "What person was born in Charlottesville?",
+    "gold_answer_name": "Rob Lowe",
+    "gold_answer_ids": [
+      "Q296505"
+    ],
+    "anchors": [
+      {
+        "name": "Charlottesville",
+        "ids": [
+          "Q123766"
+        ],
+        "unique_id": "Q123766"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "place of birth",
+          "direction": "backward",
+          "relation_key": "place of birth::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q123766",
+      [
+        "place of birth::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q296505"
+    ],
+    "reduced_answer_names": [
+      "Rob Lowe"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Charlottesville"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "place of birth",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <place_of_birth> ?e_1 . ?e_1 <pred:name> \"Charlottesville\" .   }",
+    "choices": [
+      "Max Fleischer",
+      "Rob Lowe",
+      "Tom Waits",
+      "Italo Calvino",
+      "Kim Kardashian",
+      "Robert Smith",
+      "Sylvester Stallone",
+      "Pete Postlethwaite",
+      "Zachary Taylor",
+      "William Henry Harrison"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0033",
+    "source_split": "KQAPro-val",
+    "source_index": 7869,
+    "qtype": "1p",
+    "question": "Which person is a member of Tom Petty and the Heartbreakers?",
+    "gold_answer_name": "Tom Petty",
+    "gold_answer_ids": [
+      "Q311655"
+    ],
+    "anchors": [
+      {
+        "name": "Tom Petty and the Heartbreakers",
+        "ids": [
+          "Q2117272"
+        ],
+        "unique_id": "Q2117272"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "member of",
+          "direction": "backward",
+          "relation_key": "member of::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q2117272",
+      [
+        "member of::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q311655"
+    ],
+    "reduced_answer_names": [
+      "Tom Petty"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Tom Petty and the Heartbreakers"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "member of",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <member_of> ?e_1 . ?e_1 <pred:name> \"Tom Petty and the Heartbreakers\" .   }",
+    "choices": [
+      "Cat Stevens",
+      "Max Fleischer",
+      "Ritchie Blackmore",
+      "Bill Fagerbakke",
+      "Tom Petty",
+      "Robert Plant",
+      "Mars",
+      "Sylvester Stallone",
+      "William Henry Harrison",
+      "Richard Gere"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0034",
+    "source_split": "KQAPro-val",
+    "source_index": 8561,
+    "qtype": "1p",
+    "question": "What industry is part of the North African Campaign?",
+    "gold_answer_name": "Western Desert Campaign",
+    "gold_answer_ids": [
+      "Q625798"
+    ],
+    "anchors": [
+      {
+        "name": "North African Campaign",
+        "ids": [
+          "Q218678"
+        ],
+        "unique_id": "Q218678"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "part of",
+          "direction": "backward",
+          "relation_key": "part of::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q218678",
+      [
+        "part of::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q625798"
+    ],
+    "reduced_answer_names": [
+      "Western Desert Campaign"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "North African Campaign"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "part of",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "industry"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"industry\" . ?e <part_of> ?e_1 . ?e_1 <pred:name> \"North African Campaign\" .   }",
+    "choices": [
+      "Western Desert Campaign",
+      "arms industry",
+      "Orange",
+      "Battle of Britain",
+      "Microsoft Windows",
+      "Second Intifada",
+      "fast food",
+      "Today",
+      "Napoleonic Wars",
+      "Battle of France"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0035",
+    "source_split": "KQAPro-val",
+    "source_index": 9091,
+    "qtype": "1p",
+    "question": "What visual artwork is narrated by Ray Liotta?",
+    "gold_answer_name": "Goodfellas",
+    "gold_answer_ids": [
+      "Q42047"
+    ],
+    "anchors": [
+      {
+        "name": "Ray Liotta",
+        "ids": [
+          "Q211280"
+        ],
+        "unique_id": "Q211280"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "narrator",
+          "direction": "backward",
+          "relation_key": "narrator::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q211280",
+      [
+        "narrator::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q42047"
+    ],
+    "reduced_answer_names": [
+      "Goodfellas"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Ray Liotta"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "narrator",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "visual artwork"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"visual artwork\" . ?e <narrator> ?e_1 . ?e_1 <pred:name> \"Ray Liotta\" .   }",
+    "choices": [
+      "The Graduate",
+      "North",
+      "Pleasantville",
+      "The Fifth Element",
+      "Talk to Her",
+      "The Right Stuff",
+      "Goodfellas",
+      "The Rainmaker",
+      "Attack the Block",
+      "A Prairie Home Companion"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0036",
+    "source_split": "KQAPro-val",
+    "source_index": 9290,
+    "qtype": "1p",
+    "question": "Which individual was Ted's composer?",
+    "gold_answer_name": "Walter Murphy",
+    "gold_answer_ids": [
+      "Q534419"
+    ],
+    "anchors": [
+      {
+        "name": "Ted",
+        "ids": [
+          "Q641760"
+        ],
+        "unique_id": "Q641760"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "composer",
+          "direction": "forward",
+          "relation_key": "composer::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q641760",
+      [
+        "composer::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q534419"
+    ],
+    "reduced_answer_names": [
+      "Walter Murphy"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Ted"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "composer",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e_1 <composer> ?e . ?e_1 <pred:name> \"Ted\" .   }",
+    "choices": [
+      "Richard Gere",
+      "Vangelis",
+      "Ian MacKaye",
+      "Max Fleischer",
+      "Malcolm McDowell",
+      "John Carpenter",
+      "Edward Burns",
+      "Walter Murphy",
+      "Sylvester Stallone",
+      "William Henry Harrison"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0037",
+    "source_split": "KQAPro-val",
+    "source_index": 9511,
+    "qtype": "1p",
+    "question": "What disease is James Coburn's medical condition?",
+    "gold_answer_name": "rheumatoid arthritis",
+    "gold_answer_ids": [
+      "Q187255"
+    ],
+    "anchors": [
+      {
+        "name": "James Coburn",
+        "ids": [
+          "Q4227"
+        ],
+        "unique_id": "Q4227"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "medical condition",
+          "direction": "forward",
+          "relation_key": "medical condition::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q4227",
+      [
+        "medical condition::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q187255"
+    ],
+    "reduced_answer_names": [
+      "rheumatoid arthritis"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "James Coburn"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "medical condition",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "disease"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"disease\" . ?e_1 <medical_condition> ?e . ?e_1 <pred:name> \"James Coburn\" .   }",
+    "choices": [
+      "systemic lupus erythematosus",
+      "malaria",
+      "skin cancer",
+      "rheumatoid arthritis",
+      "influenza",
+      "pneumonia",
+      "attention deficit hyperactivity disorder",
+      "prostate cancer",
+      "gastroesophageal reflux disease",
+      "epilepsy"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0038",
+    "source_split": "KQAPro-val",
+    "source_index": 9751,
+    "qtype": "1p",
+    "question": "Which person was influenced by Red Hot Chili Peppers?",
+    "gold_answer_name": "Shakira",
+    "gold_answer_ids": [
+      "Q34424"
+    ],
+    "anchors": [
+      {
+        "name": "Red Hot Chili Peppers",
+        "ids": [
+          "Q10708"
+        ],
+        "unique_id": "Q10708"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "influenced by",
+          "direction": "backward",
+          "relation_key": "influenced by::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q10708",
+      [
+        "influenced by::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q34424"
+    ],
+    "reduced_answer_names": [
+      "Shakira"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Red Hot Chili Peppers"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "influenced by",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <influenced_by> ?e_1 . ?e_1 <pred:name> \"Red Hot Chili Peppers\" .   }",
+    "choices": [
+      "Bill Murray",
+      "Salman Rushdie",
+      "Sylvester Stallone",
+      "Max Fleischer",
+      "William Henry Harrison",
+      "Thelonious Monk",
+      "Jean Simmons",
+      "Richard Gere",
+      "Shakira",
+      "Kevin Garnett"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0039",
+    "source_split": "KQAPro-val",
+    "source_index": 9871,
+    "qtype": "1p",
+    "question": "What city is the birthplace of Alan Dale?",
+    "gold_answer_name": "Dunedin",
+    "gold_answer_ids": [
+      "Q133073"
+    ],
+    "anchors": [
+      {
+        "name": "Alan Dale",
+        "ids": [
+          "Q350194"
+        ],
+        "unique_id": "Q350194"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "place of birth",
+          "direction": "forward",
+          "relation_key": "place of birth::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q350194",
+      [
+        "place of birth::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q133073"
+    ],
+    "reduced_answer_names": [
+      "Dunedin"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Alan Dale"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "place of birth",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "city"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"city\" . ?e_1 <place_of_birth> ?e . ?e_1 <pred:name> \"Alan Dale\" .   }",
+    "choices": [
+      "Canterbury",
+      "Dunedin",
+      "Madurai",
+      "Trieste",
+      "Regina",
+      "Kilkenny",
+      "New York City",
+      "Cork",
+      "Scarborough",
+      "Kingston"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0040",
+    "source_split": "KQAPro-val",
+    "source_index": 10540,
+    "qtype": "1p",
+    "question": "What work was produced by Bob Hoskins?",
+    "gold_answer_name": "Mrs Henderson Presents",
+    "gold_answer_ids": [
+      "Q1423667"
+    ],
+    "anchors": [
+      {
+        "name": "Bob Hoskins",
+        "ids": [
+          "Q211283"
+        ],
+        "unique_id": "Q211283"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "producer",
+          "direction": "backward",
+          "relation_key": "producer::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q211283",
+      [
+        "producer::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q1423667"
+    ],
+    "reduced_answer_names": [
+      "Mrs Henderson Presents"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Bob Hoskins"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "producer",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "visual artwork"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"visual artwork\" . ?e <producer> ?e_1 . ?e_1 <pred:name> \"Bob Hoskins\" .   }",
+    "choices": [
+      "The Music Man",
+      "Magic Mike",
+      "A Prairie Home Companion",
+      "Veer-Zaara",
+      "Fair Game",
+      "Pleasantville",
+      "Interview with the Vampire",
+      "Rebecca",
+      "Mrs Henderson Presents",
+      "Talk to Her"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0041",
+    "source_split": "KQAPro-val",
+    "source_index": 10672,
+    "qtype": "1p",
+    "question": "Which Summer Olympics preceded the 1912 Summer Games?",
+    "gold_answer_name": "1908 Summer Olympics",
+    "gold_answer_ids": [
+      "Q8111"
+    ],
+    "anchors": [
+      {
+        "name": "1912 Summer Olympics",
+        "ids": [
+          "Q8118"
+        ],
+        "unique_id": "Q8118"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "follows",
+          "direction": "forward",
+          "relation_key": "follows::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q8118",
+      [
+        "follows::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q8111"
+    ],
+    "reduced_answer_names": [
+      "1908 Summer Olympics"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "1912 Summer Olympics"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "follows",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "Summer Olympic Games"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"Summer Olympic Games\" . ?e_1 <follows> ?e . ?e_1 <pred:name> \"1912 Summer Olympics\" .   }",
+    "choices": [
+      "1984 Summer Olympics",
+      "1996 Summer Olympics",
+      "1908 Summer Olympics",
+      "2008 Summer Olympics",
+      "1936 Summer Olympics",
+      "1924 Summer Olympics",
+      "1928 Summer Olympics",
+      "1980 Summer Olympics",
+      "1972 Summer Olympics",
+      "1904 Summer Olympics"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0042",
+    "source_split": "KQAPro-val",
+    "source_index": 10691,
+    "qtype": "1p",
+    "question": "Whih person was convicted of theft?",
+    "gold_answer_name": "DMX",
+    "gold_answer_ids": [
+      "Q223769"
+    ],
+    "anchors": [
+      {
+        "name": "theft",
+        "ids": [
+          "Q2727213"
+        ],
+        "unique_id": "Q2727213"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "convicted of",
+          "direction": "backward",
+          "relation_key": "convicted of::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q2727213",
+      [
+        "convicted of::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q223769"
+    ],
+    "reduced_answer_names": [
+      "DMX"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "theft"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "convicted of",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <convicted_of> ?e_1 . ?e_1 <pred:name> \"theft\" .   }",
+    "choices": [
+      "Sylvester Stallone",
+      "Phil Spector",
+      "William Henry Harrison",
+      "Adam Horowitz",
+      "Etta James",
+      "PJ Harvey",
+      "Ned Kelly",
+      "DMX",
+      "Richard Gere",
+      "Max Fleischer"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0043",
+    "source_split": "KQAPro-val",
+    "source_index": 10851,
+    "qtype": "1p",
+    "question": "Steven Wilson is a member of which band?",
+    "gold_answer_name": "Porcupine Tree",
+    "gold_answer_ids": [
+      "Q213923"
+    ],
+    "anchors": [
+      {
+        "name": "Steven Wilson",
+        "ids": [
+          "Q352766"
+        ],
+        "unique_id": "Q352766"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "has part",
+          "direction": "backward",
+          "relation_key": "has part::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q352766",
+      [
+        "has part::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q213923"
+    ],
+    "reduced_answer_names": [
+      "Porcupine Tree"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Steven Wilson"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "has part",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "band"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"band\" . ?e <has_part> ?e_1 . ?e_1 <pred:name> \"Steven Wilson\" .   }",
+    "choices": [
+      "The Monkees",
+      "Gwar",
+      "The Pretenders",
+      "Little Feat",
+      "Plastic Ono Band",
+      "The Kinks",
+      "Asleep at the Wheel",
+      "The Mothers of Invention",
+      "Roxy Music",
+      "Porcupine Tree"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0044",
+    "source_split": "KQAPro-val",
+    "source_index": 10893,
+    "qtype": "1p",
+    "question": "Which person was educated at Smith College?",
+    "gold_answer_name": "Sylvia Plath",
+    "gold_answer_ids": [
+      "Q133054"
+    ],
+    "anchors": [
+      {
+        "name": "Smith College",
+        "ids": [
+          "Q49204"
+        ],
+        "unique_id": "Q49204"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "educated at",
+          "direction": "backward",
+          "relation_key": "educated at::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q49204",
+      [
+        "educated at::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q133054"
+    ],
+    "reduced_answer_names": [
+      "Sylvia Plath"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Smith College"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "educated at",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <educated_at> ?e_1 . ?e_1 <pred:name> \"Smith College\" .   }",
+    "choices": [
+      "Brian McKnight",
+      "Max Fleischer",
+      "Jim Brown",
+      "Richard Gere",
+      "William Henry Harrison",
+      "Marvin Hamlisch",
+      "Peter Ustinov",
+      "Sylvia Plath",
+      "Merle Haggard",
+      "Chris Bauer"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0045",
+    "source_split": "KQAPro-val",
+    "source_index": 10895,
+    "qtype": "1p",
+    "question": "What person was born in Royal Leamington Spa?",
+    "gold_answer_name": "Ben Foster",
+    "gold_answer_ids": [
+      "Q10585"
+    ],
+    "anchors": [
+      {
+        "name": "Royal Leamington Spa",
+        "ids": [
+          "Q546635"
+        ],
+        "unique_id": "Q546635"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "place of birth",
+          "direction": "backward",
+          "relation_key": "place of birth::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q546635",
+      [
+        "place of birth::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q10585"
+    ],
+    "reduced_answer_names": [
+      "Ben Foster"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Royal Leamington Spa"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "place of birth",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "human"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"human\" . ?e <place_of_birth> ?e_1 . ?e_1 <pred:name> \"Royal Leamington Spa\" .   }",
+    "choices": [
+      "Albert Brooks",
+      "Ben Foster",
+      "William Henry Harrison",
+      "Richard Gere",
+      "Kevin McCarthy",
+      "George Hamilton",
+      "Vernon Chatman",
+      "Max Fleischer",
+      "Cameron Mitchell",
+      "Luther Vandross"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0046",
+    "source_split": "KQAPro-val",
+    "source_index": 10928,
+    "qtype": "1p",
+    "question": "Ken Burns produced which series for TV?",
+    "gold_answer_name": "The Civil War",
+    "gold_answer_ids": [
+      "Q672443"
+    ],
+    "anchors": [
+      {
+        "name": "Ken Burns",
+        "ids": [
+          "Q616886"
+        ],
+        "unique_id": "Q616886"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "producer",
+          "direction": "backward",
+          "relation_key": "producer::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q616886",
+      [
+        "producer::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q672443"
+    ],
+    "reduced_answer_names": [
+      "The Civil War"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Ken Burns"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "producer",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "television series"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"television series\" . ?e <producer> ?e_1 . ?e_1 <pred:name> \"Ken Burns\" .   }",
+    "choices": [
+      "The Civil War",
+      "The Contender",
+      "George Washington",
+      "Charlie's Angels",
+      "Barney Miller",
+      "The Ten Commandments",
+      "Game of Thrones",
+      "30 Rock",
+      "Battlestar Galactica",
+      "The Biggest Loser"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0047",
+    "source_split": "KQAPro-val",
+    "source_index": 11106,
+    "qtype": "1p",
+    "question": "What Summer Olympic Games were followed by the 1980 Summer Olympics?",
+    "gold_answer_name": "1976 Summer Olympics",
+    "gold_answer_ids": [
+      "Q8444"
+    ],
+    "anchors": [
+      {
+        "name": "1980 Summer Olympics",
+        "ids": [
+          "Q8450"
+        ],
+        "unique_id": "Q8450"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "followed by",
+          "direction": "backward",
+          "relation_key": "followed by::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q8450",
+      [
+        "followed by::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q8444"
+    ],
+    "reduced_answer_names": [
+      "1976 Summer Olympics"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "1980 Summer Olympics"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "followed by",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "Summer Olympic Games"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"Summer Olympic Games\" . ?e <followed_by> ?e_1 . ?e_1 <pred:name> \"1980 Summer Olympics\" .   }",
+    "choices": [
+      "1908 Summer Olympics",
+      "1904 Summer Olympics",
+      "1936 Summer Olympics",
+      "1968 Summer Olympics",
+      "1948 Summer Olympics",
+      "2008 Summer Olympics",
+      "1932 Summer Olympics",
+      "1896 Summer Olympics",
+      "1976 Summer Olympics",
+      "1952 Summer Olympics"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0048",
+    "source_split": "KQAPro-val",
+    "source_index": 11143,
+    "qtype": "1p",
+    "question": "What disease did John Hartford die of ?",
+    "gold_answer_name": "lymphoma",
+    "gold_answer_ids": [
+      "Q208414"
+    ],
+    "anchors": [
+      {
+        "name": "John Hartford",
+        "ids": [
+          "Q704700"
+        ],
+        "unique_id": "Q704700"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "cause of death",
+          "direction": "forward",
+          "relation_key": "cause of death::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q704700",
+      [
+        "cause of death::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q208414"
+    ],
+    "reduced_answer_names": [
+      "lymphoma"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "John Hartford"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "cause of death",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "disease"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"disease\" . ?e_1 <cause_of_death> ?e . ?e_1 <pred:name> \"John Hartford\" .   }",
+    "choices": [
+      "leukemia",
+      "multiple sclerosis",
+      "prostate cancer",
+      "testicular cancer",
+      "attention deficit hyperactivity disorder",
+      "gastroesophageal reflux disease",
+      "heart failure",
+      "acute cystitis",
+      "lymphoma",
+      "epilepsy"
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0049",
+    "source_split": "KQAPro-val",
+    "source_index": 11353,
+    "qtype": "1p",
+    "question": "Which association football club does the National Autonomous University of Mexico own?",
+    "gold_answer_name": "Club Universidad Nacional",
+    "gold_answer_ids": [
+      "Q1143000"
+    ],
+    "anchors": [
+      {
+        "name": "National Autonomous University of Mexico",
+        "ids": [
+          "Q222738"
+        ],
+        "unique_id": "Q222738"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "owner of",
+          "direction": "forward",
+          "relation_key": "owner of::forward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q222738",
+      [
+        "owner of::forward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q1143000"
+    ],
+    "reduced_answer_names": [
+      "Club Universidad Nacional"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "National Autonomous University of Mexico"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "owner of",
+          "forward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "association football club"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"association football club\" . ?e_1 <owner_of> ?e . ?e_1 <pred:name> \"National Autonomous University of Mexico\" .   }",
+    "choices": [
+      "Club Universidad Nacional",
+      "Roda JC Kerkrade",
+      "S.C. Internacional",
+      "Norwich City F.C.",
+      "Zamalek SC",
+      "Brisbane Roar FC",
+      "FC Kallon",
+      "Stade Brestois 29",
+      "Estudiantes de La Plata",
+      "Hibernian F.C."
+    ]
+  },
+  {
+    "e11_sample_id": "1p_0050",
+    "source_split": "KQAPro-val",
+    "source_index": 11618,
+    "qtype": "1p",
+    "question": "What television series included Steve Allen in the cast?",
+    "gold_answer_name": "American Masters",
+    "gold_answer_ids": [
+      "Q2842976"
+    ],
+    "anchors": [
+      {
+        "name": "Steve Allen",
+        "ids": [
+          "Q553276"
+        ],
+        "unique_id": "Q553276"
+      }
+    ],
+    "relations": [
+      [
+        {
+          "predicate": "cast member",
+          "direction": "backward",
+          "relation_key": "cast member::backward"
+        }
+      ]
+    ],
+    "logical_query": [
+      "Q553276",
+      [
+        "cast member::backward"
+      ]
+    ],
+    "reduced_ast_shape": "P(A)",
+    "reduced_answer_ids": [
+      "Q2842976"
+    ],
+    "reduced_answer_names": [
+      "American Masters"
+    ],
+    "gold_program": [
+      {
+        "function": "Find",
+        "dependencies": [],
+        "inputs": [
+          "Steve Allen"
+        ]
+      },
+      {
+        "function": "Relate",
+        "dependencies": [
+          0
+        ],
+        "inputs": [
+          "cast member",
+          "backward"
+        ]
+      },
+      {
+        "function": "FilterConcept",
+        "dependencies": [
+          1
+        ],
+        "inputs": [
+          "television series"
+        ]
+      },
+      {
+        "function": "What",
+        "dependencies": [
+          2
+        ],
+        "inputs": []
+      }
+    ],
+    "sparql": "SELECT DISTINCT ?e WHERE { ?e <pred:instance_of> ?c . ?c <pred:name> \"television series\" . ?e <cast_member> ?e_1 . ?e_1 <pred:name> \"Steve Allen\" .   }",
+    "choices": [
+      "The Ultimate Fighter",
+      "Buffy the Vampire Slayer",
+      "American Masters",
+      "Rosemary's Baby",
+      "The Path to 9/11",
+      "Angel",
+      "Twin Peaks",
+      "Bleak House",
+      "Robot Chicken",
+      "Game of Thrones"
+    ]
+  }
+]

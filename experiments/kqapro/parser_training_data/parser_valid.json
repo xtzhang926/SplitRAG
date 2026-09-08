@@ -1,0 +1,2757 @@
+[
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What New York city is in Cayuga County?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Cayuga County\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0582",
+    "source_index": 57259
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which human was born in Wigan?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Wigan\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0345",
+    "source_index": 33429
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "In what literary genre is the work that was written by Nathaniel Hawthorne?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Nathaniel Hawthorne\", \"path\": [{\"relation\": \"after a work by\", \"direction\": \"backward\"}, {\"relation\": \"based on\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0162",
+    "source_index": 72820
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which agent's headquarter location is in Dhaka?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Dhaka\", \"path\": [{\"relation\": \"headquarters location\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0218",
+    "source_index": 20186
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What MTV Movie Awards were nominated to Rose Byrne and The Grudge?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Rose Byrne\", \"path\": [{\"relation\": \"nominated for\", \"direction\": \"forward\"}]}, {\"anchor\": \"The Grudge\", \"path\": [{\"relation\": \"nominated for\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0162",
+    "source_index": 50966
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which market town is John Hurt's residence?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"John Hurt\", \"path\": [{\"relation\": \"residence\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0619",
+    "source_index": 62071
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who resides in the New York city where Carl Sagan is buried?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Carl Sagan\", \"path\": [{\"relation\": \"place of burial\", \"direction\": \"forward\"}, {\"relation\": \"residence\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0066",
+    "source_index": 28941
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which city is the twinned administrative body of Fairbanks?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Fairbanks\", \"path\": [{\"relation\": \"twinned administrative body\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0812",
+    "source_index": 81507
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What activity's distributor is Sony Interactive Entertainment?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Sony Interactive Entertainment\", \"path\": [{\"relation\": \"distributor\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0540",
+    "source_index": 52529
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Bellingham is the capital of which Washington county?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Bellingham\", \"path\": [{\"relation\": \"capital\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0022",
+    "source_index": 2886
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which film received a Golden Lion and was distributed by Rank Organisation?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Golden Lion\", \"path\": [{\"relation\": \"award received\", \"direction\": \"backward\"}]}, {\"anchor\": \"Rank Organisation\", \"path\": [{\"relation\": \"distributor\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0144",
+    "source_index": 45209
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What member of the Nazi Party died in Darmstadt?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Darmstadt\", \"path\": [{\"relation\": \"place of death\", \"direction\": \"backward\"}]}, {\"anchor\": \"Nazi Party\", \"path\": [{\"relation\": \"member of political party\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0241",
+    "source_index": 74514
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Tell me the visual artwork that has the narrative location the administrative territorial entity that is where Al Roker was born."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Al Roker\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}, {\"relation\": \"narrative location\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0196",
+    "source_index": 89714
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which real-time strategy video game is distributed on DVD?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"real-time strategy\", \"path\": [{\"relation\": \"genre\", \"direction\": \"backward\"}]}, {\"anchor\": \"DVD\", \"path\": [{\"relation\": \"distribution\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0249",
+    "source_index": 77007
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which record label is the record label of Morning Musume and is in the country of Japan?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Morning Musume\", \"path\": [{\"relation\": \"record label\", \"direction\": \"forward\"}]}, {\"anchor\": \"Japan\", \"path\": [{\"relation\": \"country\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0158",
+    "source_index": 49963
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which person is married to the person in a partnership with Michael Keaton?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Michael Keaton\", \"path\": [{\"relation\": \"partner\", \"direction\": \"forward\"}, {\"relation\": \"spouse\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0002",
+    "source_index": 1156
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which visual artwork's narrative location is Tuscany ?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Tuscany\", \"path\": [{\"relation\": \"narrative location\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0343",
+    "source_index": 33100
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which state's country is Saint Vincent and the Grenadines?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Saint Vincent and the Grenadines\", \"path\": [{\"relation\": \"country\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0010",
+    "source_index": 1531
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which person is a member of Valenciennes F.C.?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Valenciennes F.C.\", \"path\": [{\"relation\": \"member of sports team\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0328",
+    "source_index": 31224
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which person founded Death Row Records?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Death Row Records\", \"path\": [{\"relation\": \"founded by\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0682",
+    "source_index": 67572
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which film features Jonah Hill as an executive producer?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Jonah Hill\", \"path\": [{\"relation\": \"executive producer\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0939",
+    "source_index": 94033
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which individual is well-known for grunge and belongs to the Smashing Pumpkins?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"The Smashing Pumpkins\", \"path\": [{\"relation\": \"has part\", \"direction\": \"forward\"}]}, {\"anchor\": \"grunge\", \"path\": [{\"relation\": \"famous people\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0227",
+    "source_index": 70075
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What U.S. city has the USA as its country and is the residence of Brad Bird?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"United States of America\", \"path\": [{\"relation\": \"country\", \"direction\": \"backward\"}]}, {\"anchor\": \"Brad Bird\", \"path\": [{\"relation\": \"residence\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0119",
+    "source_index": 37253
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Alan Burnett and Bruce Timm were producers on what film?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Alan Burnett\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}, {\"anchor\": \"Bruce Timm\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0076",
+    "source_index": 23840
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What is the name of the church building where Ernest Rutherford is buried?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Ernest Rutherford\", \"path\": [{\"relation\": \"place of burial\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0601",
+    "source_index": 59905
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "I need to know the historic county of England that is the origin of the name the administrative territorial entity that has Middletown as the capital."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Middletown\", \"path\": [{\"relation\": \"capital of\", \"direction\": \"forward\"}, {\"relation\": \"named after\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0197",
+    "source_index": 89885
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which person is the movement feminism?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"feminism\", \"path\": [{\"relation\": \"movement\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0261",
+    "source_index": 24329
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which person is the screenwriter of Hot Fuzz?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Hot Fuzz\", \"path\": [{\"relation\": \"screenwriter\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0762",
+    "source_index": 76383
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Lauryn Hill was born in which New Jersey city?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Lauryn Hill\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0128",
+    "source_index": 13088
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What administrative territorial entity has the administrative division City of London, and is different from Greater London?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"City of London\", \"path\": [{\"relation\": \"contains administrative territorial entity\", \"direction\": \"backward\"}]}, {\"anchor\": \"Greater London\", \"path\": [{\"relation\": \"different from\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0007",
+    "source_index": 2221
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which visual artwork's production company is Christine Vachon ?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Christine Vachon\", \"path\": [{\"relation\": \"production company\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0110",
+    "source_index": 11343
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Tell me the movie that has a script written by  Andrew Lloyd Webber"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Andrew Lloyd Webber\", \"path\": [{\"relation\": \"screenwriter\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0728",
+    "source_index": 72735
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who died in the Pennsylvania city where Keith Jarrett was born?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Keith Jarrett\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}, {\"relation\": \"place of death\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0167",
+    "source_index": 77581
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What person was educated at the university that is located in Hampton?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Hampton\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"backward\"}, {\"relation\": \"educated at\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0011",
+    "source_index": 4031
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What district has city status that contains the Royal Academy of Arts?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Royal Academy of Arts\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0158",
+    "source_index": 14805
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Jacqueline Bisset and Olympia Dukakis are both cast in which TV series?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Jacqueline Bisset\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"backward\"}]}, {\"anchor\": \"Olympia Dukakis\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0294",
+    "source_index": 89664
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "August Strindberg succumbed to which disease?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"August Strindberg\", \"path\": [{\"relation\": \"cause of death\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0092",
+    "source_index": 9588
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which school in USA is the child organization of Massachusetts Institute of Technology?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Massachusetts Institute of Technology\", \"path\": [{\"relation\": \"parent organization\", \"direction\": \"backward\"}]}, {\"anchor\": \"United States of America\", \"path\": [{\"relation\": \"country\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0215",
+    "source_index": 65376
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which human is a cast member of Role Models and has the notable work Anchorman: The Legend of Ron Burgundy?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Role Models\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"forward\"}]}, {\"anchor\": \"Anchorman: The Legend of Ron Burgundy\", \"path\": [{\"relation\": \"notable work\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0142",
+    "source_index": 44588
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which first-level administrative country subdivision has the capital of Zurich?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Zürich\", \"path\": [{\"relation\": \"capital of\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0871",
+    "source_index": 85957
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which US city is Cobb County's capital?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Cobb County\", \"path\": [{\"relation\": \"capital of\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0340",
+    "source_index": 32810
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "David Fincher produced which visual artwork ?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"David Fincher\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0352",
+    "source_index": 34516
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What geographic region is located in or next to South Australia and located in or next to Western Australia?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"South Australia\", \"path\": [{\"relation\": \"located in or next to body of water\", \"direction\": \"forward\"}]}, {\"anchor\": \"Western Australia\", \"path\": [{\"relation\": \"located in or next to body of water\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0128",
+    "source_index": 39077
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which movie is written by Anton Chekhov?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Anton Chekhov\", \"path\": [{\"relation\": \"after a work by\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0936",
+    "source_index": 93832
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who is the composer of End of Days and Evan Almighty?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"End of Days\", \"path\": [{\"relation\": \"composer\", \"direction\": \"forward\"}]}, {\"anchor\": \"Evan Almighty\", \"path\": [{\"relation\": \"composer\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0234",
+    "source_index": 73144
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which organization's chief executive officer is educated at Columbia Business School?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Columbia Business School\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"backward\"}, {\"relation\": \"chief executive officer\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0065",
+    "source_index": 28151
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What abjad uses Persian?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Persian\", \"path\": [{\"relation\": \"language of work or name\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0421",
+    "source_index": 39956
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who is employed in the US city where Dr. Luke was born?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Dr. Luke\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}, {\"relation\": \"work location\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0113",
+    "source_index": 51381
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Louis Malle is the director of what movie?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Louis Malle\", \"path\": [{\"relation\": \"director\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0019",
+    "source_index": 2660
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which person belongs to the Buffalo Sabres team?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Buffalo Sabres\", \"path\": [{\"relation\": \"member of sports team\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0386",
+    "source_index": 37245
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who is the screenwriter of The Pink Panther 2?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"The Pink Panther 2\", \"path\": [{\"relation\": \"screenwriter\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0922",
+    "source_index": 92149
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What legislative term follows the one that followed the 26th United States Congress?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"26th United States Congress\", \"path\": [{\"relation\": \"followed by\", \"direction\": \"forward\"}, {\"relation\": \"follows\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0005",
+    "source_index": 2389
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which Ireland county shares a border with County Kilkenny and County Wicklow?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"County Kilkenny\", \"path\": [{\"relation\": \"shares border with\", \"direction\": \"backward\"}]}, {\"anchor\": \"County Wicklow\", \"path\": [{\"relation\": \"shares border with\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0140",
+    "source_index": 43425
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which university is the education place of Maury Chaykin?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Maury Chaykin\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0285",
+    "source_index": 26999
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who died in Truro?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Truro\", \"path\": [{\"relation\": \"place of death\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0771",
+    "source_index": 77027
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What administrative territorial entity is St. Andrews in?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"St Andrews\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0883",
+    "source_index": 87135
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which US city headquarters Florida Atlantic University?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Florida Atlantic University\", \"path\": [{\"relation\": \"headquarters location\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0379",
+    "source_index": 36617
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Tell me the person who is part of Dream Theater"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Dream Theater\", \"path\": [{\"relation\": \"has part\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0664",
+    "source_index": 65899
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who is David Arquette's wife?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"David Arquette\", \"path\": [{\"relation\": \"spouse\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0217",
+    "source_index": 20062
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What visual artwork was produced by Werner Herzog?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Werner Herzog\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0572",
+    "source_index": 56710
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which US city shares borders with Oxnard?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"United States of America\", \"path\": [{\"relation\": \"country\", \"direction\": \"backward\"}]}, {\"anchor\": \"Oxnard\", \"path\": [{\"relation\": \"shares border with\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0182",
+    "source_index": 58555
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who is the father of Ekta Kapoor?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Ekta Kapoor\", \"path\": [{\"relation\": \"father\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0430",
+    "source_index": 41425
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which county contains Plainfield in New Jersey?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Plainfield\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0910",
+    "source_index": 90626
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What visual artwork was composed by Tangerine Dream?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Tangerine Dream\", \"path\": [{\"relation\": \"composer\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0103",
+    "source_index": 10591
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who is the creator of The West Wing?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"The West Wing\", \"path\": [{\"relation\": \"creator\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0517",
+    "source_index": 50195
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "tell me the agent who sets up in Belfast"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Belfast\", \"path\": [{\"relation\": \"location of formation\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0385",
+    "source_index": 37198
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "The 49th Academy Awards came after which Academy Awards event?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"49th Academy Awards\", \"path\": [{\"relation\": \"followed by\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0605",
+    "source_index": 60176
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What town does the Eastbourne Borough F.C. have a headquarters location at?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Eastbourne Borough F.C.\", \"path\": [{\"relation\": \"headquarters location\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0373",
+    "source_index": 36157
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who produced Andrew Stevens?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Andrew Stevens\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0188",
+    "source_index": 17465
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which University is in Kampala?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Kampala\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0507",
+    "source_index": 48789
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Avi Lerner was a student of which institution of higher learning?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Avi Lerner\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0307",
+    "source_index": 29077
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which association football club is based in the big city bordering Dortmund?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Dortmund\", \"path\": [{\"relation\": \"shares border with\", \"direction\": \"forward\"}, {\"relation\": \"located in the administrative territorial entity\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0131",
+    "source_index": 61121
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which individual served as composer for Lawless?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Lawless\", \"path\": [{\"relation\": \"composer\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0219",
+    "source_index": 20236
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which movie series contains Taken 2?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Taken 2\", \"path\": [{\"relation\": \"part of the series\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0161",
+    "source_index": 15184
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which person directed In The Loop?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"In the Loop\", \"path\": [{\"relation\": \"director\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0704",
+    "source_index": 69606
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which military rank is the movie character portrayed by Tom Cruise?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Tom Cruise\", \"path\": [{\"relation\": \"performer\", \"direction\": \"backward\"}, {\"relation\": \"military rank\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0175",
+    "source_index": 79782
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Whose birthplace is the US city where West Virginia University is located?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"West Virginia University\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}, {\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0121",
+    "source_index": 56120
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Howard Morris is associated with which military conflict?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Howard Morris\", \"path\": [{\"relation\": \"conflict\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0242",
+    "source_index": 22547
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What film was composed by Trey Parker?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Trey Parker\", \"path\": [{\"relation\": \"composer\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0838",
+    "source_index": 83738
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What higher education institution was Dermot Mulroney educated at?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Dermot Mulroney\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0314",
+    "source_index": 29822
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which person, involved in World War I conflict, is a part of British Army?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"British Army\", \"path\": [{\"relation\": \"allegiance\", \"direction\": \"backward\"}]}, {\"anchor\": \"World War I\", \"path\": [{\"relation\": \"conflict\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0131",
+    "source_index": 40405
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What motion picture's director is Frank Borzage?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Frank Borzage\", \"path\": [{\"relation\": \"director\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0152",
+    "source_index": 14395
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "The Florida county with West Palm Beach as its capital is the namesake of which US town?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"West Palm Beach\", \"path\": [{\"relation\": \"capital\", \"direction\": \"backward\"}, {\"relation\": \"named after\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0159",
+    "source_index": 72462
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Queen Latifah records on which label?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Queen Latifah\", \"path\": [{\"relation\": \"record label\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0784",
+    "source_index": 77981
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which person who works in Ottawa was born in Edinburgh?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Ottawa\", \"path\": [{\"relation\": \"work location\", \"direction\": \"backward\"}]}, {\"anchor\": \"Edinburgh\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0191",
+    "source_index": 60936
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What film is written by Gustave Flaubert and was nominated for an Academy Award for Best Supporting Actor?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Gustave Flaubert\", \"path\": [{\"relation\": \"after a work by\", \"direction\": \"backward\"}]}, {\"anchor\": \"Academy Award for Best Supporting Actor\", \"path\": [{\"relation\": \"nominated for\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0090",
+    "source_index": 28705
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What is the California county whose capital is Redding?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Redding\", \"path\": [{\"relation\": \"capital of\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0609",
+    "source_index": 60949
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which is the programming language of Perl?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Perl\", \"path\": [{\"relation\": \"programming language\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0624",
+    "source_index": 62768
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who is in the Quest for Fire cast?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Quest for Fire\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0895",
+    "source_index": 88571
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which Dutch province contains Mastricht ?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Maastricht\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0453",
+    "source_index": 42928
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Star Wars Episode II: Attack of the Clones is included in which series of movies?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Star Wars Episode II: Attack of the Clones\", \"path\": [{\"relation\": \"part of the series\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0648",
+    "source_index": 64382
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What Golden Globe Awards ceremony follows the 55th Golden Globe Awards?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"55th Golden Globe Awards\", \"path\": [{\"relation\": \"followed by\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0780",
+    "source_index": 77425
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which university did Pier Paolo Pasoliny study on?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Pier Paolo Pasolini\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0698",
+    "source_index": 69070
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Dashiell Hammett wrote which written worK?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Dashiell Hammett\", \"path\": [{\"relation\": \"author\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0248",
+    "source_index": 23402
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which ice hockey team is related to the sport of ice hockey and is in the country of Russia?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"ice hockey\", \"path\": [{\"relation\": \"sport\", \"direction\": \"backward\"}]}, {\"anchor\": \"Russia\", \"path\": [{\"relation\": \"country\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0186",
+    "source_index": 59076
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who plays third base for the Houston Astros?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Houston Astros\", \"path\": [{\"relation\": \"member of sports team\", \"direction\": \"backward\"}]}, {\"anchor\": \"third baseman\", \"path\": [{\"relation\": \"position played on team / speciality\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0014",
+    "source_index": 3678
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which disease killed Conrad Hall?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Conrad Hall\", \"path\": [{\"relation\": \"cause of death\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0104",
+    "source_index": 10838
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What activity is a part of modern pentathlon and a part of biathlon?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"modern pentathlon\", \"path\": [{\"relation\": \"has part\", \"direction\": \"forward\"}]}, {\"anchor\": \"biathlon\", \"path\": [{\"relation\": \"has part\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0062",
+    "source_index": 20571
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What film has Jason Alexander and was nominated for Golden Raspberry Award for Worst Screenplay?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Jason Alexander\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"backward\"}]}, {\"anchor\": \"Golden Raspberry Award for Worst Screenplay\", \"path\": [{\"relation\": \"nominated for\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0275",
+    "source_index": 83825
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What film has Fairuza Balk as a cast member and Avi Lerner as a producer?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Fairuza Balk\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"backward\"}]}, {\"anchor\": \"Avi Lerner\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0126",
+    "source_index": 38653
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What town did Oliver Reed die in ?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Oliver Reed\", \"path\": [{\"relation\": \"place of death\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0175",
+    "source_index": 16392
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which administrative territorial entity has the capital that is the United States city that is the death place of William S. Burroughs?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"William S. Burroughs\", \"path\": [{\"relation\": \"place of death\", \"direction\": \"forward\"}, {\"relation\": \"capital\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0041",
+    "source_index": 18129
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What screenwriter of the film received the MTV Movie Award for Most Desirable Female?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"MTV Movie Award for Most Desirable Female\", \"path\": [{\"relation\": \"award received\", \"direction\": \"backward\"}, {\"relation\": \"screenwriter\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0070",
+    "source_index": 31029
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What person was born in West Chester?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"West Chester\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0479",
+    "source_index": 46301
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Dany Heatley's position is a part of which job?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Dany Heatley\", \"path\": [{\"relation\": \"position played on team / speciality\", \"direction\": \"forward\"}, {\"relation\": \"has part\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0105",
+    "source_index": 47491
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who produced Last Action Hero?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Last Action Hero\", \"path\": [{\"relation\": \"producer\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0674",
+    "source_index": 66696
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which human died in the United States city that is the birthplace of Samuel Fuller?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Samuel Fuller\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}, {\"relation\": \"place of death\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0016",
+    "source_index": 5730
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which ethnic group is Dakota County's namesake?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Dakota County\", \"path\": [{\"relation\": \"named after\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0929",
+    "source_index": 92873
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who was educated at Furman University and received a 2006 Grammy Award?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"2006 Grammy Awards\", \"path\": [{\"relation\": \"award received\", \"direction\": \"backward\"}]}, {\"anchor\": \"Furman University\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0154",
+    "source_index": 49091
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What film production company is founded by the person who is the director of Cinderella Man?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Cinderella Man\", \"path\": [{\"relation\": \"director\", \"direction\": \"forward\"}, {\"relation\": \"found\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0118",
+    "source_index": 54932
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Tell me the higher education institution that has College of Wooster in it and that has Earlham College in it."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"College of Wooster\", \"path\": [{\"relation\": \"has part\", \"direction\": \"backward\"}]}, {\"anchor\": \"Earlham College\", \"path\": [{\"relation\": \"has part\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0183",
+    "source_index": 58764
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What is the mechanical wave which is the genre of Ice-T?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Ice-T\", \"path\": [{\"relation\": \"genre\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0471",
+    "source_index": 45393
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which New York county contains a city of New York where David Shire was born ?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"David Shire\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}, {\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0123",
+    "source_index": 58895
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which movie was designed by Henry Grace?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Henry Grace\", \"path\": [{\"relation\": \"production designer\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0326",
+    "source_index": 30971
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which school of law attended by Daniel Inouye is part of George Washington University?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Daniel Inouye\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"forward\"}]}, {\"anchor\": \"George Washington University\", \"path\": [{\"relation\": \"has part\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0266",
+    "source_index": 81403
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which movie was shot in Boston?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Boston\", \"path\": [{\"relation\": \"filming location\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0410",
+    "source_index": 38778
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which sovereign state (which is the country of Liberal Party of the Philippines) shares a border with Indonesia?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Liberal Party of the Philippines\", \"path\": [{\"relation\": \"country\", \"direction\": \"forward\"}]}, {\"anchor\": \"Indonesia\", \"path\": [{\"relation\": \"shares border with\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0225",
+    "source_index": 69333
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "The US city where Revelation Records is headquartered is the birthplace of whom?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Revelation Records\", \"path\": [{\"relation\": \"headquarters location\", \"direction\": \"forward\"}, {\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0022",
+    "source_index": 8107
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What is the affiliation football club whose headquarter area is the huge city that's the twinned authoritative body of Canterbury"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Canterbury\", \"path\": [{\"relation\": \"twinned administrative body\", \"direction\": \"forward\"}, {\"relation\": \"headquarters location\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0195",
+    "source_index": 89679
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who is the person that died in Bayreuth?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Bayreuth\", \"path\": [{\"relation\": \"place of death\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0531",
+    "source_index": 51528
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What piece of entertainment did Adam Sandler voice act for and was published by Ubisoft?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Adam Sandler\", \"path\": [{\"relation\": \"voice actor\", \"direction\": \"backward\"}]}, {\"anchor\": \"Ubisoft\", \"path\": [{\"relation\": \"publisher\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0176",
+    "source_index": 55254
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What National Basketball Association Draft follows the 2004 NBA Draft?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"2004 NBA Draft\", \"path\": [{\"relation\": \"follows\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0395",
+    "source_index": 37770
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Harold Arlen belongs to which ethnic group?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Harold Arlen\", \"path\": [{\"relation\": \"ethnic group\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0202",
+    "source_index": 18711
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What film character did Kristen Bell portray?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Kristen Bell\", \"path\": [{\"relation\": \"performer\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0552",
+    "source_index": 53853
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which city is the capital of Bihar?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Bihar\", \"path\": [{\"relation\": \"capital\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0232",
+    "source_index": 21812
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who is the production designer of Superman II: The Richard Donner Cut?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Superman II: The Richard Donner Cut\", \"path\": [{\"relation\": \"production designer\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0652",
+    "source_index": 64906
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What visual artwork is the one that mainly depicts golf ?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"golf\", \"path\": [{\"relation\": \"main subject\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0213",
+    "source_index": 19691
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which person was born in Florida?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Florida\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0038",
+    "source_index": 4265
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which TV series includes the movie character performed by Kristen Bell?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Kristen Bell\", \"path\": [{\"relation\": \"performer\", \"direction\": \"backward\"}, {\"relation\": \"present in work\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0055",
+    "source_index": 24810
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which political party has a political ideology of conservatism and whose headquarter location is Toronto ?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"conservatism\", \"path\": [{\"relation\": \"political ideology\", \"direction\": \"backward\"}]}, {\"anchor\": \"Toronto\", \"path\": [{\"relation\": \"headquarters location\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2i",
+    "sample_id": "2i_0003",
+    "source_index": 1428
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Where did Ivan Reitman go to college?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Ivan Reitman\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0355",
+    "source_index": 34614
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What color is the official color of Montpellier Hérault Sport Club?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Montpellier Hérault Sport Club\", \"path\": [{\"relation\": \"official color\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0537",
+    "source_index": 52122
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which human is the composer of the visual artwork designed by Carroll Clark?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Carroll Clark\", \"path\": [{\"relation\": \"production designer\", \"direction\": \"backward\"}, {\"relation\": \"composer\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0143",
+    "source_index": 65566
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What capital is the birthplace of Milla Jovovich?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Milla Jovovich\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0039",
+    "source_index": 4510
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What is the area of London that borders Marylebone?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Marylebone\", \"path\": [{\"relation\": \"shares border with\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0089",
+    "source_index": 9407
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which big city is located in Schleswig-Holstein?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Schleswig-Holstein\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0726",
+    "source_index": 72286
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "What person is the television-series director who has Ryan Seacrest as a presenter?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Ryan Seacrest\", \"path\": [{\"relation\": \"presenter\", \"direction\": \"backward\"}, {\"relation\": \"director\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0180",
+    "source_index": 81595
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Who is the person that is the director of photography of Ghostbusters II?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Ghostbusters II\", \"path\": [{\"relation\": \"director of photography\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0204",
+    "source_index": 19058
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which film was produced by Liv Ullmann?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Liv Ullmann\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0752",
+    "source_index": 75131
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "The Virginia Military Institute can be found in which independent city?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Virginia Military Institute\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0376",
+    "source_index": 36415
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which baseball club is headquartered in Fukuoka Prefecture?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Fukuoka Prefecture\", \"path\": [{\"relation\": \"headquarters location\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0055",
+    "source_index": 5487
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which person passed away in the US state which includes Oklahoma County?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Oklahoma County\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}, {\"relation\": \"place of death\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "2p",
+    "sample_id": "2p_0048",
+    "source_index": 21268
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which person screenwrote The Crying Game?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"The Crying Game\", \"path\": [{\"relation\": \"screenwriter\", \"direction\": \"forward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0920",
+    "source_index": 91610
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Which person lives in Islington?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Islington\", \"path\": [{\"relation\": \"residence\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0289",
+    "source_index": 27553
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a semantic parser for knowledge graph questions.\n\nConvert the user's question into a JSON structured query.\n\nQuery types:\n- 1p: one anchor and one relation\n- 2p: one anchor and two ordered relations\n- 2i: two independent one-relation branches with intersection\n\nUse this format:\n{\n  \"type\": \"1p|2p|2i\",\n  \"query\": [\n    {\n      \"anchor\": \"entity name\",\n      \"path\": [\n        {\n          \"relation\": \"relation name\",\n          \"direction\": \"forward|backward\"\n        }\n      ]\n    }\n  ]\n}\n\nKeep entity and relation names in natural language.\nFor 2p, preserve relation order.\nFor 2i, output two independent branches.\nOutput JSON only, with no explanation or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "Prince Edward Island is part of which geographic region?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Prince Edward Island\", \"path\": [{\"relation\": \"has part\", \"direction\": \"backward\"}]}]}"
+      }
+    ],
+    "qtype": "1p",
+    "sample_id": "1p_0167",
+    "source_index": 15579
+  }
+]

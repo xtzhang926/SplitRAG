@@ -1,0 +1,64 @@
+{
+  "input_parser_answer_dir": "",
+  "kb_path": "",
+  "total_samples": 119,
+  "entity_name_inventory_size": 13681,
+  "relation_inventory_size": 363,
+  "grounding_ok": 113,
+  "grounding_failed": 6,
+  "grounding_success_rate": 0.9495798319327731,
+  "failure_reasons": {
+    "entity_not_found": 4,
+    "relation_not_found": 2
+  },
+  "by_gold_qtype": {
+    "1p": {
+      "total": 50,
+      "grounding_ok": 50,
+      "grounding_failed": 0,
+      "grounding_success_rate": 1.0,
+      "predicted_qtype_distribution": {
+        "1p": 50
+      },
+      "failure_reasons": {}
+    },
+    "2p": {
+      "total": 24,
+      "grounding_ok": 22,
+      "grounding_failed": 2,
+      "grounding_success_rate": 0.9166666666666666,
+      "predicted_qtype_distribution": {
+        "1p": 2,
+        "2i": 2,
+        "2p": 20
+      },
+      "failure_reasons": {
+        "entity_not_found": 1,
+        "relation_not_found": 1
+      }
+    },
+    "2i": {
+      "total": 45,
+      "grounding_ok": 41,
+      "grounding_failed": 4,
+      "grounding_success_rate": 0.9111111111111111,
+      "predicted_qtype_distribution": {
+        "1p": 4,
+        "2i": 39,
+        "2p": 2
+      },
+      "failure_reasons": {
+        "entity_not_found": 3,
+        "relation_not_found": 1
+      }
+    }
+  },
+  "important_rules": [
+    "Predicted qtype is used to build logical_query; gold qtype is audit-only.",
+    "Exact normalized entity-name match only; no fuzzy correction.",
+    "Ambiguous entity names are rejected rather than arbitrarily resolved.",
+    "Predicted wrong-but-valid KB entities/relations are executed as predicted.",
+    "Grounding failures are retained and must count as end-to-end failures.",
+    "2i branch order is preserved from parser output."
+  ]
+}

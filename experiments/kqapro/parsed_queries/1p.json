@@ -1,0 +1,2202 @@
+[
+  {
+    "sample_id": "1p_0001",
+    "source_index": 44,
+    "question": "Star Trek: The Animated Series is based on which TV series?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Star Trek: The Animated Series\", \"path\": [{\"relation\": \"based on\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Star Trek: The Animated Series",
+          "path": [
+            {
+              "relation": "based on",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Star Trek: The Animated Series",
+        "anchor_id": "Q20922",
+        "path": [
+          {
+            "predicted_relation": "based on",
+            "canonical_relation": "based on",
+            "direction": "forward",
+            "rel_key": "based on::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q20922",
+      [
+        "based on::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0002",
+    "source_index": 270,
+    "question": "Who is Douglas Fairbanks' spouse?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Douglas Fairbanks\", \"path\": [{\"relation\": \"spouse\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Douglas Fairbanks",
+          "path": [
+            {
+              "relation": "spouse",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Douglas Fairbanks",
+        "anchor_id": "Q104127",
+        "path": [
+          {
+            "predicted_relation": "spouse",
+            "canonical_relation": "spouse",
+            "direction": "forward",
+            "rel_key": "spouse::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q104127",
+      [
+        "spouse::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0003",
+    "source_index": 344,
+    "question": "Which person was born in Coral Gables?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Coral Gables\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Coral Gables",
+          "path": [
+            {
+              "relation": "place of birth",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Coral Gables",
+        "anchor_id": "Q427559",
+        "path": [
+          {
+            "predicted_relation": "place of birth",
+            "canonical_relation": "place of birth",
+            "direction": "backward",
+            "rel_key": "place of birth::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q427559",
+      [
+        "place of birth::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0004",
+    "source_index": 784,
+    "question": "What band is signed to the Kill Rock Stars label?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Kill Rock Stars\", \"path\": [{\"relation\": \"record label\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Kill Rock Stars",
+          "path": [
+            {
+              "relation": "record label",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Kill Rock Stars",
+        "anchor_id": "Q1741329",
+        "path": [
+          {
+            "predicted_relation": "record label",
+            "canonical_relation": "record label",
+            "direction": "backward",
+            "rel_key": "record label::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q1741329",
+      [
+        "record label::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0005",
+    "source_index": 1997,
+    "question": "Which human is a member of AGOVV Apeldoorn?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"AGOVV Apeldoorn\", \"path\": [{\"relation\": \"member of sports team\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "AGOVV Apeldoorn",
+          "path": [
+            {
+              "relation": "member of sports team",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "AGOVV Apeldoorn",
+        "anchor_id": "Q292618",
+        "path": [
+          {
+            "predicted_relation": "member of sports team",
+            "canonical_relation": "member of sports team",
+            "direction": "backward",
+            "rel_key": "member of sports team::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q292618",
+      [
+        "member of sports team::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0006",
+    "source_index": 2232,
+    "question": "Who was the screenwriter of The Station Agent?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"The Station Agent\", \"path\": [{\"relation\": \"screenwriter\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "The Station Agent",
+          "path": [
+            {
+              "relation": "screenwriter",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "The Station Agent",
+        "anchor_id": "Q1653448",
+        "path": [
+          {
+            "predicted_relation": "screenwriter",
+            "canonical_relation": "screenwriter",
+            "direction": "forward",
+            "rel_key": "screenwriter::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q1653448",
+      [
+        "screenwriter::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0007",
+    "source_index": 2479,
+    "question": "What cemetery was John F. Seitz buried at?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"John F. Seitz\", \"path\": [{\"relation\": \"place of burial\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "John F. Seitz",
+          "path": [
+            {
+              "relation": "place of burial",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "John F. Seitz",
+        "anchor_id": "Q724695",
+        "path": [
+          {
+            "predicted_relation": "place of burial",
+            "canonical_relation": "place of burial",
+            "direction": "forward",
+            "rel_key": "place of burial::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q724695",
+      [
+        "place of burial::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0008",
+    "source_index": 2481,
+    "question": "Who is the spouse of Swizz Beatz ?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Swizz Beatz\", \"path\": [{\"relation\": \"spouse\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Swizz Beatz",
+          "path": [
+            {
+              "relation": "spouse",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Swizz Beatz",
+        "anchor_id": "Q240523",
+        "path": [
+          {
+            "predicted_relation": "spouse",
+            "canonical_relation": "spouse",
+            "direction": "forward",
+            "rel_key": "spouse::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q240523",
+      [
+        "spouse::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0009",
+    "source_index": 2847,
+    "question": "What is the national association football team which belongs to Austria?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Austria\", \"path\": [{\"relation\": \"country for sport\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Austria",
+          "path": [
+            {
+              "relation": "country for sport",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Austria",
+        "anchor_id": "Q40",
+        "path": [
+          {
+            "predicted_relation": "country for sport",
+            "canonical_relation": "country for sport",
+            "direction": "backward",
+            "rel_key": "country for sport::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q40",
+      [
+        "country for sport::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0010",
+    "source_index": 3241,
+    "question": "What person is part of the Dave Matthews Band?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Dave Matthews Band\", \"path\": [{\"relation\": \"has part\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Dave Matthews Band",
+          "path": [
+            {
+              "relation": "has part",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Dave Matthews Band",
+        "anchor_id": "Q832086",
+        "path": [
+          {
+            "predicted_relation": "has part",
+            "canonical_relation": "has part",
+            "direction": "forward",
+            "rel_key": "has part::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q832086",
+      [
+        "has part::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0011",
+    "source_index": 3298,
+    "question": "What activity's genre is massively multiplayer online role-playing game?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"massively multiplayer online role-playing game\", \"path\": [{\"relation\": \"genre\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "massively multiplayer online role-playing game",
+          "path": [
+            {
+              "relation": "genre",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "massively multiplayer online role-playing game",
+        "anchor_id": "Q175173",
+        "path": [
+          {
+            "predicted_relation": "genre",
+            "canonical_relation": "genre",
+            "direction": "backward",
+            "rel_key": "genre::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q175173",
+      [
+        "genre::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0012",
+    "source_index": 3397,
+    "question": "Which association football club is set up in Breda?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Breda\", \"path\": [{\"relation\": \"location of formation\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Breda",
+          "path": [
+            {
+              "relation": "location of formation",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Breda",
+        "anchor_id": "Q40844",
+        "path": [
+          {
+            "predicted_relation": "location of formation",
+            "canonical_relation": "location of formation",
+            "direction": "backward",
+            "rel_key": "location of formation::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q40844",
+      [
+        "location of formation::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0013",
+    "source_index": 3423,
+    "question": "What person is a sibling of Randy Quaid?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Randy Quaid\", \"path\": [{\"relation\": \"sibling\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Randy Quaid",
+          "path": [
+            {
+              "relation": "sibling",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Randy Quaid",
+        "anchor_id": "Q316647",
+        "path": [
+          {
+            "predicted_relation": "sibling",
+            "canonical_relation": "sibling",
+            "direction": "backward",
+            "rel_key": "sibling::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q316647",
+      [
+        "sibling::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0014",
+    "source_index": 3550,
+    "question": "Tallinn is headquarters of which soccer club?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Tallinn\", \"path\": [{\"relation\": \"headquarters location\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Tallinn",
+          "path": [
+            {
+              "relation": "headquarters location",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Tallinn",
+        "anchor_id": "Q1770",
+        "path": [
+          {
+            "predicted_relation": "headquarters location",
+            "canonical_relation": "headquarters location",
+            "direction": "backward",
+            "rel_key": "headquarters location::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q1770",
+      [
+        "headquarters location::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0015",
+    "source_index": 3593,
+    "question": "What is Eddie Vedder's record label?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Eddie Vedder\", \"path\": [{\"relation\": \"record label\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Eddie Vedder",
+          "path": [
+            {
+              "relation": "record label",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Eddie Vedder",
+        "anchor_id": "Q221535",
+        "path": [
+          {
+            "predicted_relation": "record label",
+            "canonical_relation": "record label",
+            "direction": "forward",
+            "rel_key": "record label::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q221535",
+      [
+        "record label::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0016",
+    "source_index": 3858,
+    "question": "Which film was written by William S. Burroughs?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"William S. Burroughs\", \"path\": [{\"relation\": \"screenwriter\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "William S. Burroughs",
+          "path": [
+            {
+              "relation": "screenwriter",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "William S. Burroughs",
+        "anchor_id": "Q188176",
+        "path": [
+          {
+            "predicted_relation": "screenwriter",
+            "canonical_relation": "screenwriter",
+            "direction": "backward",
+            "rel_key": "screenwriter::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q188176",
+      [
+        "screenwriter::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0017",
+    "source_index": 3961,
+    "question": "Which county town is in West Dorset?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"West Dorset\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "West Dorset",
+          "path": [
+            {
+              "relation": "located in the administrative territorial entity",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "West Dorset",
+        "anchor_id": "Q629802",
+        "path": [
+          {
+            "predicted_relation": "located in the administrative territorial entity",
+            "canonical_relation": "located in the administrative territorial entity",
+            "direction": "forward",
+            "rel_key": "located in the administrative territorial entity::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q629802",
+      [
+        "located in the administrative territorial entity::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0018",
+    "source_index": 4382,
+    "question": "Which vocal academic discipline is associated with Damon Albarn?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Damon Albarn\", \"path\": [{\"relation\": \"voice type\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Damon Albarn",
+          "path": [
+            {
+              "relation": "voice type",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Damon Albarn",
+        "anchor_id": "Q272069",
+        "path": [
+          {
+            "predicted_relation": "voice type",
+            "canonical_relation": "voice type",
+            "direction": "forward",
+            "rel_key": "voice type::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q272069",
+      [
+        "voice type::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0019",
+    "source_index": 4484,
+    "question": "Edward Norton produced which visual artwork?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Edward Norton\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Edward Norton",
+          "path": [
+            {
+              "relation": "producer",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Edward Norton",
+        "anchor_id": "Q125904",
+        "path": [
+          {
+            "predicted_relation": "producer",
+            "canonical_relation": "producer",
+            "direction": "backward",
+            "rel_key": "producer::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q125904",
+      [
+        "producer::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0020",
+    "source_index": 4709,
+    "question": "Who is Peter Bogdanovich's partner?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Peter Bogdanovich\", \"path\": [{\"relation\": \"partner\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Peter Bogdanovich",
+          "path": [
+            {
+              "relation": "partner",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Peter Bogdanovich",
+        "anchor_id": "Q158250",
+        "path": [
+          {
+            "predicted_relation": "partner",
+            "canonical_relation": "partner",
+            "direction": "backward",
+            "rel_key": "partner::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q158250",
+      [
+        "partner::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0021",
+    "source_index": 4734,
+    "question": "The Democratic Republic of the Congo was the filming locale of which visual artwork?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Democratic Republic of the Congo\", \"path\": [{\"relation\": \"filming location\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Democratic Republic of the Congo",
+          "path": [
+            {
+              "relation": "filming location",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Democratic Republic of the Congo",
+        "anchor_id": "Q974",
+        "path": [
+          {
+            "predicted_relation": "filming location",
+            "canonical_relation": "filming location",
+            "direction": "backward",
+            "rel_key": "filming location::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q974",
+      [
+        "filming location::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0022",
+    "source_index": 5013,
+    "question": "What is the university in Pomona?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Pomona\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Pomona",
+          "path": [
+            {
+              "relation": "located in the administrative territorial entity",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Pomona",
+        "anchor_id": "Q486868",
+        "path": [
+          {
+            "predicted_relation": "located in the administrative territorial entity",
+            "canonical_relation": "located in the administrative territorial entity",
+            "direction": "backward",
+            "rel_key": "located in the administrative territorial entity::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q486868",
+      [
+        "located in the administrative territorial entity::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0023",
+    "source_index": 5128,
+    "question": "Which person was born in Trondheim?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Trondheim\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Trondheim",
+          "path": [
+            {
+              "relation": "place of birth",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Trondheim",
+        "anchor_id": "Q25804",
+        "path": [
+          {
+            "predicted_relation": "place of birth",
+            "canonical_relation": "place of birth",
+            "direction": "backward",
+            "rel_key": "place of birth::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q25804",
+      [
+        "place of birth::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0024",
+    "source_index": 5182,
+    "question": "Tell me the person who is Katy Perry's spouse",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Katy Perry\", \"path\": [{\"relation\": \"spouse\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Katy Perry",
+          "path": [
+            {
+              "relation": "spouse",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Katy Perry",
+        "anchor_id": "Q42493",
+        "path": [
+          {
+            "predicted_relation": "spouse",
+            "canonical_relation": "spouse",
+            "direction": "backward",
+            "rel_key": "spouse::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q42493",
+      [
+        "spouse::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0025",
+    "source_index": 5528,
+    "question": "Which agent owns General Dynamics Electric Boat?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"General Dynamics Electric Boat\", \"path\": [{\"relation\": \"owner of\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "General Dynamics Electric Boat",
+          "path": [
+            {
+              "relation": "owner of",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "General Dynamics Electric Boat",
+        "anchor_id": "Q1325893",
+        "path": [
+          {
+            "predicted_relation": "owner of",
+            "canonical_relation": "owner of",
+            "direction": "backward",
+            "rel_key": "owner of::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q1325893",
+      [
+        "owner of::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0026",
+    "source_index": 5618,
+    "question": "Who is a resident of Tunis?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Tunis\", \"path\": [{\"relation\": \"residence\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Tunis",
+          "path": [
+            {
+              "relation": "residence",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Tunis",
+        "anchor_id": "Q3572",
+        "path": [
+          {
+            "predicted_relation": "residence",
+            "canonical_relation": "residence",
+            "direction": "backward",
+            "rel_key": "residence::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q3572",
+      [
+        "residence::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0027",
+    "source_index": 6107,
+    "question": "Which disease did Warren Zevon die of?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Warren Zevon\", \"path\": [{\"relation\": \"cause of death\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Warren Zevon",
+          "path": [
+            {
+              "relation": "cause of death",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Warren Zevon",
+        "anchor_id": "Q375792",
+        "path": [
+          {
+            "predicted_relation": "cause of death",
+            "canonical_relation": "cause of death",
+            "direction": "forward",
+            "rel_key": "cause of death::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q375792",
+      [
+        "cause of death::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0028",
+    "source_index": 6294,
+    "question": "What county in Illinois is named after DeWitt Clinton?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"DeWitt Clinton\", \"path\": [{\"relation\": \"named after\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "DeWitt Clinton",
+          "path": [
+            {
+              "relation": "named after",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "DeWitt Clinton",
+        "anchor_id": "Q527462",
+        "path": [
+          {
+            "predicted_relation": "named after",
+            "canonical_relation": "named after",
+            "direction": "backward",
+            "rel_key": "named after::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q527462",
+      [
+        "named after::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0029",
+    "source_index": 6312,
+    "question": "Which award did Rickey Henderson receive?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Rickey Henderson\", \"path\": [{\"relation\": \"award received\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Rickey Henderson",
+          "path": [
+            {
+              "relation": "award received",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Rickey Henderson",
+        "anchor_id": "Q601521",
+        "path": [
+          {
+            "predicted_relation": "award received",
+            "canonical_relation": "award received",
+            "direction": "forward",
+            "rel_key": "award received::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q601521",
+      [
+        "award received::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0030",
+    "source_index": 6550,
+    "question": "Which association football club has headquarters located in Cremona?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Cremona\", \"path\": [{\"relation\": \"headquarters location\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Cremona",
+          "path": [
+            {
+              "relation": "headquarters location",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Cremona",
+        "anchor_id": "Q6231",
+        "path": [
+          {
+            "predicted_relation": "headquarters location",
+            "canonical_relation": "headquarters location",
+            "direction": "backward",
+            "rel_key": "headquarters location::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q6231",
+      [
+        "headquarters location::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0031",
+    "source_index": 6853,
+    "question": "In which city was Orlando Bloom born?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Orlando Bloom\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Orlando Bloom",
+          "path": [
+            {
+              "relation": "place of birth",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Orlando Bloom",
+        "anchor_id": "Q44467",
+        "path": [
+          {
+            "predicted_relation": "place of birth",
+            "canonical_relation": "place of birth",
+            "direction": "forward",
+            "rel_key": "place of birth::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q44467",
+      [
+        "place of birth::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0032",
+    "source_index": 7844,
+    "question": "What person was born in Charlottesville?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Charlottesville\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Charlottesville",
+          "path": [
+            {
+              "relation": "place of birth",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Charlottesville",
+        "anchor_id": "Q123766",
+        "path": [
+          {
+            "predicted_relation": "place of birth",
+            "canonical_relation": "place of birth",
+            "direction": "backward",
+            "rel_key": "place of birth::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q123766",
+      [
+        "place of birth::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0033",
+    "source_index": 7869,
+    "question": "Which person is a member of Tom Petty and the Heartbreakers?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Tom Petty and the Heartbreakers\", \"path\": [{\"relation\": \"member of\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Tom Petty and the Heartbreakers",
+          "path": [
+            {
+              "relation": "member of",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Tom Petty and the Heartbreakers",
+        "anchor_id": "Q2117272",
+        "path": [
+          {
+            "predicted_relation": "member of",
+            "canonical_relation": "member of",
+            "direction": "backward",
+            "rel_key": "member of::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q2117272",
+      [
+        "member of::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0034",
+    "source_index": 8561,
+    "question": "What industry is part of the North African Campaign?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"North African Campaign\", \"path\": [{\"relation\": \"part of\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "North African Campaign",
+          "path": [
+            {
+              "relation": "part of",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "North African Campaign",
+        "anchor_id": "Q218678",
+        "path": [
+          {
+            "predicted_relation": "part of",
+            "canonical_relation": "part of",
+            "direction": "forward",
+            "rel_key": "part of::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q218678",
+      [
+        "part of::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0035",
+    "source_index": 9091,
+    "question": "What visual artwork is narrated by Ray Liotta?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Ray Liotta\", \"path\": [{\"relation\": \"narrator\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Ray Liotta",
+          "path": [
+            {
+              "relation": "narrator",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Ray Liotta",
+        "anchor_id": "Q211280",
+        "path": [
+          {
+            "predicted_relation": "narrator",
+            "canonical_relation": "narrator",
+            "direction": "backward",
+            "rel_key": "narrator::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q211280",
+      [
+        "narrator::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0036",
+    "source_index": 9290,
+    "question": "Which individual was Ted's composer?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Ted\", \"path\": [{\"relation\": \"composer\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Ted",
+          "path": [
+            {
+              "relation": "composer",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Ted",
+        "anchor_id": "Q641760",
+        "path": [
+          {
+            "predicted_relation": "composer",
+            "canonical_relation": "composer",
+            "direction": "forward",
+            "rel_key": "composer::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q641760",
+      [
+        "composer::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0037",
+    "source_index": 9511,
+    "question": "What disease is James Coburn's medical condition?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"James Coburn\", \"path\": [{\"relation\": \"medical condition\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "James Coburn",
+          "path": [
+            {
+              "relation": "medical condition",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "James Coburn",
+        "anchor_id": "Q4227",
+        "path": [
+          {
+            "predicted_relation": "medical condition",
+            "canonical_relation": "medical condition",
+            "direction": "forward",
+            "rel_key": "medical condition::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q4227",
+      [
+        "medical condition::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0038",
+    "source_index": 9751,
+    "question": "Which person was influenced by Red Hot Chili Peppers?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Red Hot Chili Peppers\", \"path\": [{\"relation\": \"influenced by\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Red Hot Chili Peppers",
+          "path": [
+            {
+              "relation": "influenced by",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Red Hot Chili Peppers",
+        "anchor_id": "Q10708",
+        "path": [
+          {
+            "predicted_relation": "influenced by",
+            "canonical_relation": "influenced by",
+            "direction": "backward",
+            "rel_key": "influenced by::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q10708",
+      [
+        "influenced by::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0039",
+    "source_index": 9871,
+    "question": "What city is the birthplace of Alan Dale?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Alan Dale\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Alan Dale",
+          "path": [
+            {
+              "relation": "place of birth",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Alan Dale",
+        "anchor_id": "Q350194",
+        "path": [
+          {
+            "predicted_relation": "place of birth",
+            "canonical_relation": "place of birth",
+            "direction": "forward",
+            "rel_key": "place of birth::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q350194",
+      [
+        "place of birth::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0040",
+    "source_index": 10540,
+    "question": "What work was produced by Bob Hoskins?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Bob Hoskins\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Bob Hoskins",
+          "path": [
+            {
+              "relation": "producer",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Bob Hoskins",
+        "anchor_id": "Q211283",
+        "path": [
+          {
+            "predicted_relation": "producer",
+            "canonical_relation": "producer",
+            "direction": "backward",
+            "rel_key": "producer::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q211283",
+      [
+        "producer::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0041",
+    "source_index": 10672,
+    "question": "Which Summer Olympics preceded the 1912 Summer Games?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"1912 Summer Olympics\", \"path\": [{\"relation\": \"followed by\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "1912 Summer Olympics",
+          "path": [
+            {
+              "relation": "followed by",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "1912 Summer Olympics",
+        "anchor_id": "Q8118",
+        "path": [
+          {
+            "predicted_relation": "followed by",
+            "canonical_relation": "followed by",
+            "direction": "backward",
+            "rel_key": "followed by::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q8118",
+      [
+        "followed by::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0042",
+    "source_index": 10691,
+    "question": "Whih person was convicted of theft?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"theft\", \"path\": [{\"relation\": \"convicted of\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "theft",
+          "path": [
+            {
+              "relation": "convicted of",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "theft",
+        "anchor_id": "Q2727213",
+        "path": [
+          {
+            "predicted_relation": "convicted of",
+            "canonical_relation": "convicted of",
+            "direction": "backward",
+            "rel_key": "convicted of::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q2727213",
+      [
+        "convicted of::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0043",
+    "source_index": 10851,
+    "question": "Steven Wilson is a member of which band?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Steven Wilson\", \"path\": [{\"relation\": \"has part\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Steven Wilson",
+          "path": [
+            {
+              "relation": "has part",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Steven Wilson",
+        "anchor_id": "Q352766",
+        "path": [
+          {
+            "predicted_relation": "has part",
+            "canonical_relation": "has part",
+            "direction": "backward",
+            "rel_key": "has part::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q352766",
+      [
+        "has part::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0044",
+    "source_index": 10893,
+    "question": "Which person was educated at Smith College?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Smith College\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Smith College",
+          "path": [
+            {
+              "relation": "educated at",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Smith College",
+        "anchor_id": "Q49204",
+        "path": [
+          {
+            "predicted_relation": "educated at",
+            "canonical_relation": "educated at",
+            "direction": "backward",
+            "rel_key": "educated at::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q49204",
+      [
+        "educated at::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0045",
+    "source_index": 10895,
+    "question": "What person was born in Royal Leamington Spa?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Royal Leamington Spa\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Royal Leamington Spa",
+          "path": [
+            {
+              "relation": "place of birth",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Royal Leamington Spa",
+        "anchor_id": "Q546635",
+        "path": [
+          {
+            "predicted_relation": "place of birth",
+            "canonical_relation": "place of birth",
+            "direction": "backward",
+            "rel_key": "place of birth::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q546635",
+      [
+        "place of birth::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0046",
+    "source_index": 10928,
+    "question": "Ken Burns produced which series for TV?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Ken Burns\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Ken Burns",
+          "path": [
+            {
+              "relation": "producer",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Ken Burns",
+        "anchor_id": "Q616886",
+        "path": [
+          {
+            "predicted_relation": "producer",
+            "canonical_relation": "producer",
+            "direction": "backward",
+            "rel_key": "producer::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q616886",
+      [
+        "producer::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0047",
+    "source_index": 11106,
+    "question": "What Summer Olympic Games were followed by the 1980 Summer Olympics?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"1980 Summer Olympics\", \"path\": [{\"relation\": \"followed by\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "1980 Summer Olympics",
+          "path": [
+            {
+              "relation": "followed by",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "1980 Summer Olympics",
+        "anchor_id": "Q8450",
+        "path": [
+          {
+            "predicted_relation": "followed by",
+            "canonical_relation": "followed by",
+            "direction": "backward",
+            "rel_key": "followed by::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q8450",
+      [
+        "followed by::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0048",
+    "source_index": 11143,
+    "question": "What disease did John Hartford die of ?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"John Hartford\", \"path\": [{\"relation\": \"cause of death\", \"direction\": \"forward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "John Hartford",
+          "path": [
+            {
+              "relation": "cause of death",
+              "direction": "forward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "John Hartford",
+        "anchor_id": "Q704700",
+        "path": [
+          {
+            "predicted_relation": "cause of death",
+            "canonical_relation": "cause of death",
+            "direction": "forward",
+            "rel_key": "cause of death::forward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q704700",
+      [
+        "cause of death::forward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0049",
+    "source_index": 11353,
+    "question": "Which association football club does the National Autonomous University of Mexico own?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"National Autonomous University of Mexico\", \"path\": [{\"relation\": \"owned by\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "National Autonomous University of Mexico",
+          "path": [
+            {
+              "relation": "owned by",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "National Autonomous University of Mexico",
+        "anchor_id": "Q222738",
+        "path": [
+          {
+            "predicted_relation": "owned by",
+            "canonical_relation": "owned by",
+            "direction": "backward",
+            "rel_key": "owned by::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q222738",
+      [
+        "owned by::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  },
+  {
+    "sample_id": "1p_0050",
+    "source_index": 11618,
+    "question": "What television series included Steve Allen in the cast?",
+    "gold_qtype": "1p",
+    "predicted_qtype": "1p",
+    "raw_output": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Steve Allen\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"backward\"}]}]}",
+    "parsed_output": {
+      "type": "1p",
+      "query": [
+        {
+          "anchor": "Steve Allen",
+          "path": [
+            {
+              "relation": "cast member",
+              "direction": "backward"
+            }
+          ]
+        }
+      ]
+    },
+    "grounded_query": [
+      {
+        "anchor_name": "Steve Allen",
+        "anchor_id": "Q553276",
+        "path": [
+          {
+            "predicted_relation": "cast member",
+            "canonical_relation": "cast member",
+            "direction": "backward",
+            "rel_key": "cast member::backward"
+          }
+        ]
+      }
+    ],
+    "logical_query": [
+      "Q553276",
+      [
+        "cast member::backward"
+      ]
+    ],
+    "status": "ok",
+    "failure_reason": null
+  }
+]

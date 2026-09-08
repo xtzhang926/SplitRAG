@@ -1,0 +1,154 @@
+{
+  "input": {
+    "val_path": "",
+    "kb_path": "",
+    "target_per_type": 50,
+    "seed": 926
+  },
+  "dataset": {
+    "num_validation_samples": 11797,
+    "num_kb_entities": 16960
+  },
+  "filter_stats": {
+    "raw_topology_counts": {
+      "1p": 175,
+      "2i": 62,
+      "2p": 48
+    },
+    "unique_anchor_counts": {
+      "1p": 172,
+      "2i": 53,
+      "2p": 46
+    },
+    "gold_entity_counts": {
+      "1p": 172,
+      "2i": 53,
+      "2p": 46
+    },
+    "validated_counts": {
+      "1p": 115,
+      "2i": 48,
+      "2p": 24
+    },
+    "rejected_reasons": {
+      "not_target_topology": 11512,
+      "1p:reduced_query_not_equal_gold": 57,
+      "2p:reduced_query_not_equal_gold": 22,
+      "2i:ambiguous_anchor": 9,
+      "2i:reduced_query_not_equal_gold": 5,
+      "1p:ambiguous_anchor": 3,
+      "2p:ambiguous_anchor": 2
+    },
+    "top_50_reduced_ast_shapes": [
+      {
+        "shape": "X",
+        "count": 10809
+      },
+      {
+        "shape": "P(X)",
+        "count": 241
+      },
+      {
+        "shape": "P(A)",
+        "count": 175
+      },
+      {
+        "shape": "I(X,X)",
+        "count": 119
+      },
+      {
+        "shape": "I(P(A),X)",
+        "count": 102
+      },
+      {
+        "shape": "I(X,P(A))",
+        "count": 91
+      },
+      {
+        "shape": "I(P(A),P(A))",
+        "count": 62
+      },
+      {
+        "shape": "P(I(P(A),A))",
+        "count": 50
+      },
+      {
+        "shape": "P(P(A))",
+        "count": 48
+      },
+      {
+        "shape": "I(X,P(I(P(A),A)))",
+        "count": 15
+      },
+      {
+        "shape": "P(P(I(P(A),A)))",
+        "count": 14
+      },
+      {
+        "shape": "I(P(A),P(I(P(A),A)))",
+        "count": 13
+      },
+      {
+        "shape": "I(P(I(P(A),A)),X)",
+        "count": 12
+      },
+      {
+        "shape": "I(P(X),X)",
+        "count": 9
+      },
+      {
+        "shape": "I(P(I(P(A),A)),P(A))",
+        "count": 9
+      },
+      {
+        "shape": "P(P(X))",
+        "count": 9
+      },
+      {
+        "shape": "I(P(X),P(A))",
+        "count": 5
+      },
+      {
+        "shape": "I(X,P(X))",
+        "count": 5
+      },
+      {
+        "shape": "I(P(A),P(X))",
+        "count": 4
+      },
+      {
+        "shape": "I(P(I(P(A),A)),P(I(P(A),A)))",
+        "count": 3
+      },
+      {
+        "shape": "I(P(I(P(A),A)),P(X))",
+        "count": 1
+      },
+      {
+        "shape": "I(P(X),P(I(P(A),A)))",
+        "count": 1
+      }
+    ]
+  },
+  "selected_counts": {
+    "1p": 50,
+    "2p": 24,
+    "2i": 45,
+    "3i": 0,
+    "2u": 0
+  },
+  "warnings": [
+    "2p: only 24 strictly validated samples are available; target_per_type=50. No synthetic duplication was performed.",
+    "2i: only 45 strictly validated samples are available; target_per_type=50. No synthetic duplication was performed.",
+    "3i: only 0 strictly validated samples are available; target_per_type=50. No synthetic duplication was performed.",
+    "2u: only 0 strictly validated samples are available; target_per_type=50. No synthetic duplication was performed."
+  ],
+  "notes": [
+    "Only Find/Relate/And/Or topology is modeled; FilterConcept and What are topology-transparent.",
+    "Every retained sample is re-executed on kb.json after topology reduction.",
+    "A sample is kept only when the reduced relation query returns exactly the KQA Pro gold answer name.",
+    "Anchor names must map to exactly one KB entity ID.",
+    "Relations preserve KQA Pro forward/backward direction using predicate::direction keys.",
+    "No missing topology is synthesized or duplicated merely to reach target_per_type."
+  ]
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "queries": "tell me the written work that was authored by the person that is buried in Monaco.",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Monaco\", \"path\": [{\"relation\": \"place of burial\", \"direction\": \"backward\"}, {\"relation\": \"author\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0001",
+    "source_index": 867
+  },
+  {
+    "queries": "Who resides in the town where David Thewlis was born?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"David Thewlis\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}, {\"relation\": \"residence\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0002",
+    "source_index": 872
+  },
+  {
+    "queries": "The General Electric founder is a member of which association?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"General Electric\", \"path\": [{\"relation\": \"founded by\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0003",
+    "source_index": 1179
+  },
+  {
+    "queries": "Who died in a city in the United States, where Samuel M. Corner was born?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Samuel M. Corner\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}]}, {\"anchor\": \"death place\", \"path\": [{\"relation\": \"place of death\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0004",
+    "source_index": 1496
+  },
+  {
+    "queries": "Tell me the film festival edition that follows the film festival edition that follows 58th Berlin International Film Festival",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"58th Berlin International Film Festival\", \"path\": [{\"relation\": \"followed by\", \"direction\": \"forward\"}, {\"relation\": \"followed by\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0005",
+    "source_index": 1654
+  },
+  {
+    "queries": "Which occupation is the position of the human that is a member of Costa Rica's national football team?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Costa Rica national football team\", \"path\": [{\"relation\": \"member of sports team\", \"direction\": \"backward\"}, {\"relation\": \"position played on team / speciality\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0006",
+    "source_index": 1846
+  },
+  {
+    "queries": "Which person executive produced the visual artwork featuring Betty White as a cast member?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Betty White\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"backward\"}, {\"relation\": \"executive producer\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0007",
+    "source_index": 2804
+  },
+  {
+    "queries": "Who took part in the Winter Olympics that came after the 1976 Winter Games?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"1976 Winter Olympics\", \"path\": [{\"relation\": \"follows\", \"direction\": \"backward\"}, {\"relation\": \"participant of\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0008",
+    "source_index": 2946
+  },
+  {
+    "queries": "Which higher education institution is the parent organization of the law school that is Savannah Guthrie's education place?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Savannah Guthrie\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"forward\"}, {\"relation\": \"parent organization\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0009",
+    "source_index": 4666
+  },
+  {
+    "queries": "Which person is the spouse of the person educated at University of Western Australia?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"University of Western Australia\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"backward\"}, {\"relation\": \"spouse\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0010",
+    "source_index": 5082
+  },
+  {
+    "queries": "What is the Academy Awards ceremony that came before the one received by Stirling Silliphanta?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Stirling Silliphanta\", \"path\": [{\"relation\": \"award received\", \"direction\": \"forward\"}, {\"relation\": \"follows\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0011",
+    "source_index": 5200
+  },
+  {
+    "queries": "Which city in the US contains the university in which George S. Clinton studied ?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"George S. Clinton\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"forward\"}, {\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0012",
+    "source_index": 5349
+  },
+  {
+    "queries": "Amitabh Bachchan studied at the university affiliated with which college?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Amitabh Bachchan\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"forward\"}, {\"relation\": \"affiliation\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0013",
+    "source_index": 5487
+  },
+  {
+    "queries": "What ethnic group is geographically distributed in a geographic region which is the continent where The Hague is located ?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"The Hague\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}, {\"relation\": \"geographic distribution\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0014",
+    "source_index": 5641
+  },
+  {
+    "queries": "Who is the producer of the visual artwork directed by Sammo Hung?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Sammo Hung\", \"path\": [{\"relation\": \"director\", \"direction\": \"backward\"}, {\"relation\": \"producer\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0015",
+    "source_index": 5678
+  },
+  {
+    "queries": "Which person was born in the capital city of Myanmar?",
+    "answers": "{\"type\": \"1p\", \"query\": [{\"anchor\": \"Myanmar\", \"path\": [{\"relation\": \"capital\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0016",
+    "source_index": 6423
+  },
+  {
+    "queries": "What administrative territorial entity's capital is the United States city that is the birthplace of Kristin Davis?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Kristin Davis\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}, {\"relation\": \"capital\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0017",
+    "source_index": 6665
+  },
+  {
+    "queries": "What movie was the director of She's Having a Baby a cast member of?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"She's Having a Baby\", \"path\": [{\"relation\": \"director\", \"direction\": \"forward\"}, {\"relation\": \"cast member\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0018",
+    "source_index": 8644
+  },
+  {
+    "queries": "What visual artwork is derivative of an Ian McEwan written work?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Ian McEwan\", \"path\": [{\"relation\": \"notable work\", \"direction\": \"forward\"}, {\"relation\": \"derivative work\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0019",
+    "source_index": 8895
+  },
+  {
+    "queries": "Which Washington county shares border with the Washington county which contains Yakima?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Yakima\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}, {\"relation\": \"shares border with\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0020",
+    "source_index": 9007
+  },
+  {
+    "queries": "Which ethnic group the director of photography of Sleepers belongs to?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Sleepers\", \"path\": [{\"relation\": \"director of photography\", \"direction\": \"forward\"}, {\"relation\": \"ethnic group\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0021",
+    "source_index": 9967
+  },
+  {
+    "queries": "Which person was born in the capital of Jammu and Kashmir?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Jammu and Kashmir\", \"path\": [{\"relation\": \"capital\", \"direction\": \"forward\"}, {\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0022",
+    "source_index": 10100
+  },
+  {
+    "queries": "Which public company has the legal-form of business and is a subsidiary of Sony Interactive Entertainment?",
+    "answers": "{\"type\": \"2i\", \"query\": [{\"anchor\": \"Sony Interactive Entertainment\", \"path\": [{\"relation\": \"parent company\", \"direction\": \"backward\"}]}, {\"anchor\": \"legal-form of business\", \"path\": [{\"relation\": \"legal form\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0023",
+    "source_index": 10478
+  },
+  {
+    "queries": "Which human is a cast member of the film produced by John Woo?",
+    "answers": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"John Woo\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}, {\"relation\": \"cast member\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0024",
+    "source_index": 11403
+  }
+]

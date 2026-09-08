@@ -1,0 +1,122 @@
+[
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Monaco\", \"path\": [{\"relation\": \"place of burial\", \"direction\": \"backward\"}, {\"relation\": \"author\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0001",
+    "source_index": 867
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"David Thewlis\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}, {\"relation\": \"residence\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0002",
+    "source_index": 872
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"General Electric\", \"path\": [{\"relation\": \"founded by\", \"direction\": \"forward\"}, {\"relation\": \"member of\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0003",
+    "source_index": 1179
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Samuel M. Comer\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}, {\"relation\": \"place of death\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0004",
+    "source_index": 1496
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"58th Berlin International Film Festival\", \"path\": [{\"relation\": \"followed by\", \"direction\": \"forward\"}, {\"relation\": \"followed by\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0005",
+    "source_index": 1654
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Costa Rica national football team\", \"path\": [{\"relation\": \"member of sports team\", \"direction\": \"backward\"}, {\"relation\": \"position played on team / speciality\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0006",
+    "source_index": 1846
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Betty White\", \"path\": [{\"relation\": \"cast member\", \"direction\": \"backward\"}, {\"relation\": \"executive producer\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0007",
+    "source_index": 2804
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"1976 Winter Olympics\", \"path\": [{\"relation\": \"followed by\", \"direction\": \"forward\"}, {\"relation\": \"participant of\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0008",
+    "source_index": 2946
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Savannah Guthrie\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"forward\"}, {\"relation\": \"parent organization\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0009",
+    "source_index": 4666
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"University of Western Australia\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"backward\"}, {\"relation\": \"spouse\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0010",
+    "source_index": 5082
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Stirling Silliphanta\", \"path\": [{\"relation\": \"award received\", \"direction\": \"forward\"}, {\"relation\": \"follows\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0011",
+    "source_index": 5200
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"George S. Clinton\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"forward\"}, {\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0012",
+    "source_index": 5349
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Amitabh Bachchan\", \"path\": [{\"relation\": \"educated at\", \"direction\": \"forward\"}, {\"relation\": \"affiliation\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0013",
+    "source_index": 5487
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"The Hague\", \"path\": [{\"relation\": \"continent\", \"direction\": \"forward\"}, {\"relation\": \"geographic distribution\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0014",
+    "source_index": 5641
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Sammo Hung\", \"path\": [{\"relation\": \"director\", \"direction\": \"backward\"}, {\"relation\": \"producer\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0015",
+    "source_index": 5678
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Myanmar\", \"path\": [{\"relation\": \"capital\", \"direction\": \"forward\"}, {\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0016",
+    "source_index": 6423
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Kristin Davis\", \"path\": [{\"relation\": \"place of birth\", \"direction\": \"forward\"}, {\"relation\": \"capital of\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0017",
+    "source_index": 6665
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"She's Having a Baby\", \"path\": [{\"relation\": \"director\", \"direction\": \"forward\"}, {\"relation\": \"cast member\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0018",
+    "source_index": 8644
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Ian McEwan\", \"path\": [{\"relation\": \"author\", \"direction\": \"backward\"}, {\"relation\": \"derivative work\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0019",
+    "source_index": 8895
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Yakima\", \"path\": [{\"relation\": \"located in the administrative territorial entity\", \"direction\": \"forward\"}, {\"relation\": \"shares border with\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0020",
+    "source_index": 9007
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Sleepers\", \"path\": [{\"relation\": \"director of photography\", \"direction\": \"forward\"}, {\"relation\": \"ethnic group\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0021",
+    "source_index": 9967
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Jammu and Kashmir\", \"path\": [{\"relation\": \"capital of\", \"direction\": \"backward\"}, {\"relation\": \"place of birth\", \"direction\": \"backward\"}]}]}",
+    "sample_id": "2p_0022",
+    "source_index": 10100
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"Sony Interactive Entertainment\", \"path\": [{\"relation\": \"subsidiary\", \"direction\": \"forward\"}, {\"relation\": \"legal form\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0023",
+    "source_index": 10478
+  },
+  {
+    "gold": "{\"type\": \"2p\", \"query\": [{\"anchor\": \"John Woo\", \"path\": [{\"relation\": \"producer\", \"direction\": \"backward\"}, {\"relation\": \"cast member\", \"direction\": \"forward\"}]}]}",
+    "sample_id": "2p_0024",
+    "source_index": 11403
+  }
+]
